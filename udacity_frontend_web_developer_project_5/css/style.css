@@ -1,0 +1,26 @@
+html,
+body,
+.full-row,
+.container,
+.container-fluid,
+.col-md-8 {
+	height: 100%;
+}
+
+#map-canvas {
+	width: 100%;
+	height: 100%;
+}
+
+#search {
+	width: 100%;
+	margin-top: 15px;
+}
+
+.hidden {
+	display: none;
+}
+
+.right {
+	float: right;
+}
