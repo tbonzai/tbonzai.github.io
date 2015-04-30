@@ -8,7 +8,7 @@ as a part of my Udacity Front End Web Developer Nanodegree program.
 Within the "udacity_frontend_web_developer_project_3" folder you will find the files
 I modified to build a classic, "Frogger" style video game using the HTML5 Canvas.
 
-### Project 4 - Website optimization
+### Project 4 - Website Optimization
 
 Within the "udacity_frontend_web_developer_project_4" folder you will find
 the files I modified to optimize speed and frames per second (FPS).
