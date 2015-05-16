@@ -7,6 +7,7 @@ I used the following websites as references:
 
 http://jasmine.github.io/
 http://api.jquery.com/
+https://github.com/udacity/frontend-nanodegree-feedreader
 
 # Project Overview
 
