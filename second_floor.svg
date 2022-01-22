@@ -1,0 +1,3742 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="229.71625mm"
+   height="180.02167mm"
+   version="1.1"
+   id="svg332"
+   sodipodi:docname="second_floor.svg"
+   inkscape:label="2nd Floor"
+   inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <script
+     id="script8335">
+function toggleCheck(object) {
+	var 
+		objectId,
+		objectPrefix,
+		box,
+		group;
+
+	// Cast the object's ID to a string.
+	objectId = '' + object.id;
+	// Remove any checkbox or check_label suffixes.
+	objectPrefix = objectId.replace('checkbox', '').replace('check_label', '');
+	// Get the associated checkbox.
+	box = document.getElementById(objectPrefix + 'box');
+	// Get the associated group.
+	group = document.getElementById(objectPrefix + 'group');
+	// Toggle the opacity of the box to make the X appear and toggle to group display.
+	if (box.style.fillOpacity === '1') {
+		// Checked
+		box.style.fillOpacity = '0';
+		group.style.display = 'inline';
+	} else {
+		// Not checked
+		box.style.fillOpacity = '1';
+		group.style.display = 'none';
+	}
+}
+
+function toggleCircuits(object, highlight) {
+	var 
+		objectId,
+		objectPrefix,
+		checkLabel;
+
+	// Cast the object's ID to a string.
+	objectId = '' + object.id;
+	// Remove the group suffix.
+	objectPrefix = objectId.replace('group', '');
+	// Get the associated check label.
+	checkLabel = document.getElementById(objectPrefix + 'check_label');
+	// Set the label to black.
+	checkLabel.style.fill = '#000000';
+	// Determine if we are highlighting a circuit.
+	if (highlight === true) {
+		checkLabel.style.fill = '#ff0000';
+	}
+}
+
+function toggleAll(checkAll) {
+	var
+		i,
+		objectPrefix,
+		group,
+		box,
+		objectsArr = [
+			'circuit_13',
+			'circuit_15',
+			'circuit_16',
+			'circuit_19',
+			'objects',
+			'doors'
+		];
+
+	// Loop on the objects array
+	for (i = 0; i &lt; objectsArr.length; i++) {
+		// Get the associated checkbox.
+		box = document.getElementById(objectsArr[i] + '_box');
+		// Get the associated group.
+		group = document.getElementById(objectsArr[i] + '_group');
+		// Toggle the opacity of the box to make the X appear and toggle to group display.
+		if (checkAll === true) {
+			// Checked
+			box.style.fillOpacity = '0';
+			group.style.display = 'inline';
+		} else {
+			// Not checked
+			box.style.fillOpacity = '1';
+			group.style.display = 'none';
+		}
+	}
+	
+}
+</script>
+  <defs
+     id="defs336">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect2194"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect15944"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect77542"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect77538"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect53565"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect49728"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect39842"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect29673"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect16196"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect69678"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect68689"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect11898"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect60479"
+       is_visible="true"
+       lpeversion="1" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1528">
+      <rect
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:1.00157"
+         id="rect1530"
+         width="976.97321"
+         height="647.24475"
+         x="285.55338"
+         y="581.24237" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview334"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     width="750px"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10"
+     inkscape:zoom="1.0455165"
+     inkscape:cx="545.66332"
+     inkscape:cy="343.84919"
+     inkscape:window-width="1280"
+     inkscape:window-height="685"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g326"
+     units="mm"
+     inkscape:document-units="mm" />
+  <clipPath
+     id="cl_5">
+    <rect
+       x="28.346457"
+       y="28.346457"
+       width="1223.3071"
+       height="1782.9528"
+       id="rect11" />
+  </clipPath>
+  <g
+     clip-path="url(#clipPath1528)"
+     id="g326"
+     transform="translate(-275.20405,-579.61599)"
+     style="display:inline"
+     inkscape:label="2nd Floor"
+     inkscape:groupmode="layer">
+    <path
+       fill="#00001a"
+       fill-opacity="0.0705882"
+       d="M 1.21,6.557 -1.607,6.558 V 1.225 L 1.21,1.224 v 5.333 m -4.207,-10.79 h 0.994 v 3.914 h -0.108 v 0.112 l 2.976,-0.001 v -0.106 l -2.747,0.001 v -3.912 l 2.589,10e-4 v -0.125 h 0.876 v 0.125 h 0.19 v 0.438 H 1.895 V -4.193 H 2.999 L 2.998,-3.048 H 2.657 v 0.301 H 1.895 V -3.176 H 1.773 v 2.862 H 1.678 v 0.106 h 0.216 v -0.775 h 1.105 v 0.289 h 0.12 V -1.436 H 2.998 v 0.322 H 1.894 v -1.512 h 1.104 v 0.44 h 0.121 v -2.017 h 0.788 v -0.125 h 1.791 v 0.125 H 6.363 V 0.366 H 3.119 V 0.118 H 2.999 V 0.785 H 2.855 V 0.904 H 2.993 V 1.322 H 3.117 V 0.489 L 6.36,0.488 6.359,2.104 H 6.246 V 2.228 H 5.065 V 2.104 L 3.117,2.103 V 2.072 H 2.993 V 2.56 H 1.331 V 0.904 H 2.105 V 0.785 H 1.208 V 1.104 H -2.079 V 1.229 H -2.892 V 1.104 H -2.993 V 0.842 h -0.123 v 0.273 h -0.596 v -1.313 h 0.596 v 0.29 h 0.123 v -0.299 h 0.07 v -0.112 l -1.332,0.001 v 0.109 h 0.418 L -3.836,1.101 -5.347,1.1 v -1.31 h 0.342 v -0.108 h -0.334 v -3.916 h 0.369 v -0.124 h 1.973 v 0.125 m 5.995,1.504 H 2.776 v -0.176 h 0.222 v 0.176"
+       id="path16"
+       style="display:inline"
+       inkscape:label="Background Shading"
+       transform="matrix(53.5606,0,0,53.5606,612.778,857.577)"
+       sodipodi:insensitive="true" />
+    <g
+       id="g2174"
+       inkscape:label="Walls and Windows"
+       style="display:inline"
+       inkscape:connector-avoid="true"
+       sodipodi:insensitive="true">
+      <g
+         id="g3725"
+         inkscape:label="Bedroom 4 Window">
+        <path
+           fill="#ffffff"
+           transform="matrix(0.479554,0,0,-0.214242,822.057,632.462)"
+           d="m 1.5,1.5 c 66,0 132,0 198,0 0,9.3333 0,18.6667 0,28 -66,0 -132,0 -198,0 0,-9.3333 0,-18.6667 0,-28 z"
+           id="path30" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0.479554,0,0,-0.214242,822.057,632.462)"
+           d="m 1.5,1.5 c 66,0 132,0 198,0 0,9.3333 0,18.6667 0,28 -66,0 -132,0 -198,0 0,-9.3333 0,-18.6667 0,-28 z"
+           id="path32" />
+        <path
+           transform="matrix(0.479554,0,0,-0.214242,822.057,632.462)"
+           d="m 8.5,10.63 c 29.3333,-0.0433 58.6667,-0.0867 88,-0.13"
+           id="path34" />
+        <path
+           fill="none"
+           stroke="#000fff"
+           stroke-width="6"
+           stroke-miterlimit="4"
+           transform="matrix(0.479554,0,0,-0.214242,822.057,632.462)"
+           d="m 8.5,10.63 c 29.3333,-0.0433 58.6667,-0.0867 88,-0.13"
+           id="path36" />
+        <path
+           transform="matrix(0.479554,0,0,-0.214242,822.057,632.462)"
+           d="m 193.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path42" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0.479554,0,0,-0.214242,822.057,632.462)"
+           d="m 193.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path44" />
+        <path
+           transform="matrix(0.479554,0,0,-0.214242,822.057,632.462)"
+           d="m 104.5,20.63 c 29.333,-0.0433 58.667,-0.0867 88,-0.13"
+           id="path46" />
+        <path
+           fill="none"
+           stroke="#000fff"
+           stroke-width="6"
+           stroke-miterlimit="4"
+           transform="matrix(0.479554,0,0,-0.214242,822.057,632.462)"
+           d="m 104.5,20.63 c 29.333,-0.0433 58.667,-0.0867 88,-0.13"
+           id="path48" />
+        <path
+           transform="matrix(0.479554,0,0,-0.214242,822.057,632.462)"
+           d="m 97.5,5.5 c 2,0 4,0 6,0 0,3.33333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.66667 0,-10 z"
+           id="path50" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0.479554,0,0,-0.214242,822.057,632.462)"
+           d="m 97.5,5.5 c 2,0 4,0 6,0 0,3.33333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.66667 0,-10 z"
+           id="path52" />
+        <path
+           transform="matrix(0.479554,0,0,-0.214242,822.057,632.462)"
+           d="m 97.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path54" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0.479554,0,0,-0.214242,822.057,632.462)"
+           d="m 97.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path56" />
+      </g>
+      <g
+         id="g3682"
+         inkscape:label="Bedroom 3 Window">
+        <path
+           fill="#ffffff"
+           transform="matrix(0.234676,6.41892e-5,5.86002e-5,-0.214242,650.653,631.291)"
+           d="m 1.5,1.5 c 66,0 132,0 198,0 0,9.3333 0,18.6667 0,28 -66,0 -132,0 -198,0 0,-9.3333 0,-18.6667 0,-28 z"
+           id="path66" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0.234676,6.41892e-5,5.86002e-5,-0.214242,650.653,631.291)"
+           d="m 1.5,1.5 c 66,0 132,0 198,0 0,9.3333 0,18.6667 0,28 -66,0 -132,0 -198,0 0,-9.3333 0,-18.6667 0,-28 z"
+           id="path68" />
+        <path
+           transform="matrix(0.234676,6.41892e-5,5.86002e-5,-0.214242,650.653,631.291)"
+           d="m 8.5,10.63 c 61.3333,-0.0433 122.667,-0.0867 184,-0.13"
+           id="path70" />
+        <path
+           fill="none"
+           stroke="#000fff"
+           stroke-width="6"
+           stroke-miterlimit="4"
+           transform="matrix(0.234676,6.41892e-5,5.86002e-5,-0.214242,650.653,631.291)"
+           d="m 8.5,10.63 c 61.3333,-0.0433 122.667,-0.0867 184,-0.13"
+           id="path72" />
+        <path
+           transform="matrix(0.234676,6.41892e-5,5.86002e-5,-0.214242,650.653,631.291)"
+           d="m 1.5,5.5 c 2,0 4,0 6,0 0,3.66667 0,7.3333 0,11 -2,0 -4,0 -6,0 0,-3.6667 0,-7.33333 0,-11 z"
+           id="path74" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0.234676,6.41892e-5,5.86002e-5,-0.214242,650.653,631.291)"
+           d="m 1.5,5.5 c 2,0 4,0 6,0 0,3.66667 0,7.3333 0,11 -2,0 -4,0 -6,0 0,-3.6667 0,-7.33333 0,-11 z"
+           id="path76" />
+        <path
+           transform="matrix(0.234676,6.41892e-5,5.86002e-5,-0.214242,650.653,631.291)"
+           d="m 193.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path78" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0.234676,6.41892e-5,5.86002e-5,-0.214242,650.653,631.291)"
+           d="m 193.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path80" />
+        <path
+           transform="matrix(0.234676,6.41892e-5,5.86002e-5,-0.214242,650.653,631.291)"
+           d="m 8.5,20.63 c 61.3333,-0.0433 122.667,-0.0867 184,-0.13"
+           id="path82" />
+        <path
+           fill="none"
+           stroke="#000fff"
+           stroke-width="6"
+           stroke-miterlimit="4"
+           transform="matrix(0.234676,6.41892e-5,5.86002e-5,-0.214242,650.653,631.291)"
+           d="m 8.5,20.63 c 61.3333,-0.0433 122.667,-0.0867 184,-0.13"
+           id="path84" />
+        <path
+           transform="matrix(0.234676,6.41892e-5,5.86002e-5,-0.214242,650.653,631.291)"
+           d="m 193.5,5.5 c 2,0 4,0 6,0 0,3.33333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.66667 0,-10 z"
+           id="path86" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0.234676,6.41892e-5,5.86002e-5,-0.214242,650.653,631.291)"
+           d="m 193.5,5.5 c 2,0 4,0 6,0 0,3.33333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.66667 0,-10 z"
+           id="path88" />
+        <path
+           transform="matrix(0.234676,6.41892e-5,5.86002e-5,-0.214242,650.653,631.291)"
+           d="m 1.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path90" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0.234676,6.41892e-5,5.86002e-5,-0.214242,650.653,631.291)"
+           d="m 1.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path92" />
+      </g>
+      <g
+         id="g3641"
+         inkscape:label="Bedroom 2 Window">
+        <path
+           fill="#ffffff"
+           transform="matrix(0.528549,1.58438e-4,6.42213e-5,-0.214242,346.536,630.807)"
+           d="m 1.5,1.5 c 66,0 132,0 198,0 0,9.3333 0,18.6667 0,28 -66,0 -132,0 -198,0 0,-9.3333 0,-18.6667 0,-28 z"
+           id="path102" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0.528549,1.58438e-4,6.42213e-5,-0.214242,346.536,630.807)"
+           d="m 1.5,1.5 c 66,0 132,0 198,0 0,9.3333 0,18.6667 0,28 -66,0 -132,0 -198,0 0,-9.3333 0,-18.6667 0,-28 z"
+           id="path104" />
+        <path
+           transform="matrix(0.528549,1.58438e-4,6.42213e-5,-0.214242,346.536,630.807)"
+           d="m 8.5,10.63 c 29.3333,-0.0433 58.6667,-0.0867 88,-0.13"
+           id="path106" />
+        <path
+           fill="none"
+           stroke="#000fff"
+           stroke-width="6"
+           stroke-miterlimit="4"
+           transform="matrix(0.528549,1.58438e-4,6.42213e-5,-0.214242,346.536,630.807)"
+           d="m 8.5,10.63 c 29.3333,-0.0433 58.6667,-0.0867 88,-0.13"
+           id="path108" />
+        <path
+           transform="matrix(0.528549,1.58438e-4,6.42213e-5,-0.214242,346.536,630.807)"
+           d="m 193.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path114" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0.528549,1.58438e-4,6.42213e-5,-0.214242,346.536,630.807)"
+           d="m 193.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path116" />
+        <path
+           transform="matrix(0.528549,1.58438e-4,6.42213e-5,-0.214242,346.536,630.807)"
+           d="m 104.5,20.63 c 29.333,-0.0433 58.667,-0.0867 88,-0.13"
+           id="path118" />
+        <path
+           fill="none"
+           stroke="#000fff"
+           stroke-width="6"
+           stroke-miterlimit="4"
+           transform="matrix(0.528549,1.58438e-4,6.42213e-5,-0.214242,346.536,630.807)"
+           d="m 104.5,20.63 c 29.333,-0.0433 58.667,-0.0867 88,-0.13"
+           id="path120" />
+        <path
+           transform="matrix(0.528549,1.58438e-4,6.42213e-5,-0.214242,346.536,630.807)"
+           d="m 97.5,5.5 c 2,0 4,0 6,0 0,3.33333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.66667 0,-10 z"
+           id="path122" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0.528549,1.58438e-4,6.42213e-5,-0.214242,346.536,630.807)"
+           d="m 97.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path128" />
+      </g>
+      <g
+         id="g2040"
+         inkscape:label="Bathroom Window"
+         style="display:inline">
+        <path
+           fill="#ffffff"
+           transform="matrix(-0.316302,-9.75558e-5,-6.60779e-5,0.214242,947.358,970.268)"
+           d="m 1.5,1.5 c 66,0 132,0 198,0 0,9.3333 0,18.6667 0,28 -66,0 -132,0 -198,0 0,-9.3333 0,-18.6667 0,-28 z"
+           id="path288"
+           style="display:inline" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(-0.316302,-9.75558e-5,-6.60779e-5,0.214242,947.358,970.268)"
+           d="m 1.5,1.5 c 66,0 132,0 198,0 0,9.3333 0,18.6667 0,28 -66,0 -132,0 -198,0 0,-9.3333 0,-18.6667 0,-28 z"
+           id="path290"
+           style="display:inline" />
+        <path
+           fill="none"
+           stroke="#000fff"
+           stroke-width="1.5619"
+           stroke-miterlimit="4"
+           d="m 944.66839,973.6477 c -19.39984,-0.0259 -38.7998,-0.0518 -58.19955,-0.0777"
+           id="path294" />
+      </g>
+      <path
+         transform="matrix(0,0.438741,-0.0642727,0,872.514,883.742)"
+         d="m 0,0 c 33.3333,0 66.6667,0 100,0 0,33.3333 0,66.6667 0,100 -33.3333,0 -66.6667,0 -100,0 C 0,66.6667 0,33.3333 0,0 Z"
+         id="path282"
+         style="display:inline"
+         inkscape:label="Bathroom Partition Wall" />
+      <path
+         transform="matrix(53.5606,0,0,53.5606,612.778,857.577)"
+         d="m 3.117,2.103 1.948,10e-4 v 0.25 L 3.243,2.353 V 2.81 H 1.46 V 6.807 L -1.857,6.808 V 1.365 H -2.079 V 1.104 H 1.208 V 0.785 H 2.105 V 0.904 H 1.331 V 2.56 H 2.993 V 2.072 H 3.117 V 2.103 M -1.607,1.225 V 6.558 L 1.21,6.557 V 1.224 L -1.607,1.225 M 6.246,2.104 H 6.359 L 6.36,0.488 3.117,0.489 V 1.322 H 2.993 V 0.904 H 2.855 V 0.785 H 2.999 V 0.118 h 0.12 V 0.366 H 6.363 V -4.203 H 5.698 V -4.481 H 6.613 L 6.612,2.354 H 6.246 v -0.25 m -9.362,-2.302 h -0.596 v 1.313 h 0.596 V 0.842 h 0.123 v 0.262 h 0.101 V 1.365 L -5.597,1.364 v -5.848 h 0.627 v 0.25 h -0.369 v 3.916 h 0.334 V -0.21 H -5.347 V 1.1 l 1.511,10e-4 -0.001,-1.31 h -0.418 v -0.109 l 1.332,-0.001 v 0.112 h -0.07 v 0.299 h -0.123 v -0.29 m 3.823,-4.284 v 0.258 l -2.589,-10e-4 v 3.912 l 2.747,-0.001 v 0.106 l -2.976,0.001 v -0.112 h 0.108 v -3.914 h -0.994 v -0.25 l 3.704,10e-4 m 2.291,1.856 H 1.894 v 1.512 h 1.104 v -0.322 h 0.121 v 0.742 H 2.999 V -0.983 H 1.894 v 0.775 H 1.678 v -0.106 h 0.095 v -2.862 h 0.122 v 0.429 H 2.657 V -3.048 H 2.998 L 2.999,-4.193 H 1.895 v 0.407 H 1.773 v -0.438 h -0.19 v -0.258 h 2.324 v 0.279 H 3.119 v 2.017 H 2.998 v -0.44 M 2.776,-2.905 v 0.176 H 2.998 V -2.905 H 2.776"
+         id="path14"
+         style="display:inline"
+         inkscape:label="Walls" />
+    </g>
+    <g
+       id="g2840"
+       inkscape:label="Stairs"
+       style="display:inline"
+       sodipodi:insensitive="true">
+      <g
+         id="g3222"
+         inkscape:label="Step 15">
+        <path
+           fill="#ffffff"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,917.113)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path134" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,917.113)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path136" />
+      </g>
+      <g
+         id="g3218"
+         inkscape:label="Step 14">
+        <path
+           fill="#ffffff"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,930.422)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path138" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,930.422)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path140" />
+      </g>
+      <g
+         id="g3214"
+         inkscape:label="Step 13">
+        <path
+           fill="#ffffff"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,943.732)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path142" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,943.732)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path144" />
+      </g>
+      <g
+         id="g3210"
+         inkscape:label="Step 12">
+        <path
+           fill="#ffffff"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,957.042)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path146" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,957.042)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path148" />
+      </g>
+      <g
+         id="g3206"
+         inkscape:label="Step 11">
+        <path
+           fill="#ffffff"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,970.351)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path150" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,970.351)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path152" />
+      </g>
+      <g
+         id="g3045"
+         inkscape:label="Step 10">
+        <path
+           fill="#ffffff"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,983.661)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path154" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,983.661)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path156" />
+      </g>
+      <g
+         id="g3041"
+         inkscape:label="Step 9">
+        <path
+           fill="#ffffff"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,996.971)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path158" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,996.971)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path160" />
+      </g>
+      <g
+         id="g3037"
+         inkscape:label="Step 8">
+        <path
+           fill="#ffffff"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,1010.28)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path162" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,1010.28)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path164" />
+      </g>
+      <g
+         id="g3033"
+         inkscape:label="Step 7">
+        <path
+           fill="#ffffff"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,1023.59)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path166" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,1023.59)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path168" />
+      </g>
+      <g
+         id="g2864"
+         inkscape:label="Step 6">
+        <path
+           fill="#ffffff"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,1036.9)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path170" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,1036.9)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path172" />
+      </g>
+      <g
+         id="g2860"
+         inkscape:label="Step 5">
+        <path
+           fill="#ffffff"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,1050.21)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path174" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,1050.21)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path176" />
+      </g>
+      <g
+         id="g2856"
+         inkscape:label="Step 4">
+        <path
+           fill="#ffffff"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,1063.52)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path178" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,1063.52)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path180" />
+      </g>
+      <g
+         id="g2852"
+         inkscape:label="Step 3">
+        <path
+           fill="#ffffff"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,1076.83)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path182" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,1076.83)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path184" />
+      </g>
+      <g
+         id="g2848"
+         inkscape:label="Step 2">
+        <path
+           fill="#ffffff"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,1090.14)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path186" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,1090.14)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path188" />
+      </g>
+      <g
+         id="g2844"
+         inkscape:label="Step 1"
+         inkscape:groupmode="layer">
+        <path
+           fill="#ffffff"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,1103.45)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path190" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.575233,-0.618999,0,677.614,1103.45)"
+           d="m 1,1 c 7.66667,0 15.3333,0 23,0 0,32.6667 0,65.3333 0,98 C 16.3333,99 8.66667,99 1,99 1,66.3333 1,33.6667 1,1 Z"
+           id="path192" />
+      </g>
+    </g>
+    <g
+       id="doors_group"
+       inkscape:label="Doors"
+       style="display:inline"
+       sodipodi:insensitive="true">
+      <g
+         id="g3748"
+         inkscape:label="Attic Door">
+        <path
+           fill="none"
+           stroke="#636363"
+           stroke-width="1"
+           stroke-miterlimit="4"
+           transform="matrix(0.43534,0,0,0.43534,457.839,876.421)"
+           d="m 0.5,0.5 c 54.676,0 99,44.772 99,100"
+           id="path18"
+           inkscape:label="Swing" />
+        <path
+           fill="#636363"
+           transform="matrix(0.43534,0,0,0.43534,457.839,876.421)"
+           d="M 0,100 C 0,66.6667 0,33.3333 0,0 c 3.33333,0 6.66667,0 10,0 0,33.3333 0,66.6667 0,100 -3.33333,0 -6.66667,0 -10,0 z"
+           id="path20"
+           inkscape:label="Door" />
+      </g>
+      <g
+         id="g2724"
+         inkscape:label="Bedroom 4 Door">
+        <path
+           fill="none"
+           stroke="#636363"
+           stroke-width="1"
+           stroke-miterlimit="4"
+           transform="matrix(0,-0.43534,-0.43534,0,820.204,863.913)"
+           d="m 0.5,0.5 c 54.676,0 99,44.772 99,100"
+           id="path22"
+           inkscape:label="Swing" />
+        <path
+           fill="#636363"
+           transform="matrix(0,-0.43534,-0.43534,0,820.204,863.913)"
+           d="M 0,100 C 0,66.6667 0,33.3333 0,0 c 3.33333,0 6.66667,0 10,0 0,33.3333 0,66.6667 0,100 -3.33333,0 -6.66667,0 -10,0 z"
+           id="path24"
+           inkscape:label="Door" />
+      </g>
+      <g
+         id="g2728"
+         inkscape:label="Bedroom 4 Closet Door"
+         transform="matrix(1,0,0,-1,0,1521.1116)">
+        <path
+           fill="none"
+           stroke="#636363"
+           stroke-width="1"
+           stroke-miterlimit="4"
+           transform="matrix(0,-0.401704,-0.401704,0,816.84,780.641)"
+           d="m 0.5,0.5 c 54.676,0 99,44.772 99,100"
+           id="path26"
+           inkscape:label="Swing" />
+        <path
+           fill="#636363"
+           transform="matrix(0,-0.401704,-0.401704,0,816.84,780.641)"
+           d="M 0,100 C 0,66.6667 0,33.3333 0,0 c 3.33333,0 6.66667,0 10,0 0,33.3333 0,66.6667 0,100 -3.33333,0 -6.66667,0 -10,0 z"
+           id="path28"
+           inkscape:label="Door" />
+      </g>
+      <g
+         id="g3701"
+         inkscape:label="Bedroom 3 Door">
+        <path
+           fill="none"
+           stroke="#636363"
+           stroke-width="1"
+           stroke-miterlimit="4"
+           transform="matrix(-0.43534,1.19117e-4,1.19117e-4,0.43534,702.674,800.388)"
+           d="m 0.5,0.5 c 54.676,0 99,44.772 99,100"
+           id="path62"
+           inkscape:label="Swing" />
+        <path
+           fill="#636363"
+           transform="matrix(-0.43534,1.19117e-4,1.19117e-4,0.43534,702.674,800.388)"
+           d="M 0,100 C 0,66.6667 0,33.3333 0,0 c 3.33333,0 6.66667,0 10,0 0,33.3333 0,66.6667 0,100 -3.33333,0 -6.66667,0 -10,0 z"
+           id="path64"
+           inkscape:label="Door" />
+      </g>
+      <g
+         id="g3705"
+         inkscape:label="Bedroom 3 Closet Door">
+        <path
+           fill="none"
+           stroke="#636363"
+           stroke-width="1"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.326505,0.326505,0,678.354,654.774)"
+           d="m 0.5,0.5 c 54.676,0 99,44.772 99,100"
+           id="path58"
+           inkscape:label="Swing" />
+        <path
+           fill="#636363"
+           transform="matrix(0,0.326505,0.326505,0,678.354,654.774)"
+           d="M 0,100 C 0,66.6667 0,33.3333 0,0 c 3.33333,0 6.66667,0 10,0 0,33.3333 0,66.6667 0,100 -3.33333,0 -6.66667,0 -10,0 z"
+           id="path60"
+           inkscape:label="Door" />
+      </g>
+      <g
+         id="g3656"
+         inkscape:label="Bedroom 2 Closet Door"
+         transform="matrix(-1,0,0,1,729.45375,0)">
+        <path
+           fill="none"
+           stroke="#636363"
+           stroke-width="1"
+           stroke-miterlimit="4"
+           transform="matrix(-0.401704,1.20448e-4,1.20448e-4,0.401704,384.8,803.57)"
+           d="m 0.5,0.5 c 54.676,0 99,44.772 99,100"
+           id="path98"
+           inkscape:label="Swing" />
+        <path
+           fill="#636363"
+           transform="matrix(-0.401704,1.20448e-4,1.20448e-4,0.401704,384.8,803.57)"
+           d="M 0,100 C 0,66.6667 0,33.3333 0,0 c 3.33333,0 6.66667,0 10,0 0,33.3333 0,66.6667 0,100 -3.33333,0 -6.66667,0 -10,0 z"
+           id="path100"
+           inkscape:label="Door" />
+      </g>
+      <g
+         id="g3660"
+         inkscape:label="Bedroom 2 Door">
+        <path
+           fill="none"
+           stroke="#636363"
+           stroke-width="1"
+           stroke-miterlimit="4"
+           transform="matrix(-0.43534,1.30534e-4,1.30534e-4,0.43534,499.685,800.172)"
+           d="m 0.5,0.5 c 54.676,0 99,44.772 99,100"
+           id="path94"
+           inkscape:label="Swing" />
+        <path
+           fill="#636363"
+           transform="matrix(-0.43534,1.30534e-4,1.30534e-4,0.43534,499.685,800.172)"
+           d="M 0,100 C 0,66.6667 0,33.3333 0,0 c 3.33333,0 6.66667,0 10,0 0,33.3333 0,66.6667 0,100 -3.33333,0 -6.66667,0 -10,0 z"
+           id="path96"
+           inkscape:label="Door" />
+      </g>
+      <g
+         id="g3306"
+         inkscape:label="Hall Closet Door">
+        <path
+           fill="none"
+           stroke="#636363"
+           stroke-width="1"
+           stroke-miterlimit="4"
+           transform="matrix(0,-0.401704,-0.401704,0,489.243,902.698)"
+           d="m 0.5,0.5 c 54.676,0 99,44.772 99,100"
+           id="path130"
+           inkscape:label="Swing" />
+        <path
+           fill="#636363"
+           transform="matrix(0,-0.401704,-0.401704,0,489.243,902.698)"
+           d="M 0,100 C 0,66.6667 0,33.3333 0,0 c 3.33333,0 6.66667,0 10,0 0,33.3333 0,66.6667 0,100 -3.33333,0 -6.66667,0 -10,0 z"
+           id="path132"
+           inkscape:label="Door" />
+      </g>
+      <g
+         id="g2158"
+         inkscape:label="Vanity Area Door"
+         style="display:inline">
+        <path
+           fill="none"
+           stroke="#636363"
+           stroke-width="1"
+           stroke-miterlimit="4"
+           transform="matrix(-0.401704,0,0,-0.401704,765.735,943.004)"
+           d="m 0.5,0.5 c 54.676,0 99,44.772 99,100"
+           id="path230"
+           inkscape:label="Swing" />
+        <path
+           fill="#636363"
+           transform="matrix(-0.401704,0,0,-0.401704,765.735,943.004)"
+           d="M 0,100 C 0,66.6667 0,33.3333 0,0 c 3.33333,0 6.66667,0 10,0 0,33.3333 0,66.6667 0,100 -3.33333,0 -6.66667,0 -10,0 z"
+           id="path232"
+           inkscape:label="Door" />
+      </g>
+      <g
+         id="g2044"
+         inkscape:label="Bathroom Door"
+         style="display:inline">
+        <path
+           fill="none"
+           stroke="#636363"
+           stroke-width="1"
+           stroke-miterlimit="4"
+           transform="matrix(0,-0.401704,-0.401704,0,816.725,968.557)"
+           d="m 0.5,0.5 c 54.676,0 99,44.772 99,100"
+           id="path284"
+           inkscape:label="Swing" />
+        <path
+           fill="#636363"
+           transform="matrix(0,-0.401704,-0.401704,0,816.725,968.557)"
+           d="M 0,100 C 0,66.6667 0,33.3333 0,0 c 3.33333,0 6.66667,0 10,0 0,33.3333 0,66.6667 0,100 -3.33333,0 -6.66667,0 -10,0 z"
+           id="path286"
+           style="display:inline"
+           inkscape:label="Door" />
+      </g>
+    </g>
+    <g
+       id="g6632"
+       inkscape:label="Room Labels"
+       sodipodi:insensitive="true">
+      <text
+         xml:space="preserve"
+         style="font-size:32px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+         x="751.78638"
+         y="1094.5991"
+         id="text94276-93-0"
+         inkscape:label="2nd Floor Label"
+         sodipodi:insensitive="true"><tspan
+           sodipodi:role="line"
+           id="tspan94274-8-3"
+           x="751.78638"
+           y="1094.5991"
+           style="font-size:32px">2nd Floor</tspan><tspan
+           sodipodi:role="line"
+           x="751.78638"
+           y="1134.5991"
+           style="font-size:32px"
+           id="tspan5219">and Attic</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+         x="579.07416"
+         y="1168.8007"
+         id="text94276-93"
+         inkscape:label="Entry Label"
+         sodipodi:insensitive="true"><tspan
+           sodipodi:role="line"
+           id="tspan94274-8"
+           x="579.07416"
+           y="1168.8007">Entry</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+         x="813.80139"
+         y="702.03699"
+         id="text94276-2"
+         inkscape:label="Bedroom 4 Label"
+         sodipodi:insensitive="true"><tspan
+           sodipodi:role="line"
+           x="813.80139"
+           y="702.03699"
+           id="tspan2440">Bedroom 4</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+         x="546.38879"
+         y="702.1073"
+         id="text94276-9"
+         inkscape:label="Bedroom 3 Label"
+         sodipodi:insensitive="true"><tspan
+           sodipodi:role="line"
+           x="546.38879"
+           y="702.1073"
+           id="tspan5046">Bedroom 3</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+         x="350.81271"
+         y="702.1073"
+         id="text94276"
+         inkscape:label="Bedroom 2 Label"
+         sodipodi:insensitive="true"><tspan
+           sodipodi:role="line"
+           id="tspan94274"
+           x="350.81271"
+           y="702.1073">Bedroom 2</tspan></text>
+    </g>
+    <g
+       id="objects_group"
+       inkscape:label="Objects"
+       style="display:inline"
+       sodipodi:insensitive="true">
+      <g
+         id="g2236"
+         inkscape:label="Vanity Area"
+         style="display:inline">
+        <g
+           id="g2216"
+           inkscape:label="Countertops">
+          <path
+             fill="#ffffff"
+             fill-opacity="0.74902"
+             transform="matrix(0.222544,0,0,0.160085,684.09,962.727)"
+             d="M 0.68,0.32 C 134.013,0.439667 267.346,0.559333 400.679,0.679 400.619,67.286 400.56,133.893 400.5,200.5 267.167,200.38 133.834,200.261 0.501,200.141 0.560667,133.534 0.620333,66.927 0.68,0.32 Z"
+             id="path198" />
+          <path
+             fill="none"
+             stroke="#000000"
+             stroke-width="5"
+             stroke-miterlimit="4"
+             transform="matrix(0.222544,0,0,0.160085,684.09,962.727)"
+             d="M 0.68,0.32 C 134.013,0.439667 267.346,0.559333 400.679,0.679 400.619,67.286 400.56,133.893 400.5,200.5 267.167,200.38 133.834,200.261 0.501,200.141 0.560667,133.534 0.620333,66.927 0.68,0.32 Z"
+             id="path200" />
+          <path
+             fill="none"
+             stroke="#000000"
+             stroke-width="5"
+             stroke-miterlimit="4"
+             transform="matrix(0.222544,0,0,0.160085,684.09,962.727)"
+             d="M 0.411,8.258 C 133.804,8.43033 267.196,8.60267 400.589,8.775"
+             id="path202" />
+          <path
+             fill="#ffffff"
+             fill-opacity="0.74902"
+             transform="matrix(0,0.141697,-0.160682,0,716.226,906.048)"
+             d="M 0.68,0.32 C 134.013,0.439667 267.346,0.559333 400.679,0.679 400.619,67.286 400.56,133.893 400.5,200.5 267.167,200.38 133.834,200.261 0.501,200.141 0.560667,133.534 0.620333,66.927 0.68,0.32 Z"
+             id="path204" />
+          <path
+             fill="none"
+             stroke="#000000"
+             stroke-width="5"
+             stroke-miterlimit="4"
+             transform="matrix(0,0.141697,-0.160682,0,716.226,906.048)"
+             d="M 0.68,0.32 C 134.013,0.439667 267.346,0.559333 400.679,0.679 400.619,67.286 400.56,133.893 400.5,200.5 267.167,200.38 133.834,200.261 0.501,200.141 0.560667,133.534 0.620333,66.927 0.68,0.32 Z"
+             id="path206" />
+          <path
+             fill="none"
+             stroke="#000000"
+             stroke-width="5"
+             stroke-miterlimit="4"
+             transform="matrix(0,0.141697,-0.160682,0,716.226,906.048)"
+             d="M 0.411,8.258 C 133.804,8.43033 267.196,8.60267 400.589,8.775"
+             id="path208" />
+        </g>
+        <g
+           id="g2170"
+           inkscape:label="Sink"
+           style="display:inline">
+          <path
+             fill="#ffffff"
+             transform="matrix(0,0.0699114,-0.0898667,0,708.003,915.771)"
+             d="M 178.063,243.36 C 272.269,243.36 360.5,218.239 360.5,127.459 360.5,38.963 311.093,1.884 180.347,1.884 48.458,1.884 0.5,46.385 0.5,123.462 c 0,87.925 70.797,118.756 177.563,119.898 0,0 0,0 0,0 z"
+             id="path210" />
+          <path
+             fill="none"
+             stroke="#000000"
+             stroke-width="5"
+             stroke-miterlimit="4"
+             transform="matrix(0,0.0699114,-0.0898667,0,708.003,915.771)"
+             d="M 178.063,243.36 C 272.269,243.36 360.5,218.239 360.5,127.459 360.5,38.963 311.093,1.884 180.347,1.884 48.458,1.884 0.5,46.385 0.5,123.462 c 0,87.925 70.797,118.756 177.563,119.898 0,0 0,0 0,0 z"
+             id="path212" />
+          <path
+             fill="#ffffff"
+             transform="matrix(0,0.0699114,-0.0898667,0,708.003,915.771)"
+             d="M 180.918,211.388 C 269.415,210.817 327.651,188.55 327.08,125.747 326.509,62.943 293.394,28.686 191.766,29.257 95.848,29.796 34.757,62.372 33.615,120.608 c -1.142,58.236 63.947,91.318 147.303,90.78 0,0 0,0 0,0 z"
+             id="path214" />
+          <path
+             fill="none"
+             stroke="#000000"
+             stroke-width="5"
+             stroke-miterlimit="4"
+             transform="matrix(0,0.0699114,-0.0898667,0,708.003,915.771)"
+             d="M 180.918,211.388 C 269.415,210.817 327.651,188.55 327.08,125.747 326.509,62.943 293.394,28.686 191.766,29.257 95.848,29.796 34.757,62.372 33.615,120.608 c -1.142,58.236 63.947,91.318 147.303,90.78 0,0 0,0 0,0 z"
+             id="path216" />
+          <path
+             fill="#808080"
+             transform="matrix(0,0.0699114,-0.0898667,0,708.003,915.771)"
+             d="m 182.327,253.378 c -9.932,0 -22.494,5.233 -22.494,12.631 0,7.399 12.562,14.163 22.494,14.163 9.933,0 21.142,-6.764 21.142,-14.163 0,-7.398 -11.209,-12.631 -21.142,-12.631 0,0 0,0 0,0 z"
+             id="path218" />
+          <path
+             fill="none"
+             stroke="#000000"
+             stroke-width="5"
+             stroke-miterlimit="4"
+             transform="matrix(0,0.0699114,-0.0898667,0,708.003,915.771)"
+             d="m 182.327,253.378 c -9.932,0 -22.494,5.233 -22.494,12.631 0,7.399 12.562,14.163 22.494,14.163 9.933,0 21.142,-6.764 21.142,-14.163 0,-7.398 -11.209,-12.631 -21.142,-12.631 0,0 0,0 0,0 z"
+             id="path220" />
+          <path
+             fill="#808080"
+             transform="matrix(0,0.0699114,-0.0898667,0,708.003,915.771)"
+             d="m 182.345,102.338 c -9.933,0 -17.985,8.18 -17.985,18.27 0,10.09 8.052,18.27 17.985,18.27 9.933,0 17.985,-8.18 17.985,-18.27 0,-10.09 -8.052,-18.27 -17.985,-18.27 0,0 0,0 0,0 z"
+             id="path222" />
+          <path
+             fill="none"
+             stroke="#000000"
+             stroke-width="5"
+             stroke-miterlimit="4"
+             transform="matrix(0,0.0699114,-0.0898667,0,708.003,915.771)"
+             d="m 182.345,102.338 c -9.933,0 -17.985,8.18 -17.985,18.27 0,10.09 8.052,18.27 17.985,18.27 9.933,0 17.985,-8.18 17.985,-18.27 0,-10.09 -8.052,-18.27 -17.985,-18.27 0,0 0,0 0,0 z"
+             id="path224" />
+          <path
+             fill="#808080"
+             transform="matrix(0,0.0699114,-0.0898667,0,708.003,915.771)"
+             d="m 194.754,286.679 c 0,-9.57 0.901,-77.32 0.765,-87.462 -0.191,-14.354 -27.942,-14.163 -27.75,1.722 0.115,9.568 0.464,77.129 0.574,86.123 0.191,15.693 26.411,14.927 26.411,-0.383 0,0 0,0 0,0 z"
+             id="path226" />
+          <path
+             fill="none"
+             stroke="#000000"
+             stroke-width="5"
+             stroke-miterlimit="4"
+             transform="matrix(0,0.0699114,-0.0898667,0,708.003,915.771)"
+             d="m 194.754,286.679 c 0,-9.57 0.901,-77.32 0.765,-87.462 -0.191,-14.354 -27.942,-14.163 -27.75,1.722 0.115,9.568 0.464,77.129 0.574,86.123 0.191,15.693 26.411,14.927 26.411,-0.383 0,0 0,0 0,0 z"
+             id="path228" />
+        </g>
+      </g>
+      <g
+         id="g2208"
+         inkscape:label="Bathroom"
+         style="display:inline">
+        <g
+           id="g2154"
+           inkscape:label="Tub"
+           style="display:inline">
+          <path
+             fill="#ffffff"
+             transform="matrix(-0.152728,0,0,-0.164386,953.46,923.175)"
+             d="m 0.914,0.5 c 176.21,0.055667 352.42,0.111333 528.63,0.167 0.319,79.5453 0.637,159.091 0.956,238.636 -176.667,0.399 -353.333,0.798 -530,1.197 0.138,-80 0.276,-160 0.414,-240 0,0 0,0 0,0 z"
+             id="path234" />
+          <path
+             fill="none"
+             stroke="#000000"
+             stroke-width="5"
+             stroke-miterlimit="4"
+             transform="matrix(-0.152728,0,0,-0.164386,953.46,923.175)"
+             d="m 0.914,0.5 c 176.21,0.055667 352.42,0.111333 528.63,0.167 0.319,79.5453 0.637,159.091 0.956,238.636 -176.667,0.399 -353.333,0.798 -530,1.197 0.138,-80 0.276,-160 0.414,-240 0,0 0,0 0,0 z"
+             id="path236" />
+          <path
+             fill="none"
+             stroke="#000000"
+             stroke-width="0.792249"
+             stroke-miterlimit="4"
+             d="m 949.44936,903.29218 c -0.15166,7.76593 -2.68877,15.77859 -11.75624,15.7089 -4.85277,-0.0373 -47.59554,-0.12247 -52.25221,-0.0585 -6.65879,0.0916 -9.60843,-8.04258 -9.76375,-14.95666 -0.15517,-6.91391 3.37651,-15.36039 9.89616,-15.70609 6.51965,-0.34571 49.12313,0.20367 54.09229,0.29655 6.18105,0.11573 9.93954,6.7344 9.78375,14.71583 0,0 0,0 0,0 z"
+             id="path238" />
+          <path
+             fill="#808080"
+             transform="matrix(-0.152728,0,0,-0.164386,953.46,923.175)"
+             d="m 409.003,132.022 c -5.239,0 -9.486,-4.314 -9.486,-9.635 0,-5.321 4.247,-9.635 9.486,-9.635 5.239,0 9.486,4.314 9.486,9.635 0,5.321 -4.247,9.635 -9.486,9.635 0,0 0,0 0,0 z"
+             id="path240" />
+          <path
+             fill="none"
+             stroke="#000000"
+             stroke-width="5"
+             stroke-miterlimit="4"
+             transform="matrix(-0.152728,0,0,-0.164386,953.46,923.175)"
+             d="m 409.003,132.022 c -5.239,0 -9.486,-4.314 -9.486,-9.635 0,-5.321 4.247,-9.635 9.486,-9.635 5.239,0 9.486,4.314 9.486,9.635 0,5.321 -4.247,9.635 -9.486,9.635 0,0 0,0 0,0 z"
+             id="path242" />
+          <path
+             fill="#808080"
+             transform="matrix(-0.152728,0,0,-0.164386,953.46,923.175)"
+             d="m 492.633,133.514 c -2.562,0 -4.639,-5.403 -4.639,-12.068 0,-6.665 2.077,-12.068 4.639,-12.068 2.562,0 4.639,5.403 4.639,12.068 0,6.665 -2.077,12.068 -4.639,12.068 0,0 0,0 0,0 z"
+             id="path244" />
+          <path
+             fill="none"
+             stroke="#000000"
+             stroke-width="5"
+             stroke-miterlimit="4"
+             transform="matrix(-0.152728,0,0,-0.164386,953.46,923.175)"
+             d="m 492.633,133.514 c -2.562,0 -4.639,-5.403 -4.639,-12.068 0,-6.665 2.077,-12.068 4.639,-12.068 2.562,0 4.639,5.403 4.639,12.068 0,6.665 -2.077,12.068 -4.639,12.068 0,0 0,0 0,0 z"
+             id="path246" />
+          <path
+             fill="none"
+             stroke="#000000"
+             stroke-width="5"
+             stroke-miterlimit="4"
+             transform="matrix(-0.152728,0,0,-0.164386,953.46,923.175)"
+             d="m 128.468,123.311 c 0.647,-26.13 10.166,-52.668 48.783,-54.358 23.139,-1.013 201.283,2.213 221.139,1.998 28.394,-0.308 43.99,26.762 44.652,50.026 0.662,23.263 -14.397,51.683 -42.198,52.846 -27.801,1.163 -209.468,-0.686 -230.657,-0.998 -26.356,-0.39 -42.383,-22.659 -41.719,-49.514 0,0 0,0 0,0 z"
+             id="path248" />
+          <path
+             fill="#808080"
+             transform="matrix(-0.152728,0,0,-0.164386,953.46,923.175)"
+             d="m 515.86,114.362 c 9.544,0 10.317,14.028 0.826,14.028 -3.819,0 -33.332,-0.463 -40.392,-0.348 -10.745,0.176 -11.593,-13.541 0.926,-13.541 12.519,0 29.996,-0.139 38.64,-0.139 0,0 0,0 0,0 z"
+             id="path250" />
+          <path
+             fill="none"
+             stroke="#000000"
+             stroke-width="5"
+             stroke-miterlimit="4"
+             transform="matrix(-0.152728,0,0,-0.164386,953.46,923.175)"
+             d="m 515.86,114.362 c 9.544,0 10.317,14.028 0.826,14.028 -3.819,0 -33.332,-0.463 -40.392,-0.348 -10.745,0.176 -11.593,-13.541 0.926,-13.541 12.519,0 29.996,-0.139 38.64,-0.139 0,0 0,0 0,0 z"
+             id="path252" />
+        </g>
+        <g
+           id="g1069"
+           inkscape:label="Toilet"
+           style="display:inline">
+          <path
+             fill="#ffffff"
+             transform="matrix(-0.139445,0,0,-0.105227,860.76,921.837)"
+             d="m 42.884,286.626 c 37.896,0 75.792,0 113.688,0 0,0 5.466,-77.088 12.964,-92.745 C 186.489,158.478 193.47,91.662 176.183,57.19 140.566,-13.831 70.308,-17.538 29.919,42.796 11.479,70.343 0.5,136.539 30.229,197.204 c 10.266,20.949 12.655,89.422 12.655,89.422 0,0 0,0 0,0 z"
+             id="path268"
+             style="display:inline" />
+          <path
+             fill="none"
+             stroke="#000000"
+             stroke-width="5"
+             stroke-miterlimit="4"
+             transform="matrix(-0.139445,0,0,-0.105227,860.76,921.837)"
+             d="m 42.884,286.626 c 37.896,0 75.792,0 113.688,0 0,0 5.466,-77.088 12.964,-92.745 C 186.489,158.478 193.47,91.662 176.183,57.19 140.566,-13.831 70.308,-17.538 29.919,42.796 11.479,70.343 0.5,136.539 30.229,197.204 c 10.266,20.949 12.655,89.422 12.655,89.422 0,0 0,0 0,0 z"
+             id="path270"
+             style="display:inline" />
+          <path
+             fill="#ffffff"
+             transform="matrix(-0.139445,0,0,-0.105227,860.76,921.837)"
+             d="m 163.054,358.429 c 40.413,0 48.865,-59.337 16.455,-84.767 -26.947,-21.143 -115.11,-20.74 -151.584,0.498 -39.392,22.937 -30.54,84.269 5.983,84.269 43.88,0 107.705,0 129.146,0 0,0 0,0 0,0 z"
+             id="path272"
+             style="display:inline" />
+          <path
+             fill="none"
+             stroke="#000000"
+             stroke-width="5"
+             stroke-miterlimit="4"
+             transform="matrix(-0.139445,0,0,-0.105227,860.76,921.837)"
+             d="m 163.054,358.429 c 40.413,0 48.865,-59.337 16.455,-84.767 -26.947,-21.143 -115.11,-20.74 -151.584,0.498 -39.392,22.937 -30.54,84.269 5.983,84.269 43.88,0 107.705,0 129.146,0 0,0 0,0 0,0 z"
+             id="path274"
+             style="display:inline" />
+          <path
+             fill="none"
+             stroke="#000000"
+             stroke-width="5"
+             stroke-miterlimit="4"
+             transform="matrix(-0.139445,0,0,-0.105227,860.76,921.837)"
+             d="m 50.363,236.763 c 33.4083,0.166 66.817,0.332 100.225,0.498 0,0 6.081,-37.461 13.101,-54.2 9.499,-22.651 14.127,-38.239 14.127,-69.903 0,-37.899 -33.202,-101.389 -76.593,-101.777 -55.846,-0.498 -81.353,69.273 -81.725,101.777 -0.414,36.162 5.871,48.123 15.101,66.006 7.794,15.101 15.764,57.599 15.764,57.599 0,0 0,0 0,0 z"
+             id="path280"
+             style="display:inline" />
+        </g>
+        <g
+           id="g2142"
+           inkscape:label="Cabinet"
+           style="display:inline">
+          <g
+             id="g2130"
+             inkscape:label="Lower Cabinet">
+            <path
+               fill="#ffffff"
+               transform="matrix(-0.136044,0,0,-0.131127,820.582,916.415)"
+               d="m 1.5,1.5 c 99.333,0 198.667,0 298,0 0,2.84067 0,5.68133 0,8.522 -99.333,0 -198.667,0 -298,0 0,-2.84067 0,-5.68133 0,-8.522 z"
+               id="path254" />
+            <path
+               fill="none"
+               stroke="#000000"
+               stroke-width="3"
+               stroke-miterlimit="4"
+               transform="matrix(-0.136044,0,0,-0.131127,820.582,916.415)"
+               d="m 1.5,1.5 c 99.333,0 198.667,0 298,0 0,2.84067 0,5.68133 0,8.522 -99.333,0 -198.667,0 -298,0 0,-2.84067 0,-5.68133 0,-8.522 z"
+               id="path256" />
+            <path
+               fill="#808080"
+               transform="matrix(-0.136044,0,0,-0.131127,820.582,916.415)"
+               d="m 1.5,10.022 c 99.333,0 198.667,0 298,0 0,79.2993 0,158.599 0,237.898 -99.333,0 -198.667,0 -298,0 0,-79.299 0,-158.5987 0,-237.898 z"
+               id="path260"
+               style="display:inline;fill:#ffffff;fill-opacity:1" />
+            <path
+               fill="none"
+               stroke="#000000"
+               stroke-width="3"
+               stroke-miterlimit="4"
+               transform="matrix(-0.136044,0,0,-0.131127,820.582,916.415)"
+               d="m 1.5,10.022 c 99.333,0 198.667,0 298,0 0,79.2993 0,158.599 0,237.898 -99.333,0 -198.667,0 -298,0 0,-79.299 0,-158.5987 0,-237.898 z"
+               id="path262" />
+          </g>
+          <g
+             id="g2034"
+             inkscape:label="Upper Cabinet">
+            <path
+               fill="#ffffff"
+               transform="matrix(-0.136044,4.195e-5,-3.90232e-5,-0.126552,820.895,900.082)"
+               d="m 1.5,1.5 c 99.333,0 198.667,0 298,0 0,42 0,84 0,126 -99.333,0 -198.667,0 -298,0 0,-42 0,-84 0,-126 z"
+               id="path304" />
+            <path
+               fill="none"
+               stroke="#000000"
+               stroke-width="3"
+               stroke-miterlimit="4"
+               transform="matrix(-0.136044,4.195e-5,-3.90232e-5,-0.126552,820.895,900.082)"
+               d="m 1.5,1.5 c 99.333,0 198.667,0 298,0 0,42 0,84 0,126 -99.333,0 -198.667,0 -298,0 0,-42 0,-84 0,-126 z"
+               id="path306" />
+            <path
+               fill="none"
+               stroke="#000000"
+               stroke-width="3"
+               stroke-miterlimit="4"
+               transform="matrix(-0.136044,4.195e-5,-3.90232e-5,-0.126552,820.895,900.082)"
+               d="M 0.718,8.91 C 100.312,8.94733 199.906,8.98467 299.5,9.022"
+               id="path310" />
+            <path
+               fill="none"
+               stroke="#808080"
+               stroke-width="1"
+               stroke-miterlimit="4"
+               transform="matrix(-0.136044,4.195e-5,-3.90232e-5,-0.126552,820.895,900.082)"
+               d="m 5.233,12.675 c 96.877,0 193.755,0 290.632,0 0,37.2207 0,74.4413 0,111.662 -96.877,0 -193.755,0 -290.632,0 0,-37.2207 0,-74.4413 0,-111.662 z"
+               id="path316" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g28783"
+       inkscape:label="Electrical"
+       style="display:inline"
+       sodipodi:insensitive="true">
+      <g
+         id="circuit_19_group"
+         inkscape:label="Circuit 19"
+         style="display:inline"
+         onmouseover="toggleCircuits(this, true)"
+         onmouseout="toggleCircuits(this, false)">
+        <g
+           id="g17449"
+           inkscape:label="Attic Light and Outlet"
+           style="display:inline">
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 793.26309,994.47476 c 1.86421,3.5074 3.23651,7.27584 4.06426,11.16064 2.35438,11.0498 0.10061,23.0077 -6.11455,32.4423"
+             id="path15942"
+             inkscape:path-effect="#path-effect15944"
+             inkscape:original-d="m 793.26309,994.47476 c 6.09422,-0.15156 -2.02795,11.31424 4.06426,11.16064 6.09222,-0.1536 -4.8708,29.7092 -6.11455,32.4423"
+             sodipodi:nodetypes="csc"
+             inkscape:label="Wiring" />
+          <text
+             xml:space="preserve"
+             style="font-size:4.8px;line-height:1.25;font-family:sans-serif;display:inline"
+             x="789.54047"
+             y="993.63672"
+             id="text7427-9-1-4-3-8-9"
+             inkscape:label="Switch Label"><tspan
+               sodipodi:role="line"
+               id="tspan7425-6-8-8-7-8-7"
+               x="789.54047"
+               y="993.63672"
+               style="font-weight:bold">S</tspan><tspan
+               sodipodi:role="line"
+               x="789.54047"
+               y="999.63672"
+               id="tspan7429-8-1-3-9-3-0" /></text>
+          <circle
+             id="path291-8-2-9-7-7-3-7"
+             cx="791.31622"
+             cy="1038.212"
+             style="display:inline;fill:none;stroke:#000000;stroke-width:0.623621;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             r="4.9344997"
+             inkscape:label="Light" />
+          <g
+             id="QuadOutlet-3"
+             transform="matrix(-1,0,0,1,1127.9196,372.94146)"
+             inkscape:label="Half Switched Quad Outlet">
+            <title
+               id="title4268">Quad Outlet</title>
+            <circle
+               id="path291-8-2-9-7-7-0"
+               cx="330.62708"
+               cy="631.62512"
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               r="4.9344997" />
+            <path
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m 325.92525,633.4678 h 15.634 v 0"
+               id="path1300-7-3-0-8-1-5" />
+            <path
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m 325.92525,629.8658 h 15.634 v 0"
+               id="path1300-7-3-0-8-6-8-6" />
+            <path
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m 328.75665,627.13746 v 8.834 0"
+               id="path1300-7-3-0-8-6-8-6-3" />
+            <path
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m 332.45947,627.13746 v 8.834 0"
+               id="path1300-7-3-0-8-6-8-6-3-4" />
+            <title
+               id="title4358">Quad Outlet</title>
+          </g>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="801.28601"
+             y="1014.7896"
+             id="text13490-6"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan13488-4"
+               x="801.28601"
+               y="1014.7896">19</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="796.98987"
+             y="994.01141"
+             id="text13490"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan13488"
+               x="796.98987"
+               y="994.01141">19</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="806.01617"
+             y="1006.7155"
+             id="text15206"
+             inkscape:label="Outlet Label"><tspan
+               sodipodi:role="line"
+               id="tspan15204"
+               x="806.01617"
+               y="1006.7155">Half Switched Outlet</tspan></text>
+        </g>
+        <g
+           id="g28158"
+           inkscape:label="Vanity GFCI Outlet"
+           transform="translate(-4.5354087)">
+          <g
+             id="DuplexOutlet-6-6"
+             transform="rotate(-90,647.95781,583.88338)"
+             inkscape:label="DuplexOutlet"
+             style="display:inline">
+            <title
+               id="title4270-7">Duplex Outlet</title>
+            <circle
+               id="path291-8-2-9-7-7-3-94"
+               cx="315.80029"
+               cy="643.67255"
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               r="4.9344997" />
+            <path
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m 311.09847,645.5152 h 15.634 v 0"
+               id="path1300-7-3-0-8-1-2-16" />
+            <path
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m 311.09847,641.9132 h 15.634 v 0"
+               id="path1300-7-3-0-8-6-8-68-1" />
+            <title
+               id="title4330-20">Duplex Outlet</title>
+          </g>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="693.70093"
+             y="918.37195"
+             id="text24407"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan24405"
+               x="693.70093"
+               y="918.37195">19</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="700.68933"
+             y="928.89771"
+             id="text27315"
+             inkscape:label="GFCI Label"><tspan
+               sodipodi:role="line"
+               id="tspan27313"
+               x="700.68933"
+               y="928.89771">GFCI</tspan></text>
+        </g>
+        <g
+           id="g28170"
+           inkscape:label="Vanity GFCI Outlet"
+           transform="translate(1.4997472)">
+          <g
+             id="DuplexOutlet-6-1"
+             transform="translate(444.98926,333.74881)"
+             inkscape:label="DuplexOutlet"
+             style="display:inline">
+            <title
+               id="title4270-87">Duplex Outlet</title>
+            <circle
+               id="path291-8-2-9-7-7-3-1"
+               cx="315.80029"
+               cy="643.67255"
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               r="4.9344997" />
+            <path
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m 311.09847,645.5152 h 15.634 v 0"
+               id="path1300-7-3-0-8-1-2-5" />
+            <path
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m 311.09847,641.9132 h 15.634 v 0"
+               id="path1300-7-3-0-8-6-8-68-5" />
+            <title
+               id="title4330-85">Duplex Outlet</title>
+          </g>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="746.22125"
+             y="979.60931"
+             id="text24407-3"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan24405-9"
+               x="746.22125"
+               y="979.60931">19</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="753.80829"
+             y="988.63062"
+             id="text27315-0"
+             inkscape:label="GFCI Label"><tspan
+               sodipodi:role="line"
+               id="tspan27313-5"
+               x="753.80829"
+               y="988.63062">GFCI</tspan></text>
+        </g>
+      </g>
+      <g
+         id="circuit_16_group"
+         inkscape:label="Circuit 16"
+         style="display:inline"
+         sodipodi:insensitive="true"
+         onmouseover="toggleCircuits(this, true)"
+         onmouseout="toggleCircuits(this, false)">
+        <g
+           id="g19166"
+           inkscape:label="Hallway"
+           style="display:inline">
+          <g
+             id="g27816"
+             inkscape:label="Attic Light Outlet"
+             style="display:inline">
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="453.46732"
+               y="980.13922"
+               id="text65479"
+               inkscape:label="Location Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan65477"
+                 x="453.46732"
+                 y="980.13922">Attic</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="453.189"
+               y="971.96466"
+               id="text62043"
+               inkscape:label="Switched label"><tspan
+                 sodipodi:role="line"
+                 id="tspan62041"
+                 x="453.189"
+                 y="971.96466">Switched</tspan></text>
+            <path
+               style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+               d="m 504.51795,908.78957 c -10.37338,0.90619 -20.50366,4.46987 -29.15968,10.25793 -8.65601,5.78806 -15.81962,13.78837 -20.62022,23.02864 -3.23024,6.21762 -5.39074,12.94921 -6.89722,19.792 -2.52943,11.48928 -3.24066,23.37692 -2.09915,35.08583"
+               id="path49726"
+               inkscape:path-effect="#path-effect49728"
+               inkscape:original-d="m 504.51795,908.78957 c -13.19368,8.89741 -36.58423,24.39116 -49.7799,33.28657 -13.19567,8.8954 -0.9986,13.99534 -6.89722,19.792 -5.89861,5.79666 -1.99819,20.09288 -2.09915,35.08583"
+               sodipodi:nodetypes="cssc"
+               inkscape:label="Wiring" />
+            <text
+               xml:space="preserve"
+               style="font-size:4.8px;line-height:1.25;font-family:sans-serif;display:inline"
+               x="508.14404"
+               y="911.11615"
+               id="text7427-9-1-4-3-9-3"
+               inkscape:label="Switch Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan7425-6-8-8-7-80-9"
+                 x="508.14404"
+                 y="911.11615"
+                 style="font-weight:bold">S</tspan><tspan
+                 sodipodi:role="line"
+                 x="508.14404"
+                 y="917.11615"
+                 id="tspan7429-8-1-3-9-5-8" /></text>
+            <circle
+               id="path291-8-2-9-7-7-3-7-7"
+               cx="445.93579"
+               cy="997.10693"
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.623621;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               r="4.9344997"
+               inkscape:label="Light" />
+            <g
+               id="DuplexOutlet-6-98"
+               transform="translate(131.7473,318.51279)"
+               inkscape:label="DuplexOutlet"
+               style="display:inline">
+              <title
+                 id="title4270-4">Duplex Outlet</title>
+              <circle
+                 id="path291-8-2-9-7-7-3-58"
+                 cx="315.80029"
+                 cy="643.67255"
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 r="4.9344997" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,645.5152 h 15.634 v 0"
+                 id="path1300-7-3-0-8-1-2-8" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,641.9132 h 15.634 v 0"
+                 id="path1300-7-3-0-8-6-8-68-9" />
+              <title
+                 id="title4330-4">Duplex Outlet</title>
+            </g>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="511.7016"
+               y="906.19434"
+               id="text46670"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan46668"
+                 x="511.7016"
+                 y="906.19434">16</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+               x="434.27209"
+               y="957.46967"
+               id="text46670-0"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan46668-6"
+                 x="434.27209"
+                 y="957.46967">16</tspan></text>
+          </g>
+          <g
+             id="g43263"
+             inkscape:label="Outlet "
+             transform="translate(0.32466939,-2.6461534)"
+             style="display:inline">
+            <g
+               id="DuplexOutlet-6-3-8-8-4-1"
+               transform="rotate(-90,559.35254,616.42444)"
+               inkscape:label="DuplexOutlet"
+               style="display:inline">
+              <title
+                 id="title4270-8-4-4-8-5">Duplex Outlet</title>
+              <circle
+                 id="path291-8-2-9-7-7-3-0-0-0-8-0"
+                 cx="315.80029"
+                 cy="643.67255"
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 r="4.9344997" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,645.5152 h 15.634 v 0"
+                 id="path1300-7-3-0-8-1-2-2-4-0-7-08" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,641.9132 h 15.634 v 0"
+                 id="path1300-7-3-0-8-6-8-68-4-6-9-1-3" />
+              <title
+                 id="title4330-8-4-3-9-7">Duplex Outlet</title>
+            </g>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="593.57062"
+               y="862.0744"
+               id="text6160-6-7-3-0"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan6158-4-5-1-13"
+                 x="593.57062"
+                 y="862.0744">16</tspan></text>
+          </g>
+          <g
+             id="g88569"
+             inkscape:label="Hall Light 4 Way">
+            <path
+               style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+               d="m 688.75576,891.39118 c 14.60972,0.30747 29.28387,-3.74927 41.66106,-11.51739 10.97395,-6.88743 20.12129,-16.65691 26.27279,-28.05969 6.1515,-11.40277 9.29285,-24.41233 9.02252,-37.36575"
+               id="path77540"
+               inkscape:path-effect="#path-effect77542"
+               inkscape:original-d="m 688.75576,891.39118 c 14.77911,-2.58158 26.88395,-8.93381 41.66106,-11.51739 14.77712,-2.58358 25.25293,-42.61162 35.29531,-65.42544"
+               sodipodi:nodetypes="csc"
+               inkscape:label="Wiring" />
+            <path
+               style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+               d="m 507.02339,857.06097 c 5.98541,6.8161 13.3517,12.41448 21.52152,16.35636 16.79749,8.10467 36.03828,8.95194 54.66468,9.8999 32.89193,1.67398 65.74488,4.11397 98.52323,7.31732"
+               id="path77536"
+               inkscape:path-effect="#path-effect77538"
+               inkscape:original-d="m 507.02339,857.06097 c 7.31831,5.88355 14.2052,10.47481 21.52152,16.35636 7.31632,5.88155 36.5876,7.03137 54.66468,9.8999 18.07708,2.86854 65.95499,4.87921 98.52323,7.31732"
+               sodipodi:nodetypes="cssc"
+               inkscape:label="Wiring" />
+            <g
+               id="g77405-5"
+               inkscape:label="Switch Four Way"
+               style="display:inline"
+               transform="translate(259.17656,-42.517035)">
+              <text
+                 xml:space="preserve"
+                 style="font-size:4px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+                 x="510.14148"
+                 y="856.0954"
+                 id="text70654-3"
+                 inkscape:label="Four Way label"><tspan
+                   sodipodi:role="line"
+                   id="tspan70652-7"
+                   x="510.14148"
+                   y="856.0954"
+                   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold'">4</tspan></text>
+              <text
+                 xml:space="preserve"
+                 style="font-size:4.8px;line-height:1.25;font-family:sans-serif;display:inline"
+                 x="505.70654"
+                 y="853.64075"
+                 id="text7427-9-1-4-3-8-9-8-1-9"
+                 inkscape:label="Switch Label"><tspan
+                   sodipodi:role="line"
+                   id="tspan7425-6-8-8-7-8-7-2-4-6"
+                   x="505.70654"
+                   y="853.64075"
+                   style="font-weight:bold">S</tspan><tspan
+                   sodipodi:role="line"
+                   x="505.70654"
+                   y="859.64075"
+                   id="tspan7429-8-1-3-9-3-0-0-6-3" /></text>
+            </g>
+            <g
+               id="g77405-1"
+               inkscape:label="Switch Four Way"
+               style="display:inline"
+               transform="translate(177.39476,40.556055)">
+              <text
+                 xml:space="preserve"
+                 style="font-size:4px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+                 x="510.14148"
+                 y="856.0954"
+                 id="text70654-5"
+                 inkscape:label="Four Way label"><tspan
+                   sodipodi:role="line"
+                   id="tspan70652-1"
+                   x="510.14148"
+                   y="856.0954"
+                   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold'">4</tspan></text>
+              <text
+                 xml:space="preserve"
+                 style="font-size:4.8px;line-height:1.25;font-family:sans-serif;display:inline"
+                 x="505.70654"
+                 y="853.64075"
+                 id="text7427-9-1-4-3-8-9-8-1-7"
+                 inkscape:label="Switch Label"><tspan
+                   sodipodi:role="line"
+                   id="tspan7425-6-8-8-7-8-7-2-4-0"
+                   x="505.70654"
+                   y="853.64075"
+                   style="font-weight:bold">S</tspan><tspan
+                   sodipodi:role="line"
+                   x="505.70654"
+                   y="859.64075"
+                   id="tspan7429-8-1-3-9-3-0-0-6-8" /></text>
+            </g>
+            <g
+               id="g77405"
+               inkscape:label="Switch Four Way">
+              <text
+                 xml:space="preserve"
+                 style="font-size:4px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+                 x="510.14148"
+                 y="856.0954"
+                 id="text70654"
+                 inkscape:label="Four Way label"><tspan
+                   sodipodi:role="line"
+                   id="tspan70652"
+                   x="510.14148"
+                   y="856.0954"
+                   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold'">4</tspan></text>
+              <text
+                 xml:space="preserve"
+                 style="font-size:4.8px;line-height:1.25;font-family:sans-serif;display:inline"
+                 x="505.70654"
+                 y="853.64075"
+                 id="text7427-9-1-4-3-8-9-8-1"
+                 inkscape:label="Switch Label"><tspan
+                   sodipodi:role="line"
+                   id="tspan7425-6-8-8-7-8-7-2-4"
+                   x="505.70654"
+                   y="853.64075"
+                   style="font-weight:bold">S</tspan><tspan
+                   sodipodi:role="line"
+                   x="505.70654"
+                   y="859.64075"
+                   id="tspan7429-8-1-3-9-3-0-0-6" /></text>
+            </g>
+            <circle
+               id="path291-8-2-9-7-7-3-7-15"
+               cx="582.77917"
+               cy="882.45636"
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.623621;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               r="4.9344997"
+               inkscape:label="Light" />
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="590.75897"
+               y="876.57721"
+               id="text88109"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan88107"
+                 x="590.75897"
+                 y="876.57721">16</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+               x="693.92407"
+               y="897.29053"
+               id="text88109-8"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan88107-5"
+                 x="693.92407"
+                 y="897.29053">16</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+               x="516.3985"
+               y="854.34796"
+               id="text88109-3"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan88107-1"
+                 x="516.3985"
+                 y="854.34796">16</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+               x="753.24683"
+               y="813.17621"
+               id="text88109-9"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan88107-3"
+                 x="753.24683"
+                 y="813.17621">16</tspan></text>
+          </g>
+        </g>
+        <g
+           id="g6919"
+           inkscape:label="Bedroom 3"
+           style="display:inline">
+          <g
+             id="g20503-3"
+             inkscape:label="Outlet 4"
+             transform="translate(176.41687,-9.247172)"
+             style="display:inline">
+            <g
+               id="DuplexOutlet-6-3-8-8-9-1"
+               transform="matrix(-1,0,0,1,661.68027,97.608712)"
+               inkscape:label="DuplexOutlet"
+               style="display:inline">
+              <title
+                 id="title4270-8-4-4-5-0">Duplex Outlet</title>
+              <circle
+                 id="path291-8-2-9-7-7-3-0-0-0-9-2"
+                 cx="315.80029"
+                 cy="643.67255"
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 r="4.9344997" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,645.5152 h 15.634 v 0"
+                 id="path1300-7-3-0-8-1-2-2-4-0-0-3" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,641.9132 h 15.634 v 0"
+                 id="path1300-7-3-0-8-6-8-68-4-6-9-9-7" />
+              <title
+                 id="title4330-8-4-3-3-1">Duplex Outlet</title>
+            </g>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="352.88583"
+               y="743.40088"
+               id="text6160-6-7-4-8"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan6158-4-5-0-9"
+                 x="352.88583"
+                 y="743.40088">16</tspan></text>
+          </g>
+          <g
+             id="g20521-0"
+             inkscape:label="Outlet 3"
+             transform="translate(170.19999,2.761958)"
+             style="display:inline">
+            <g
+               id="DuplexOutlet-6-3-8-8-4-6"
+               transform="rotate(90,271.90655,783.19999)"
+               inkscape:label="DuplexOutlet"
+               style="display:inline">
+              <title
+                 id="title4270-8-4-4-8-0">Duplex Outlet</title>
+              <circle
+                 id="path291-8-2-9-7-7-3-0-0-0-8-7"
+                 cx="315.80029"
+                 cy="643.67255"
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 r="4.9344997" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,645.5152 h 15.634 v 0"
+                 id="path1300-7-3-0-8-1-2-2-4-0-7-2" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,641.9132 h 15.634 v 0"
+                 id="path1300-7-3-0-8-6-8-68-4-6-9-1-9" />
+              <title
+                 id="title4330-8-4-3-9-8">Duplex Outlet</title>
+            </g>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="418.40396"
+               y="828.94702"
+               id="text6160-6-7-3-1"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan6158-4-5-1-1"
+                 x="418.40396"
+                 y="828.94702">16</tspan></text>
+          </g>
+          <g
+             id="g53812"
+             inkscape:label="Light and Fan">
+            <g
+               id="g27243-90"
+               inkscape:label="Fan"
+               transform="translate(448.85257,215.32198)"
+               style="display:inline">
+              <ellipse
+                 style="fill:none;stroke:#000000"
+                 id="path27088-5"
+                 cx="170.05365"
+                 cy="519.83636"
+                 rx="7.2653718"
+                 ry="1.949246"
+                 inkscape:label="Blade" />
+              <ellipse
+                 style="display:inline;fill:none;stroke:#000000"
+                 id="path27088-2-2"
+                 cx="148.84962"
+                 cy="519.83636"
+                 rx="7.2653718"
+                 ry="1.949246"
+                 inkscape:label="Blade" />
+              <ellipse
+                 style="display:inline;fill:none;stroke:#000000"
+                 id="path27088-0-2"
+                 cx="-530.32025"
+                 cy="159.45163"
+                 rx="7.2653718"
+                 ry="1.949246"
+                 transform="rotate(-90)"
+                 inkscape:label="Blade" />
+              <ellipse
+                 style="display:inline;fill:none;stroke:#000000"
+                 id="path27088-6-7"
+                 cx="-509.11621"
+                 cy="159.45163"
+                 rx="7.2653718"
+                 ry="1.949246"
+                 transform="rotate(-90)"
+                 inkscape:label="Blade" />
+              <circle
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.999998"
+                 id="path27088-07-3"
+                 cx="159.45163"
+                 cy="519.7182"
+                 r="2.3346467"
+                 inkscape:label="Center" />
+            </g>
+            <text
+               xml:space="preserve"
+               style="font-size:4.8px;line-height:1.25;font-family:sans-serif;display:inline"
+               x="649.58356"
+               y="835.05817"
+               id="text7427-9-1-4-3-8-2-9"
+               inkscape:label="Switch Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan7425-6-8-8-7-8-70-2"
+                 x="649.58356"
+                 y="835.05817"
+                 style="font-weight:bold">S</tspan><tspan
+                 sodipodi:role="line"
+                 x="649.58356"
+                 y="841.05817"
+                 id="tspan7429-8-1-3-9-3-3-9" /></text>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="654.54504"
+               y="829.08441"
+               id="text52463"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan52461"
+                 x="654.54504"
+                 y="829.08441">16</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+               x="616.72333"
+               y="731.14001"
+               id="text52463-4"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan52461-5"
+                 x="616.72333"
+                 y="731.14001">16</tspan></text>
+            <path
+               style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+               d="m 609.82356,736.80197 c 6.28984,5.16574 12.02648,11.0046 17.08034,17.38468 16.55818,20.90334 25.4655,47.73506 24.6955,74.39083"
+               id="path53563"
+               inkscape:path-effect="#path-effect53565"
+               inkscape:original-d="m 609.82356,736.80197 c 9.94762,7.25618 7.13471,10.13049 17.08034,17.38468 9.94563,7.25419 20.71784,47.3604 24.6955,74.39083"
+               sodipodi:nodetypes="csc"
+               inkscape:label="Wiring" />
+          </g>
+        </g>
+        <g
+           id="g13353"
+           inkscape:label="Bedroom 2"
+           style="display:inline">
+          <g
+             id="g20503"
+             inkscape:label="Outlet 4"
+             transform="translate(-8.3150942,-9.247172)"
+             style="display:inline">
+            <g
+               id="DuplexOutlet-6-3-8-8-9"
+               transform="matrix(-1,0,0,1,661.68027,97.608712)"
+               inkscape:label="DuplexOutlet"
+               style="display:inline">
+              <title
+                 id="title4270-8-4-4-5">Duplex Outlet</title>
+              <circle
+                 id="path291-8-2-9-7-7-3-0-0-0-9"
+                 cx="315.80029"
+                 cy="643.67255"
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 r="4.9344997" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,645.5152 h 15.634 v 0"
+                 id="path1300-7-3-0-8-1-2-2-4-0-0" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,641.9132 h 15.634 v 0"
+                 id="path1300-7-3-0-8-6-8-68-4-6-9-9" />
+              <title
+                 id="title4330-8-4-3-3">Duplex Outlet</title>
+            </g>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="352.88583"
+               y="743.40088"
+               id="text6160-6-7-4"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan6158-4-5-0"
+                 x="352.88583"
+                 y="743.40088">16</tspan></text>
+          </g>
+          <g
+             id="g20521"
+             inkscape:label="Outlet 3"
+             transform="translate(11.338881,2.6447927)"
+             style="display:inline">
+            <g
+               id="DuplexOutlet-6-3-8-8-4"
+               transform="rotate(90,271.90655,783.19999)"
+               inkscape:label="DuplexOutlet"
+               style="display:inline">
+              <title
+                 id="title4270-8-4-4-8">Duplex Outlet</title>
+              <circle
+                 id="path291-8-2-9-7-7-3-0-0-0-8"
+                 cx="315.80029"
+                 cy="643.67255"
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 r="4.9344997" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,645.5152 h 15.634 v 0"
+                 id="path1300-7-3-0-8-1-2-2-4-0-7" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,641.9132 h 15.634 v 0"
+                 id="path1300-7-3-0-8-6-8-68-4-6-9-1" />
+              <title
+                 id="title4330-8-4-3-9">Duplex Outlet</title>
+            </g>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="418.40396"
+               y="828.94702"
+               id="text6160-6-7-3"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan6158-4-5-1"
+                 x="418.40396"
+                 y="828.94702">16</tspan></text>
+          </g>
+          <g
+             id="g20151"
+             transform="translate(7.5121571,-18)"
+             inkscape:label="Outlet 2"
+             style="display:inline">
+            <g
+               id="DuplexOutlet-6-3-8-8"
+               transform="translate(171.39957,106.36154)"
+               inkscape:label="DuplexOutlet"
+               style="display:inline">
+              <title
+                 id="title4270-8-4-4">Duplex Outlet</title>
+              <circle
+                 id="path291-8-2-9-7-7-3-0-0-0"
+                 cx="315.80029"
+                 cy="643.67255"
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 r="4.9344997" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,645.5152 h 15.634 v 0"
+                 id="path1300-7-3-0-8-1-2-2-4-0" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,641.9132 h 15.634 v 0"
+                 id="path1300-7-3-0-8-6-8-68-4-6-9" />
+              <title
+                 id="title4330-8-4-3">Duplex Outlet</title>
+            </g>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="473.05746"
+               y="752.15369"
+               id="text6160-6-7"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan6158-4-5"
+                 x="473.05746"
+                 y="752.15369">16</tspan></text>
+          </g>
+          <g
+             id="g30315"
+             inkscape:label="Light and Fan"
+             style="display:inline">
+            <path
+               style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+               d="m 418.56541,736.8937 c 5.21859,5.90143 9.88435,12.2915 13.91634,19.05933 13.04143,21.89051 19.24828,47.78806 17.54668,73.21202"
+               id="path29671"
+               inkscape:path-effect="#path-effect29673"
+               inkscape:original-d="m 418.56541,736.8937 c 4.63978,6.35411 9.27856,12.70722 13.91634,19.05933 4.63777,6.3521 11.69879,48.80901 17.54668,73.21202"
+               inkscape:label="Wiring" />
+            <text
+               xml:space="preserve"
+               style="font-size:4.8px;line-height:1.25;font-family:sans-serif;display:inline"
+               x="447.88458"
+               y="835.25372"
+               id="text7427-9-1-4-3-8-2-9-8"
+               inkscape:label="Switch Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan7425-6-8-8-7-8-70-2-8"
+                 x="447.88458"
+                 y="835.25372"
+                 style="font-weight:bold">S</tspan><tspan
+                 sodipodi:role="line"
+                 x="447.88458"
+                 y="841.25372"
+                 id="tspan7429-8-1-3-9-3-3-9-9" /></text>
+            <g
+               id="g27243-9"
+               inkscape:label="Fan"
+               transform="translate(257.97324,215.32198)"
+               style="display:inline">
+              <ellipse
+                 style="fill:none;stroke:#000000"
+                 id="path27088-3"
+                 cx="170.05365"
+                 cy="519.83636"
+                 rx="7.2653718"
+                 ry="1.949246"
+                 inkscape:label="Blade" />
+              <ellipse
+                 style="display:inline;fill:none;stroke:#000000"
+                 id="path27088-2-8"
+                 cx="148.84962"
+                 cy="519.83636"
+                 rx="7.2653718"
+                 ry="1.949246"
+                 inkscape:label="Blade" />
+              <ellipse
+                 style="display:inline;fill:none;stroke:#000000"
+                 id="path27088-0-0"
+                 cx="-530.32025"
+                 cy="159.45163"
+                 rx="7.2653718"
+                 ry="1.949246"
+                 transform="rotate(-90)"
+                 inkscape:label="Blade" />
+              <ellipse
+                 style="display:inline;fill:none;stroke:#000000"
+                 id="path27088-6-2"
+                 cx="-509.11621"
+                 cy="159.45163"
+                 rx="7.2653718"
+                 ry="1.949246"
+                 transform="rotate(-90)"
+                 inkscape:label="Blade" />
+              <circle
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.999998"
+                 id="path27088-07-4"
+                 cx="159.45163"
+                 cy="519.7182"
+                 r="2.3346467"
+                 inkscape:label="Center" />
+            </g>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+               x="421.49469"
+               y="731.14001"
+               id="text26713-5"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan26711-3"
+                 x="421.49469"
+                 y="731.14001">16</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="453.14932"
+               y="829.534"
+               id="text26713"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan26711"
+                 x="453.14932"
+                 y="829.534">16</tspan></text>
+          </g>
+          <g
+             id="g40104"
+             inkscape:label="Closet Light"
+             style="display:inline">
+            <text
+               xml:space="preserve"
+               style="font-size:4.8px;line-height:1.25;font-family:sans-serif;display:inline"
+               x="388.14322"
+               y="835.25372"
+               id="text7427-9-1-4-3-9"
+               inkscape:label="Switch Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan7425-6-8-8-7-80"
+                 x="388.14322"
+                 y="835.25372"
+                 style="font-weight:bold">S</tspan><tspan
+                 sodipodi:role="line"
+                 x="388.14322"
+                 y="841.25372"
+                 id="tspan7429-8-1-3-9-5" /></text>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="392.85043"
+               y="829.534"
+               id="text36646"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan36644"
+                 x="392.85043"
+                 y="829.534">16</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="373.03369"
+               y="889.67151"
+               id="text37574"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan37572"
+                 x="373.03369"
+                 y="889.67151">16</tspan></text>
+            <circle
+               id="path291-8-2-9-7-7-3-7-5"
+               cx="367.28564"
+               cy="880.89819"
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.623621;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               inkscape:label="Light"
+               r="4.9344997" />
+            <path
+               style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+               d="m 386.1948,834.30805 c -2.80296,2.88409 -5.33842,6.02805 -7.56323,9.37839 -7.09126,10.67872 -10.93308,23.48479 -10.89103,36.30349"
+               id="path39840"
+               inkscape:path-effect="#path-effect39842"
+               inkscape:original-d="m 386.1948,834.30805 c -4.63778,4.53893 -2.92345,4.84146 -7.56323,9.37839 -4.63977,4.53694 -9.67992,25.3126 -10.89103,36.30349"
+               sodipodi:nodetypes="csc"
+               inkscape:label="Wiring" />
+          </g>
+        </g>
+        <g
+           id="g23728"
+           inkscape:label="Attic"
+           inkscape:connector-avoid="true"
+           style="display:inline">
+          <g
+             id="g20151-7"
+             transform="translate(15.449165,203.9509)"
+             inkscape:label="Outlet"
+             style="display:inline">
+            <g
+               id="DuplexOutlet-6-3-8-8-7"
+               transform="translate(171.39957,106.36154)"
+               inkscape:label="DuplexOutlet"
+               style="display:inline">
+              <title
+                 id="title4270-8-4-4-51">Duplex Outlet</title>
+              <circle
+                 id="path291-8-2-9-7-7-3-0-0-0-2"
+                 cx="315.80029"
+                 cy="643.67255"
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 r="4.9344997" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,645.5152 h 15.634 v 0"
+                 id="path1300-7-3-0-8-1-2-2-4-0-6" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,641.9132 h 15.634 v 0"
+                 id="path1300-7-3-0-8-6-8-68-4-6-9-6" />
+              <title
+                 id="title4330-8-4-3-5">Duplex Outlet</title>
+            </g>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="473.05746"
+               y="752.15369"
+               id="text6160-6-7-41"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan6158-4-5-7"
+                 x="473.05746"
+                 y="752.15369">16</tspan></text>
+          </g>
+          <g
+             id="g30016"
+             inkscape:label="Doorbell Transformer"
+             transform="translate(-65.831454,-168.96573)"
+             style="display:inline">
+            <g
+               id="Appliance-2-3-2"
+               transform="translate(237.85419,501.23621)"
+               inkscape:label="Appliance"
+               style="display:inline">
+              <title
+                 id="title4266-0-1">Appliance</title>
+              <circle
+                 id="path291-8-2-9-7-7-2-4-9"
+                 cx="330.62677"
+                 cy="642.8031"
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 r="4.9344997" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 334.04547,644.08751 h 7.513 v 0"
+                 id="path1300-7-3-0-8-1-1-8-2" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 331.97947,640.58716 h 9.579 v 0"
+                 id="path1300-7-3-0-8-6-8-8-5-4" />
+              <path
+                 sodipodi:type="star"
+                 style="fill:none;stroke:#000000;stroke-width:0.51766;stroke-miterlimit:4;stroke-dasharray:none"
+                 id="path3851-55-5"
+                 inkscape:flatsided="false"
+                 sodipodi:sides="3"
+                 sodipodi:cx="290.89798"
+                 sodipodi:cy="398.42972"
+                 sodipodi:r1="3.6526456"
+                 sodipodi:r2="1.8263229"
+                 sodipodi:arg1="0.52391935"
+                 sodipodi:arg2="1.5711169"
+                 inkscape:rounded="0"
+                 inkscape:randomized="0"
+                 transform="matrix(1.2054248,0,0,1.2054248,-20.028026,162.60668)"
+                 inkscape:transform-center-x="0.00071903649"
+                 inkscape:transform-center-y="-1.1001616"
+                 d="m 294.06068,400.25705 -3.16329,-0.001 -3.16328,-0.001 1.58252,-2.73898 1.58252,-2.73898 1.58076,2.73999 z" />
+              <title
+                 id="title4412-4-8">Appliance</title>
+            </g>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="554.33807"
+               y="1146.1589"
+               id="text15379"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan15377"
+                 x="554.33807"
+                 y="1146.1589">16</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
+               x="576.94806"
+               y="1156.0415"
+               id="text17891"
+               inkscape:label="Transformer Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan17889"
+                 x="576.94806"
+                 y="1156.0415">Doorbell</tspan><tspan
+                 sodipodi:role="line"
+                 x="576.94806"
+                 y="1163.5415"
+                 id="tspan3014">Transformer</tspan></text>
+          </g>
+        </g>
+        <g
+           id="g9453-9"
+           inkscape:label="Vanity Lights"
+           style="display:inline"
+           transform="translate(-121.97036,-5.6707192)">
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:sans-serif"
+             x="841.21008"
+             y="930.3985"
+             id="text7427-9-1-4-4-9"
+             inkscape:label="Circuit Number"><tspan
+               sodipodi:role="line"
+               x="841.21008"
+               y="930.3985"
+               id="tspan7228-1"
+               style="font-size:6px">16</tspan><tspan
+               sodipodi:role="line"
+               x="841.21008"
+               y="937.8985"
+               id="tspan7429-8-1-3-8-7"
+               style="font-size:6px" /></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:sans-serif;display:inline"
+             x="825.97815"
+             y="961.66083"
+             id="text7427-9-1-4-4-6-2"
+             inkscape:label="Circuit Number"><tspan
+               sodipodi:role="line"
+               x="825.97815"
+               y="961.66083"
+               id="tspan7228-7-3"
+               style="font-size:6px">16</tspan><tspan
+               sodipodi:role="line"
+               x="825.97815"
+               y="969.16083"
+               id="tspan7429-8-1-3-8-8-6"
+               style="font-size:6px" /></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:sans-serif;display:inline"
+             x="853.01068"
+             y="978.73187"
+             id="text7427-9-1-4-4-0-5"
+             inkscape:label="Circuit Number"><tspan
+               sodipodi:role="line"
+               x="853.01068"
+               y="978.73187"
+               id="tspan7228-6-5"
+               style="font-size:6px">16</tspan><tspan
+               sodipodi:role="line"
+               x="853.01068"
+               y="986.23187"
+               id="tspan7429-8-1-3-8-5-8"
+               style="font-size:6px" /></text>
+          <text
+             xml:space="preserve"
+             style="font-size:4.8px;line-height:1.25;font-family:sans-serif;display:inline"
+             x="843.47504"
+             y="921.20337"
+             id="text7427-9-1-4-3-5-1"
+             inkscape:label="Switch Label"><tspan
+               sodipodi:role="line"
+               id="tspan7425-6-8-8-7-89-4"
+               x="843.47504"
+               y="921.20337"
+               style="font-weight:bold">S</tspan><tspan
+               sodipodi:role="line"
+               x="843.47504"
+               y="927.20337"
+               id="tspan7429-8-1-3-9-9-7" /></text>
+          <circle
+             id="path291-8-2-9-7-7-3-7-9-1"
+             cx="818.08728"
+             cy="959.51776"
+             style="display:inline;fill:none;stroke:#000000;stroke-width:0.623621;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             r="4.9344997"
+             inkscape:label="Light" />
+          <circle
+             id="path291-8-2-9-7-7-3-7-37-3"
+             cx="857.02289"
+             cy="989.22406"
+             style="display:inline;fill:none;stroke:#000000;stroke-width:0.623621;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             r="4.9344997"
+             inkscape:label="Light" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 851.49368,921.48878 c 2.64574,1.0519 4.87851,3.10674 6.14599,5.65624 1.26748,2.54949 1.55791,5.56997 0.79945,8.31427 -0.52784,1.90986 -1.54285,3.66978 -2.8476,5.16103 -1.30474,1.49125 -2.89453,2.71928 -4.61206,3.70735 -3.43506,1.97615 -7.33088,2.98572 -11.19854,3.84945 -3.86765,0.86373 -7.79155,1.61247 -11.45062,3.13431 -3.65906,1.52184 -7.09466,3.91226 -9.0825,7.34056 -1.16307,2.00587 -1.78987,4.30743 -1.89433,6.62375 -0.10446,2.31632 0.30643,4.64551 1.11269,6.81949 1.61253,4.34796 4.76385,8.00248 8.43931,10.83021 8.35298,6.42639 19.71675,8.75115 29.9224,6.12144"
+             id="path60477-8"
+             inkscape:path-effect="#path-effect2194"
+             inkscape:original-d="m 851.49368,921.48878 c 12.2382,1.4213 -5.29076,12.55111 6.94544,13.97051 12.23621,1.4194 -44.87183,15.76397 -39.19132,23.1927 2.84028,3.7144 4.74678,15.05553 7.65767,24.27345 2.91089,9.21792 18.06812,5.90344 29.9224,6.12144"
+             sodipodi:nodetypes="csssc"
+             inkscape:label="Wiring" />
+        </g>
+      </g>
+      <g
+         id="circuit_15_group"
+         inkscape:label="Circuit 15"
+         style="display:inline"
+         sodipodi:insensitive="true"
+         onmouseover="toggleCircuits(this, true)"
+         onmouseout="toggleCircuits(this, false)">
+        <g
+           id="g2106"
+           inkscape:label="Bathroom">
+          <g
+             id="g9453"
+             inkscape:label="Ceiling Lights"
+             style="display:inline">
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:sans-serif"
+               x="784.16766"
+               y="911.24554"
+               id="text7427-9-1-4-4"
+               inkscape:label="Circuit Number"><tspan
+                 sodipodi:role="line"
+                 x="784.16766"
+                 y="911.24554"
+                 id="tspan7228"
+                 style="font-size:6px">15</tspan><tspan
+                 sodipodi:role="line"
+                 x="784.16766"
+                 y="918.74554"
+                 id="tspan7429-8-1-3-8"
+                 style="font-size:6px" /></text>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:sans-serif;display:inline"
+               x="848.87842"
+               y="955.41528"
+               id="text7427-9-1-4-4-6"
+               inkscape:label="Circuit Number"><tspan
+                 sodipodi:role="line"
+                 x="848.87842"
+                 y="955.41528"
+                 id="tspan7228-7"
+                 style="font-size:6px">15</tspan><tspan
+                 sodipodi:role="line"
+                 x="848.87842"
+                 y="962.91528"
+                 id="tspan7429-8-1-3-8-8"
+                 style="font-size:6px" /></text>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:sans-serif;display:inline"
+               x="920.46234"
+               y="955.41528"
+               id="text7427-9-1-4-4-0"
+               inkscape:label="Circuit Number"><tspan
+                 sodipodi:role="line"
+                 x="920.46234"
+                 y="955.41528"
+                 id="tspan7228-6"
+                 style="font-size:6px">15</tspan><tspan
+                 sodipodi:role="line"
+                 x="920.46234"
+                 y="962.91528"
+                 id="tspan7429-8-1-3-8-5"
+                 style="font-size:6px" /></text>
+            <text
+               xml:space="preserve"
+               style="font-size:4.8px;line-height:1.25;font-family:sans-serif;display:inline"
+               x="785.53436"
+               y="920.21802"
+               id="text7427-9-1-4-3-5"
+               inkscape:label="Switch Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan7425-6-8-8-7-89"
+                 x="785.53436"
+                 y="920.21802"
+                 style="font-weight:bold">S</tspan><tspan
+                 sodipodi:role="line"
+                 x="785.53436"
+                 y="926.21802"
+                 id="tspan7429-8-1-3-9-9" /></text>
+            <circle
+               id="path291-8-2-9-7-7-3-7-9"
+               cx="845.15125"
+               cy="946.33813"
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.623621;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               r="4.9344997"
+               inkscape:label="Light" />
+            <circle
+               id="path291-8-2-9-7-7-3-7-37"
+               cx="916.60779"
+               cy="946.33813"
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.623621;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               r="4.9344997"
+               inkscape:label="Light" />
+            <path
+               style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+               d="m 787.78933,922.73784 c 1.92619,4.32141 4.73144,8.24876 8.19455,11.47237 6.39244,5.95037 14.8239,9.34623 23.39607,11.016 8.57217,1.66978 17.36585,1.72872 26.09905,1.76751 23.49091,0.10433 46.98229,0.10433 70.4732,0"
+               id="path60477"
+               inkscape:path-effect="#path-effect60479"
+               inkscape:original-d="m 787.78933,922.73784 c 12.2382,1.42139 -4.04165,10.05298 8.19455,11.47237 12.23621,1.41939 43.81456,5.35478 49.49512,12.78351 5.68056,7.42873 46.76461,-0.43604 70.4732,0"
+               sodipodi:nodetypes="cssc"
+               inkscape:label="Wiring" />
+          </g>
+        </g>
+        <g
+           id="g1427"
+           inkscape:label="Bedroom 4"
+           style="display:inline">
+          <g
+             id="g73420-6"
+             inkscape:label="Outlet 4"
+             transform="translate(-88.113591,92.858659)"
+             style="display:inline">
+            <g
+               id="DuplexOutlet-6-5-1"
+               transform="rotate(180,597.27671,635.47684)"
+               inkscape:label="DuplexOutlet"
+               style="display:inline">
+              <title
+                 id="title4270-1-2">Duplex Outlet</title>
+              <circle
+                 id="path291-8-2-9-7-7-3-3-0"
+                 cx="315.80029"
+                 cy="643.67255"
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 r="4.9344997" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,645.5152 h 15.634 v 0"
+                 id="path1300-7-3-0-8-1-2-9-4" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,641.9132 h 15.634 v 0"
+                 id="path1300-7-3-0-8-6-8-68-73-4" />
+              <title
+                 id="title4330-7-5">Duplex Outlet</title>
+            </g>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="885.0531"
+               y="629.40131"
+               id="text72538-9"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan72536-7"
+                 x="885.0531"
+                 y="629.40131">15</tspan></text>
+          </g>
+          <g
+             id="g73420-9"
+             inkscape:label="Outlet 3"
+             transform="translate(-12.739862,229.59861)"
+             style="display:inline">
+            <g
+               id="DuplexOutlet-6-5-3"
+               transform="matrix(0,1,1,0,232.45805,321.64344)"
+               inkscape:label="DuplexOutlet"
+               style="display:inline">
+              <title
+                 id="title4270-1-1">Duplex Outlet</title>
+              <circle
+                 id="path291-8-2-9-7-7-3-3-1"
+                 cx="315.80029"
+                 cy="643.67255"
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 r="4.9344997" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,645.5152 h 15.634 v 0"
+                 id="path1300-7-3-0-8-1-2-9-49" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,641.9132 h 15.634 v 0"
+                 id="path1300-7-3-0-8-6-8-68-73-5" />
+              <title
+                 id="title4330-7-9">Duplex Outlet</title>
+            </g>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="883.42944"
+               y="639.38629"
+               id="text72538-0"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan72536-9"
+                 x="883.42944"
+                 y="639.38629">15</tspan></text>
+          </g>
+          <g
+             id="g1500"
+             inkscape:label="Outlet 2"
+             transform="translate(13.134886)"
+             style="display:inline">
+            <g
+               id="DuplexOutlet-6-5-2"
+               transform="translate(614.29562,110.32813)"
+               inkscape:label="DuplexOutlet"
+               style="display:inline">
+              <title
+                 id="title4270-1-6">Duplex Outlet</title>
+              <circle
+                 id="path291-8-2-9-7-7-3-3-8"
+                 cx="315.80029"
+                 cy="643.67255"
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 r="4.9344997" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,645.5152 h 15.634 v 0"
+                 id="path1300-7-3-0-8-1-2-9-9" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,641.9132 h 15.634 v 0"
+                 id="path1300-7-3-0-8-6-8-68-73-1" />
+              <title
+                 id="title4330-7-4">Duplex Outlet</title>
+            </g>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="915.08954"
+               y="756.1203"
+               id="text72538-8"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan72536-8"
+                 x="915.08954"
+                 y="756.1203">15</tspan></text>
+          </g>
+          <g
+             id="g73420"
+             inkscape:label="Outlet 1"
+             transform="translate(-18.141344)"
+             style="display:inline">
+            <g
+               id="DuplexOutlet-6-5"
+               transform="rotate(-90,595.69397,363.23592)"
+               inkscape:label="DuplexOutlet"
+               style="display:inline">
+              <title
+                 id="title4270-1">Duplex Outlet</title>
+              <circle
+                 id="path291-8-2-9-7-7-3-3"
+                 cx="315.80029"
+                 cy="643.67255"
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 r="4.9344997" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,645.5152 h 15.634 v 0"
+                 id="path1300-7-3-0-8-1-2-9" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,641.9132 h 15.634 v 0"
+                 id="path1300-7-3-0-8-6-8-68-73" />
+              <title
+                 id="title4330-7">Duplex Outlet</title>
+            </g>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="883.42944"
+               y="646.56726"
+               id="text72538"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan72536"
+                 x="883.42944"
+                 y="646.56726">15</tspan></text>
+          </g>
+          <g
+             id="g15318"
+             inkscape:label="Light and Fan"
+             style="display:inline">
+            <g
+               id="g27243"
+               inkscape:label="Fan"
+               transform="translate(709.86144,235.65766)"
+               style="display:inline">
+              <ellipse
+                 style="fill:none;stroke:#000000"
+                 id="path27088"
+                 cx="170.05365"
+                 cy="519.83636"
+                 rx="7.2653718"
+                 ry="1.949246"
+                 inkscape:label="Blade" />
+              <ellipse
+                 style="display:inline;fill:none;stroke:#000000"
+                 id="path27088-2"
+                 cx="148.84962"
+                 cy="519.83636"
+                 rx="7.2653718"
+                 ry="1.949246"
+                 inkscape:label="Blade" />
+              <ellipse
+                 style="display:inline;fill:none;stroke:#000000"
+                 id="path27088-0"
+                 cx="-530.32025"
+                 cy="159.45163"
+                 rx="7.2653718"
+                 ry="1.949246"
+                 transform="rotate(-90)"
+                 inkscape:label="Blade" />
+              <ellipse
+                 style="display:inline;fill:none;stroke:#000000"
+                 id="path27088-6"
+                 cx="-509.11621"
+                 cy="159.45163"
+                 rx="7.2653718"
+                 ry="1.949246"
+                 transform="rotate(-90)"
+                 inkscape:label="Blade" />
+              <circle
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.999998"
+                 id="path27088-07"
+                 cx="159.45163"
+                 cy="519.7182"
+                 r="2.3346467"
+                 inkscape:label="Center" />
+            </g>
+            <text
+               xml:space="preserve"
+               style="font-size:4.8px;line-height:1.25;font-family:sans-serif;display:inline"
+               x="783.36572"
+               y="815.40002"
+               id="text7427-9-1-4-3-8-2-8"
+               inkscape:label="Switch Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan7425-6-8-8-7-8-70-7"
+                 x="783.36572"
+                 y="815.40002"
+                 style="font-weight:bold">S</tspan><tspan
+                 sodipodi:role="line"
+                 x="783.36572"
+                 y="821.40002"
+                 id="tspan7429-8-1-3-9-3-3-1" /></text>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:sans-serif;display:inline"
+               x="789.94989"
+               y="815.78699"
+               id="text7427-9-1-4-1-5-5"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan7425-6-8-8-3-7-5"
+                 x="789.94989"
+                 y="815.78699"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arial;-inkscape-font-specification:Arial">15</tspan><tspan
+                 sodipodi:role="line"
+                 x="789.94989"
+                 y="823.35645"
+                 id="tspan7429-8-1-3-7-6-5"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arial;-inkscape-font-specification:Arial" /></text>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:sans-serif;display:inline"
+               x="874.49597"
+               y="751.12378"
+               id="text7427-9-1-4-1-5-5-4"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan7425-6-8-8-3-7-5-5"
+                 x="874.49597"
+                 y="751.12378"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arial;-inkscape-font-specification:Arial">15</tspan><tspan
+                 sodipodi:role="line"
+                 x="874.49597"
+                 y="758.69324"
+                 id="tspan7429-8-1-3-7-6-5-8"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arial;-inkscape-font-specification:Arial" /></text>
+            <path
+               style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+               d="m 785.84123,810.08306 c 19.35295,-0.37652 38.53478,-7.01925 53.9758,-18.69201 11.90794,-9.00189 21.58418,-20.9335 27.93301,-34.4437"
+               id="path69676"
+               inkscape:path-effect="#path-effect69678"
+               inkscape:original-d="m 785.84123,810.08306 c 17.99294,-6.22967 35.98487,-12.46034 53.9758,-18.69201 17.99094,-6.23167 18.62301,-22.96147 27.93301,-34.4437"
+               inkscape:label="Wiring" />
+          </g>
+          <g
+             id="g7104"
+             inkscape:label="Closet Light"
+             style="display:inline">
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:sans-serif"
+               x="789.94989"
+               y="791.07458"
+               id="text7427-9-1-4-1-5"
+               inkscape:label="Circuit Number"><tspan
+                 sodipodi:role="line"
+                 id="tspan7425-6-8-8-3-7"
+                 x="789.94989"
+                 y="791.07458"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arial;-inkscape-font-specification:Arial">15</tspan><tspan
+                 sodipodi:role="line"
+                 x="789.94989"
+                 y="798.64404"
+                 id="tspan7429-8-1-3-7-6"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arial;-inkscape-font-specification:Arial" /></text>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:sans-serif;display:inline"
+               x="748.53815"
+               y="765.91339"
+               id="text7427-9-1-4-1-5-8"
+               inkscape:label="Circuit Number"><tspan
+                 sodipodi:role="line"
+                 id="tspan7425-6-8-8-3-7-41"
+                 x="748.53815"
+                 y="765.91339"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arial;-inkscape-font-specification:Arial">15</tspan><tspan
+                 sodipodi:role="line"
+                 x="748.53815"
+                 y="773.48285"
+                 id="tspan7429-8-1-3-7-6-7"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arial;-inkscape-font-specification:Arial" /></text>
+            <text
+               xml:space="preserve"
+               style="font-size:4.8px;line-height:1.25;font-family:sans-serif;display:inline"
+               x="783.36572"
+               y="790.67645"
+               id="text7427-9-1-4-3-8-2"
+               inkscape:label="Switch Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan7425-6-8-8-7-8-70"
+                 x="783.36572"
+                 y="790.67645"
+                 style="font-weight:bold">S</tspan><tspan
+                 sodipodi:role="line"
+                 x="783.36572"
+                 y="796.67645"
+                 id="tspan7429-8-1-3-9-3-3" /></text>
+            <circle
+               id="path291-8-2-9-7-7-3-7-8"
+               cx="743.92902"
+               cy="757.15173"
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.623621;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               r="4.9344997"
+               inkscape:label="Light" />
+            <path
+               style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+               d="m 745.39229,757.15178 c 7.08781,-0.75283 14.39089,0.65806 20.68825,3.99679 6.29736,3.33872 11.56344,8.59172 14.9178,14.88077 1.54196,2.891 2.68711,5.9933 3.39332,9.19279"
+               id="path11896"
+               inkscape:path-effect="#path-effect11898"
+               inkscape:original-d="m 745.39229,757.15178 c 11.86969,1.62685 47.16025,15.71806 35.60605,18.87756 -409.95406,112.10197 3.7826,2.98224 3.39332,9.19279"
+               sodipodi:nodetypes="csc"
+               inkscape:label="Wiring" />
+          </g>
+        </g>
+        <g
+           id="g1444"
+           inkscape:label="Bedroom 3"
+           style="display:inline">
+          <g
+             id="g11246"
+             inkscape:label="Outlet 2"
+             transform="translate(3.0236178)"
+             sodipodi:insensitive="true">
+            <g
+               id="DuplexOutlet-6-39"
+               transform="translate(378.14099,107.59137)"
+               inkscape:label="DuplexOutlet"
+               style="display:inline">
+              <title
+                 id="title4270-0">Duplex Outlet</title>
+              <circle
+                 id="path291-8-2-9-7-7-3-5"
+                 cx="315.80029"
+                 cy="643.67255"
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 r="4.9344997" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,645.5152 h 15.634 v 0"
+                 id="path1300-7-3-0-8-1-2-22" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,641.9132 h 15.634 v 0"
+                 id="path1300-7-3-0-8-6-8-68-737" />
+              <title
+                 id="title4330-9">Duplex Outlet</title>
+            </g>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="679.69781"
+               y="753.38354"
+               id="text9788"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan9786"
+                 x="679.69781"
+                 y="753.38354">15</tspan></text>
+          </g>
+          <g
+             id="g8296"
+             inkscape:label="Outlet 1"
+             sodipodi:insensitive="true">
+            <g
+               id="DuplexOutlet-6-3"
+               transform="rotate(-90,461.23044,496.52508)"
+               inkscape:label="DuplexOutlet"
+               style="display:inline">
+              <title
+                 id="title4270-8">Duplex Outlet</title>
+              <circle
+                 id="path291-8-2-9-7-7-3-0"
+                 cx="315.80029"
+                 cy="643.67255"
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 r="4.9344997" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,645.5152 h 15.634 v 0"
+                 id="path1300-7-3-0-8-1-2-2" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,641.9132 h 15.634 v 0"
+                 id="path1300-7-3-0-8-6-8-68-4" />
+              <title
+                 id="title4330-8">Duplex Outlet</title>
+            </g>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="615.39856"
+               y="644.42804"
+               id="text6160"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan6158"
+                 x="615.39856"
+                 y="644.42804">15</tspan></text>
+          </g>
+          <g
+             id="g16344"
+             inkscape:label="Closet Light"
+             sodipodi:insensitive="true">
+            <text
+               xml:space="preserve"
+               style="font-size:4.8px;line-height:1.25;font-family:sans-serif;display:inline"
+               x="701.1236"
+               y="694.89886"
+               id="text7427-9-1-4-3-4"
+               inkscape:label="Switch Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan7425-6-8-8-7-83"
+                 x="701.1236"
+                 y="694.89886"
+                 style="font-weight:bold">S</tspan><tspan
+                 sodipodi:role="line"
+                 x="701.1236"
+                 y="700.89886"
+                 id="tspan7429-8-1-3-9-90" /></text>
+            <circle
+               id="path291-8-2-9-7-7-3-7-2"
+               cx="743.70544"
+               cy="671.09979"
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.623621;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               r="4.9344997"
+               inkscape:label="Light" />
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="690.65088"
+               y="695.27356"
+               id="text15370"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan15368"
+                 x="690.65088"
+                 y="695.27356">15</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+               x="748.99323"
+               y="679.72778"
+               id="text15370-1"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan15368-5"
+                 x="748.99323"
+                 y="679.72778">15</tspan></text>
+            <path
+               style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+               d="m 743.06947,671.7464 c -11.97648,-1.27086 -24.40424,2.43278 -33.73126,10.05236 -2.36897,1.9353 -4.54289,4.10922 -6.47819,6.47819"
+               id="path16194"
+               inkscape:path-effect="#path-effect16196"
+               inkscape:original-d="m 743.06947,671.7464 c -39.62821,-24.25053 -21.36958,9.30875 -33.73126,10.05236 -12.36169,0.74361 -5.06242,1.19239 -6.47819,6.47819"
+               sodipodi:nodetypes="csc"
+               inkscape:label="Wiring" />
+          </g>
+        </g>
+        <g
+           id="g2180"
+           inkscape:label="Bedroom 2"
+           style="display:inline">
+          <g
+             id="g8296-0"
+             inkscape:label="Outlet 1"
+             style="display:inline"
+             transform="translate(-198.10771)">
+            <g
+               id="DuplexOutlet-6-3-8"
+               transform="rotate(-90,461.23044,496.52508)"
+               inkscape:label="DuplexOutlet"
+               style="display:inline">
+              <title
+                 id="title4270-8-4">Duplex Outlet</title>
+              <circle
+                 id="path291-8-2-9-7-7-3-0-0"
+                 cx="315.80029"
+                 cy="643.67255"
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 r="4.9344997" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,645.5152 h 15.634 v 0"
+                 id="path1300-7-3-0-8-1-2-2-4" />
+              <path
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 311.09847,641.9132 h 15.634 v 0"
+                 id="path1300-7-3-0-8-6-8-68-4-6" />
+              <title
+                 id="title4330-8-4">Duplex Outlet</title>
+            </g>
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="615.39856"
+               y="644.42804"
+               id="text6160-6"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan6158-4"
+                 x="615.39856"
+                 y="644.42804">15</tspan></text>
+          </g>
+        </g>
+        <g
+           id="g2088"
+           inkscape:label="Hallway">
+          <g
+             id="g52613"
+             inkscape:label="Attic Light"
+             style="display:inline">
+            <text
+               xml:space="preserve"
+               style="font-size:4.8px;line-height:1.25;font-family:sans-serif;display:inline"
+               x="717.88184"
+               y="838.64972"
+               id="text7427-9-1-4-3-80"
+               inkscape:label="Switch Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan7425-6-8-8-7-4"
+                 x="717.88184"
+                 y="838.64972"
+                 style="font-weight:bold">S</tspan><tspan
+                 sodipodi:role="line"
+                 x="717.88184"
+                 y="844.64972"
+                 id="tspan7429-8-1-3-9-0" /></text>
+            <g
+               id="g52535"
+               inkscape:label="Switched Duplex Outlet">
+              <text
+                 xml:space="preserve"
+                 style="font-style:normal;font-weight:normal;font-size:6px;line-height:1.25;font-family:sans-serif;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+                 x="702.21753"
+                 y="880.69537"
+                 id="text6459-8"
+                 inkscape:label="Location Label"><tspan
+                   sodipodi:role="line"
+                   x="702.21753"
+                   y="880.69537"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arial;-inkscape-font-specification:Arial"
+                   id="tspan2846-4">Attic</tspan></text>
+              <text
+                 xml:space="preserve"
+                 style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+                 x="695.9231"
+                 y="873.9201"
+                 id="text9526"
+                 inkscape:label="Switched Label"><tspan
+                   sodipodi:role="line"
+                   id="tspan9524"
+                   x="695.9231"
+                   y="873.9201"
+                   style="font-size:6px">Switched</tspan></text>
+              <g
+                 id="DuplexOutlet-6-9"
+                 transform="rotate(-90,620.71652,556.36769)"
+                 inkscape:label="DuplexOutlet"
+                 style="display:inline">
+                <title
+                   id="title4270-9">Duplex Outlet</title>
+                <circle
+                   id="path291-8-2-9-7-7-3-9"
+                   cx="315.80029"
+                   cy="643.67255"
+                   style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                   r="4.9344997" />
+                <path
+                   style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                   d="m 311.09847,645.5152 h 15.634 v 0"
+                   id="path1300-7-3-0-8-1-2-1" />
+                <path
+                   style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                   d="m 311.09847,641.9132 h 15.634 v 0"
+                   id="path1300-7-3-0-8-6-8-68-7" />
+                <title
+                   id="title4330-2">Duplex Outlet</title>
+              </g>
+              <text
+                 xml:space="preserve"
+                 style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+                 x="712.94318"
+                 y="868.38031"
+                 id="text65889-1"
+                 inkscape:label="Circuit Label"><tspan
+                   sodipodi:role="line"
+                   id="tspan65887-5"
+                   x="712.94318"
+                   y="868.38031"
+                   style="font-size:6px">15</tspan></text>
+            </g>
+            <g
+               id="g52583"
+               inkscape:label="LED Light"
+               transform="translate(0,-3.0234339)">
+              <text
+                 xml:space="preserve"
+                 style="font-style:normal;font-weight:normal;font-size:6px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+                 x="670.28369"
+                 y="876.8703"
+                 id="text6459"
+                 inkscape:label="Light Label"><tspan
+                   sodipodi:role="line"
+                   x="670.28369"
+                   y="876.8703"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arial;-inkscape-font-specification:Arial"
+                   id="tspan2846">Light</tspan></text>
+              <circle
+                 id="path291-8-2-9-7-7-3-7-3"
+                 cx="676.99268"
+                 cy="864.30768"
+                 style="display:inline;fill:none;stroke:#000000;stroke-width:0.623621;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 r="4.9344997"
+                 inkscape:label="Light" />
+              <text
+                 xml:space="preserve"
+                 style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+                 x="671.18896"
+                 y="883.71881"
+                 id="text37270"
+                 inkscape:label="Location Label"><tspan
+                   sodipodi:role="line"
+                   id="tspan37268"
+                   x="671.18896"
+                   y="883.71881"
+                   style="font-size:6px">Attic</tspan></text>
+            </g>
+            <path
+               style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+               d="m 719.90685,840.20228 c 1.92726,2.34825 2.94393,5.42509 2.7952,8.45931 -0.14874,3.03422 -1.46147,5.99686 -3.60916,8.14536 -2.26669,2.26755 -5.34963,3.57784 -8.49119,4.21836 -3.14156,0.64052 -6.3724,0.65957 -9.57859,0.66536 -8.08555,0.0146 -16.17122,-0.0397 -24.25585,-0.16279"
+               id="path68687"
+               inkscape:path-effect="#path-effect68689"
+               inkscape:original-d="m 719.90685,840.20228 c 1.30333,5.21031 -1.8668,11.34051 -0.81396,16.60467 23422.41011,117110.75305 -33.74682,3.46508 -18.06978,4.88372 121.22547,10.96991 -24.30911,-0.27032 -24.25585,-0.16279"
+               sodipodi:nodetypes="cssc"
+               inkscape:label="Wiring" />
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="723.81384"
+               y="839.06274"
+               id="text65889"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan65887"
+                 x="723.81384"
+                 y="839.06274"
+                 style="font-size:6px">15</tspan></text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="circuit_13_group"
+         inkscape:label="Circuit 13"
+         sodipodi:insensitive="true"
+         onmouseover="toggleCircuits(this, true)"
+         onmouseout="toggleCircuits(this, false)">
+        <g
+           id="g30016-1"
+           inkscape:label="Furnace"
+           transform="translate(42.394316,-349.80273)"
+           style="display:inline">
+          <g
+             id="Appliance-2-3-2-8"
+             transform="translate(237.85419,501.23621)"
+             inkscape:label="Appliance"
+             style="display:inline">
+            <title
+               id="title4266-0-1-7">Appliance</title>
+            <circle
+               id="path291-8-2-9-7-7-2-4-9-8"
+               cx="330.62677"
+               cy="642.8031"
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               r="4.9344997" />
+            <path
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m 334.04547,644.08751 h 7.513 v 0"
+               id="path1300-7-3-0-8-1-1-8-2-7" />
+            <path
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m 331.97947,640.58716 h 9.579 v 0"
+               id="path1300-7-3-0-8-6-8-8-5-4-7" />
+            <path
+               sodipodi:type="star"
+               style="fill:none;stroke:#000000;stroke-width:0.51766;stroke-miterlimit:4;stroke-dasharray:none"
+               id="path3851-55-5-4"
+               inkscape:flatsided="false"
+               sodipodi:sides="3"
+               sodipodi:cx="290.89798"
+               sodipodi:cy="398.42972"
+               sodipodi:r1="3.6526456"
+               sodipodi:r2="1.8263229"
+               sodipodi:arg1="0.52391935"
+               sodipodi:arg2="1.5711169"
+               inkscape:rounded="0"
+               inkscape:randomized="0"
+               transform="matrix(1.2054248,0,0,1.2054248,-20.028026,162.60668)"
+               inkscape:transform-center-x="0.00071903649"
+               inkscape:transform-center-y="-1.1001616"
+               d="m 294.06068,400.25705 -3.16329,-0.001 -3.16328,-0.001 1.58252,-2.73898 1.58252,-2.73898 1.58076,2.73999 z" />
+            <title
+               id="title4412-4-8-4">Appliance</title>
+          </g>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="554.33807"
+             y="1146.1589"
+             id="text15379-9"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan15377-1"
+               x="554.33807"
+               y="1146.1589">13</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
+             x="576.53046"
+             y="1154.5562"
+             id="text17891-5"
+             inkscape:label="Furnace Label"><tspan
+               sodipodi:role="line"
+               x="576.53046"
+               y="1154.5562"
+               id="tspan3014-5">Furnace</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="559.83124"
+             y="1162.9592"
+             id="text14850"
+             inkscape:label="Location Label"><tspan
+               sodipodi:role="line"
+               id="tspan14848"
+               x="559.83124"
+               y="1162.9592">Attic</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="doors_checkbox"
+       inkscape:label="Doors Checkbox"
+       onclick="toggleCheck(this)"
+       transform="translate(715.55753,492.24203)"
+       style="fill:#ffffff;fill-opacity:0">
+      <g
+         id="g24377-1"
+         inkscape:label="X"
+         style="fill:#ffffff;fill-opacity:0">
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 298.11688,305.99506 -15.1181,15.1181 v 0"
+           id="path23942-70" />
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 282.99878,305.99506 15.1181,15.1181"
+           id="path23944-8" />
+      </g>
+      <rect
+         style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="doors_box"
+         width="15.118111"
+         height="15.118111"
+         x="282.99878"
+         y="305.99506"
+         inkscape:label="Box" />
+    </g>
+    <g
+       id="objects_checkbox"
+       inkscape:label="Objects Checkbox"
+       onclick="toggleCheck(this)"
+       transform="translate(715.55753,467.04397)"
+       style="fill:#ffffff;fill-opacity:0">
+      <g
+         id="g24377-7"
+         inkscape:label="X"
+         style="fill:#ffffff;fill-opacity:0">
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 298.11688,305.99506 -15.1181,15.1181 v 0"
+           id="path23942-7" />
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 282.99878,305.99506 15.1181,15.1181"
+           id="path23944-0" />
+      </g>
+      <rect
+         style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="objects_box"
+         width="15.118111"
+         height="15.118111"
+         x="282.99878"
+         y="305.99506"
+         inkscape:label="Box" />
+    </g>
+    <g
+       id="circuit_19_checkbox"
+       inkscape:label="Circuit 19 Checkbox"
+       onclick="toggleCheck(this)"
+       transform="translate(715.55753,441.84593)"
+       style="fill:#ffffff;fill-opacity:0">
+      <g
+         id="g24377-4-8"
+         inkscape:label="X"
+         style="fill:#ffffff;fill-opacity:0">
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 298.11688,305.99506 -15.1181,15.1181 v 0"
+           id="path23942-6-0" />
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 282.99878,305.99506 15.1181,15.1181"
+           id="path23944-7-2" />
+      </g>
+      <rect
+         style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circuit_19_box"
+         width="15.118111"
+         height="15.118111"
+         x="282.99878"
+         y="305.99506"
+         inkscape:label="Box" />
+    </g>
+    <g
+       id="circuit_16_checkbox"
+       inkscape:label="Circuit 16 Checkbox"
+       onclick="toggleCheck(this)"
+       transform="translate(715.55753,416.64788)"
+       style="fill:#ffffff;fill-opacity:0">
+      <g
+         id="g24377-4"
+         inkscape:label="X"
+         style="fill:#ffffff;fill-opacity:0">
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 298.11688,305.99506 -15.1181,15.1181 v 0"
+           id="path23942-6" />
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 282.99878,305.99506 15.1181,15.1181"
+           id="path23944-7" />
+      </g>
+      <rect
+         style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circuit_16_box"
+         width="15.118111"
+         height="15.118111"
+         x="282.99878"
+         y="305.99506"
+         inkscape:label="Box" />
+    </g>
+    <g
+       id="circuit_15_checkbox"
+       inkscape:label="Circuit 15 Checkbox"
+       onclick="toggleCheck(this)"
+       transform="translate(715.55753,391.44983)"
+       style="fill:#ffffff;fill-opacity:0">
+      <g
+         id="g24377-2"
+         inkscape:label="X"
+         style="fill:#ffffff;fill-opacity:0">
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 298.11688,305.99506 -15.1181,15.1181 v 0"
+           id="path23942-0" />
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 282.99878,305.99506 15.1181,15.1181"
+           id="path23944-6" />
+      </g>
+      <rect
+         style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circuit_15_box"
+         width="15.118111"
+         height="15.118111"
+         x="282.99878"
+         y="305.99506"
+         inkscape:label="Box" />
+    </g>
+    <g
+       id="circuit_13_checkbox"
+       inkscape:label="Circuit 13 Checkbox"
+       onclick="toggleCheck(this)"
+       style="fill:#ffffff;fill-opacity:1"
+       transform="translate(715.55753,366.25177)">
+      <g
+         id="g24377"
+         inkscape:label="X"
+         style="fill:#ffffff;fill-opacity:1">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 298.11688,305.99506 -15.1181,15.1181 v 0"
+           id="path23942" />
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 282.99878,305.99506 15.1181,15.1181"
+           id="path23944" />
+      </g>
+      <rect
+         style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circuit_13_box"
+         width="15.118111"
+         height="15.118111"
+         x="282.99878"
+         y="305.99506"
+         inkscape:label="Box" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+       x="1029.7869"
+       y="812.13306"
+       id="doors_check_label"
+       inkscape:label="Doors Check Label"
+       onclick="toggleCheck(this)"><tspan
+         sodipodi:role="line"
+         id="tspan7629"
+         x="1029.7869"
+         y="812.13306">Doors</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+       x="1030.3054"
+       y="787.14069"
+       id="objects_check_label"
+       inkscape:label="Objects Check Label"
+       onclick="toggleCheck(this)"><tspan
+         sodipodi:role="line"
+         id="tspan11371"
+         x="1030.3054"
+         y="787.14069">Objects</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+       x="1030.2791"
+       y="761.91095"
+       id="circuit_19_check_label"
+       inkscape:label="Circuit 19 Check Label"
+       onmouseover=""
+       onmouseout=""
+       onmousedown=""
+       onmouseup=""
+       onclick="toggleCheck(this)"><tspan
+         sodipodi:role="line"
+         id="tspan23049-9"
+         x="1030.2791"
+         y="761.91095"
+         style="font-size:18px">Circuit 19</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+       x="1030.2791"
+       y="736.69006"
+       id="circuit_16_check_label"
+       inkscape:label="Circuit 16 Check Label"
+       onmouseover=""
+       onmouseout=""
+       onmousedown=""
+       onmouseup=""
+       onclick="toggleCheck(this)"><tspan
+         sodipodi:role="line"
+         id="tspan23049"
+         x="1030.2791"
+         y="736.69006"
+         style="font-size:18px">Circuit 16</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+       x="1030.2791"
+       y="711.46918"
+       id="circuit_15_check_label"
+       inkscape:label="Circuit 15 Check Label"
+       onmouseout=""
+       onmouseover=""
+       onclick="toggleCheck(this)"><tspan
+         sodipodi:role="line"
+         id="tspan22671"
+         x="1030.2791"
+         y="711.46918"
+         style="font-size:18px">Circuit 15</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+       x="1030.2791"
+       y="686.24823"
+       id="circuit_13_check_label"
+       inkscape:label="Circuit 13 Check Label"
+       onmouseover=""
+       onmouseout=""
+       onclick="toggleCheck(this)"><tspan
+         sodipodi:role="line"
+         id="tspan16563"
+         x="1030.2791"
+         y="686.24823"
+         style="font-size:18px">Circuit 13</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+       x="1008.9858"
+       y="651.56036"
+       id="select_all_label"
+       inkscape:label="Select All Label"
+       onclick="toggleAll(true)"><tspan
+         sodipodi:role="line"
+         id="tspan35644"
+         x="1008.9858"
+         y="651.56036">All</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+       x="1050.4838"
+       y="651.4549"
+       id="deselect_all_label"
+       inkscape:label="Deselect All Label"
+       onclick="toggleAll(false)"><tspan
+         sodipodi:role="line"
+         id="tspan55824"
+         x="1050.4838"
+         y="651.4549">None</tspan></text>
+  </g>
+</svg>

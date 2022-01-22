@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Home Electrical Plan</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js" integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">1st Floor</a></li>
+    <li><a href="#tabs-2">2nd Floor &amp; Attic</a></li>
+    <li><a href="#tabs-3">Garage</a></li>
+  </ul>
+  <div id="tabs-1">
+		<br /><br />
+		<object id="first-svg" style="border:1px solid black" data="first_floor.svg" type="image/svg+xml"></object>
+  </div>
+  <div id="tabs-2">
+		<object id="second-svg" style="border:1px solid black" data="second_floor.svg" type="image/svg+xml"></object>
+  </div>
+  <div id="tabs-3">
+		<object id="garage-svg" style="border:1px solid black" data="garage.svg" type="image/svg+xml"></object>
+  </div>
+</div>
+
+	</body>
+	<script type="text/javascript">
+
+		$( function() {
+			$( "input" ).checkboxradio();
+			$("#tabs").tabs();
+		} );
+
+	</script>
+
+
+</html>

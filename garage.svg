@@ -1,0 +1,2482 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="415.09415"
+   height="729.14374"
+   version="1.1"
+   id="svg2170"
+   sodipodi:docname="garage.svg"
+   inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <script
+     id="script3018">
+function toggleCheck(object) {
+	var 
+		objectId,
+		objectPrefix,
+		box,
+		group;
+
+	// Cast the object's ID to a string.
+	objectId = '' + object.id;
+	// Remove any checkbox or check_label suffixes.
+	objectPrefix = objectId.replace('checkbox', '').replace('check_label', '');
+	// Get the associated checkbox.
+	box = document.getElementById(objectPrefix + 'box');
+	// Get the associated group.
+	group = document.getElementById(objectPrefix + 'group');
+	// Toggle the opacity of the box to make the X appear and toggle to group display.
+	if (box.style.fillOpacity === '1') {
+		// Checked
+		box.style.fillOpacity = '0';
+		group.style.display = 'inline';
+	} else {
+		// Not checked
+		box.style.fillOpacity = '1';
+		group.style.display = 'none';
+	}
+}
+
+function toggleCircuits(object, highlight) {
+	var 
+		objectId,
+		objectPrefix,
+		checkLabel;
+
+	// Cast the object's ID to a string.
+	objectId = '' + object.id;
+	// Remove the group suffix.
+	objectPrefix = objectId.replace('group', '');
+	// Get the associated check label.
+	checkLabel = document.getElementById(objectPrefix + 'check_label');
+	// Set the label to black.
+	checkLabel.style.fill = '#000000';
+	// Determine if we are highlighting a circuit.
+	if (highlight === true) {
+		checkLabel.style.fill = '#ff0000';
+	}
+}
+
+function toggleAll(checkAll) {
+	var
+		i,
+		objectPrefix,
+		group,
+		box,
+		objectsArr = [
+			'circuit_19',
+			'circuit_20',
+			'circuit_25',
+			'circuit_27_28',
+			'objects',
+			'doors'
+		];
+
+	// Loop on the objects array
+	for (i = 0; i &lt; objectsArr.length; i++) {
+		// Get the associated checkbox.
+		box = document.getElementById(objectsArr[i] + '_box');
+		// Get the associated group.
+		group = document.getElementById(objectsArr[i] + '_group');
+		// Toggle the opacity of the box to make the X appear and toggle to group display.
+		if (checkAll === true) {
+			// Checked
+			box.style.fillOpacity = '0';
+			group.style.display = 'inline';
+		} else {
+			// Not checked
+			box.style.fillOpacity = '1';
+			group.style.display = 'none';
+		}
+	}
+	
+}
+</script>
+  <defs
+     id="defs2174">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1761"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5620"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5138"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4694"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1571"
+       is_visible="true"
+       lpeversion="1" />
+    <linearGradient
+       id="linearGradient130508"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop130506" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect66817"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4049"
+       is_visible="true"
+       lpeversion="1" />
+    <symbol
+       id="QuadOutlet">
+      <title
+         id="title6658">Quad Outlet</title>
+      <circle
+         id="path291-8-2-9-7"
+         cx="383.86102"
+         cy="639.11035"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         r="9.75" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 374.861,635.61035 h 30 v 0"
+         id="path1300-7-3-0-8" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 374.86102,642.61038 h 30 v 0"
+         id="path1300-7-3-0-8-6" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 387.36102,630.11038 v 18 0"
+         id="path1300-7-3-0-8-6-4" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 380.36102,630.11038 v 18 0"
+         id="path1300-7-3-0-8-6-4-5" />
+      <title
+         id="title6926">Quad Outlet</title>
+    </symbol>
+    <symbol
+       id="DuplexOutlet">
+      <title
+         id="title13331">Duplex Outlet</title>
+      <circle
+         id="path291-8-2-9-7-7"
+         cx="344.11102"
+         cy="639.36035"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         r="9.75" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 335.111,635.86038 h 30 v 0"
+         id="path1300-7-3-0-8-1" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 335.11102,642.86041 h 30 v 0"
+         id="path1300-7-3-0-8-6-8" />
+      <title
+         id="title16696">Duplex Outlet</title>
+    </symbol>
+    <symbol
+       id="symbol21770">
+      <circle
+         id="Light"
+         cx="344.11102"
+         cy="669.36035"
+         style="display:inline;fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         r="9.75"
+         inkscape:label="#light">
+        <title
+           id="title16195">Light</title>
+      </circle>
+      <title
+         id="title21772">Light</title>
+    </symbol>
+    <symbol
+       id="symbol1802">
+      <text
+         xml:space="preserve"
+         style="font-size:4.8px;line-height:1.25;font-family:sans-serif;display:inline"
+         x="342.36374"
+         y="657.37628"
+         id="SwitchLabel"
+         inkscape:label="Switch Label"><tspan
+           sodipodi:role="line"
+           id="tspan7425-6-8-8-7-7"
+           x="342.36374"
+           y="657.37628"
+           style="font-weight:bold">S</tspan><tspan
+           sodipodi:role="line"
+           x="342.36374"
+           y="663.37628"
+           id="tspan7429-8-1-3-9-2" /></text>
+    </symbol>
+  </defs>
+  <sodipodi:namedview
+     id="namedview2172"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.0361785"
+     inkscape:cx="277.46185"
+     inkscape:cy="222.45202"
+     inkscape:window-width="1280"
+     inkscape:window-height="685"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2170"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10"
+     inkscape:connector-spacing="11"
+     lock-margins="false"
+     units="mm"
+     inkscape:snap-to-guides="false"
+     inkscape:snap-grids="false"
+     showguides="false" />
+  <clipPath
+     id="cl_3">
+    <rect
+       x="28.346457"
+       y="28.346457"
+       width="1223.3071"
+       height="1782.9528"
+       id="rect833" />
+  </clipPath>
+  <g
+     clip-path="url(#cl_3)"
+     id="g2164"
+     inkscape:label="Garage"
+     transform="translate(-37.147469,-244.81547)">
+    <path
+       id="backgroup_shading"
+       clip-path="none"
+       style="display:inline;fill:#000014;fill-opacity:0.0705882;stroke-width:53.5606"
+       inkscape:label="Background"
+       d="m 23.390625,23.390625 v 52.380859 h 35.027344 v 6.427735 H 23.443359 V 173.0918 h -6.695312 v 40.43945 h 6.695312 V 350.9668 h 0.05469 v 339.68164 h 20.726562 v 6.69531 H 303.35156 v -6.69531 h 70.75391 V 570.56445 h 6.69531 v -43.49023 h -6.69531 V 357.39453 H 175.50195 v -6.69531 h -0.0527 v -46.00977 h 6.69531 v -47.29297 h -6.69531 v -14.62304 h 6.69531 v -94.58789 h -6.69531 v -6.74805 h 6.69531 V 94.197266 h -6.69531 V 82.199219 h -35.4043 v -6.427735 h 35.34961 V 23.390625 Z"
+       transform="translate(54.747469,244.81547)"
+       sodipodi:insensitive="true" />
+    <g
+       id="walls_windows_group"
+       inkscape:label="Walls and Windows"
+       style="display:inline"
+       sodipodi:insensitive="true">
+      <g
+         id="g35732"
+         inkscape:label="Patio Door"
+         style="display:inline">
+        <path
+           fill="#636363"
+           transform="matrix(0,0.472752,0.267803,0,230.731,392.997)"
+           d="m 0.507,10.491 c -0.004667,-2 -0.009333,-4 -0.014,-6 33.3333,-0.073 66.6667,-0.146 100,-0.219 0.005,2 0.009,4 0.014,6 -33.3333,0.073 -66.6667,0.146 -100,0.219 z"
+           id="path2070" />
+        <path
+           fill="#636363"
+           transform="matrix(0,0.472752,0.267803,0,230.731,392.997)"
+           d="m 200.493,16.728 c -33.333,-0.0753 -66.667,-0.1507 -100,-0.226 0.005,-2 0.009,-4 0.014,-6 33.333,0.0753 66.667,0.1507 100,0.226 -0.005,2 -0.009,4 -0.014,6 z"
+           id="path2072" />
+        <path
+           fill="#000fff"
+           transform="matrix(0,0.472752,0.267803,0,230.731,392.997)"
+           d="m 12.505,10.447 c -0.0033,-2 -0.0067,-4 -0.01,-6 25.3333,-0.04333 50.6667,-0.08667 76,-0.13 0.0033,2 0.0067,4 0.01,6 -25.3333,0.0433 -50.6667,0.0867 -76,0.13 z"
+           id="path2074" />
+        <path
+           fill="#000fff"
+           transform="matrix(0,0.472752,0.267803,0,230.731,392.997)"
+           d="m 112.505,16.68 c -0.003,-2 -0.007,-4 -0.01,-6 25.333,-0.0433 50.667,-0.0867 76,-0.13 0.003,2 0.007,4 0.01,6 -25.333,0.0433 -50.667,0.0867 -76,0.13 z"
+           id="path2076" />
+      </g>
+      <g
+         id="g28318"
+         inkscape:label="Window"
+         style="display:inline">
+        <path
+           fill="#ffffff"
+           transform="matrix(0,-0.202365,-0.214242,0,78.1666,458.345)"
+           d="m 1.5,1.5 c 66,0 132,0 198,0 0,9.3333 0,18.6667 0,28 -66,0 -132,0 -198,0 0,-9.3333 0,-18.6667 0,-28 z"
+           id="path2078" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,-0.202365,-0.214242,0,78.1666,458.345)"
+           d="m 1.5,1.5 c 66,0 132,0 198,0 0,9.3333 0,18.6667 0,28 -66,0 -132,0 -198,0 0,-9.3333 0,-18.6667 0,-28 z"
+           id="path2080" />
+        <path
+           transform="matrix(0,-0.202365,-0.214242,0,78.1666,458.345)"
+           d="m 8.5,10.63 c 61.3333,-0.0433 122.667,-0.0867 184,-0.13"
+           id="path2082" />
+        <path
+           fill="none"
+           stroke="#000fff"
+           stroke-width="6"
+           stroke-miterlimit="4"
+           transform="matrix(0,-0.202365,-0.214242,0,78.1666,458.345)"
+           d="m 8.5,10.63 c 61.3333,-0.0433 122.667,-0.0867 184,-0.13"
+           id="path2084" />
+        <path
+           transform="matrix(0,-0.202365,-0.214242,0,78.1666,458.345)"
+           d="m 1.5,5.5 c 2,0 4,0 6,0 0,3.66667 0,7.3333 0,11 -2,0 -4,0 -6,0 0,-3.6667 0,-7.33333 0,-11 z"
+           id="path2086" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,-0.202365,-0.214242,0,78.1666,458.345)"
+           d="m 1.5,5.5 c 2,0 4,0 6,0 0,3.66667 0,7.3333 0,11 -2,0 -4,0 -6,0 0,-3.6667 0,-7.33333 0,-11 z"
+           id="path2088" />
+        <path
+           transform="matrix(0,-0.202365,-0.214242,0,78.1666,458.345)"
+           d="m 193.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path2090" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,-0.202365,-0.214242,0,78.1666,458.345)"
+           d="m 193.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path2092" />
+        <path
+           transform="matrix(0,-0.202365,-0.214242,0,78.1666,458.345)"
+           d="m 8.5,20.63 c 61.3333,-0.0433 122.667,-0.0867 184,-0.13"
+           id="path2094" />
+        <path
+           fill="none"
+           stroke="#000fff"
+           stroke-width="6"
+           stroke-miterlimit="4"
+           transform="matrix(0,-0.202365,-0.214242,0,78.1666,458.345)"
+           d="m 8.5,20.63 c 61.3333,-0.0433 122.667,-0.0867 184,-0.13"
+           id="path2096" />
+        <path
+           transform="matrix(0,-0.202365,-0.214242,0,78.1666,458.345)"
+           d="m 193.5,5.5 c 2,0 4,0 6,0 0,3.33333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.66667 0,-10 z"
+           id="path2098" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,-0.202365,-0.214242,0,78.1666,458.345)"
+           d="m 193.5,5.5 c 2,0 4,0 6,0 0,3.33333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.66667 0,-10 z"
+           id="path2100" />
+        <path
+           transform="matrix(0,-0.202365,-0.214242,0,78.1666,458.345)"
+           d="m 1.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path2102" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,-0.202365,-0.214242,0,78.1666,458.345)"
+           d="m 1.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path2104" />
+      </g>
+      <g
+         id="g32594"
+         inkscape:label="Window"
+         style="display:inline">
+        <path
+           fill="#ffffff"
+           transform="matrix(0,0.236376,0.214242,0,230.195,338.96)"
+           d="m 1.5,1.5 c 66,0 132,0 198,0 0,9.3333 0,18.6667 0,28 -66,0 -132,0 -198,0 0,-9.3333 0,-18.6667 0,-28 z"
+           id="path2106" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.236376,0.214242,0,230.195,338.96)"
+           d="m 1.5,1.5 c 66,0 132,0 198,0 0,9.3333 0,18.6667 0,28 -66,0 -132,0 -198,0 0,-9.3333 0,-18.6667 0,-28 z"
+           id="path2108" />
+        <path
+           transform="matrix(0,0.236376,0.214242,0,230.195,338.96)"
+           d="m 8.5,10.63 c 61.3333,-0.0433 122.667,-0.0867 184,-0.13"
+           id="path2110" />
+        <path
+           fill="none"
+           stroke="#000fff"
+           stroke-width="6"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.236376,0.214242,0,230.195,338.96)"
+           d="m 8.5,10.63 c 61.3333,-0.0433 122.667,-0.0867 184,-0.13"
+           id="path2112" />
+        <path
+           transform="matrix(0,0.236376,0.214242,0,230.195,338.96)"
+           d="m 1.5,5.5 c 2,0 4,0 6,0 0,3.66667 0,7.3333 0,11 -2,0 -4,0 -6,0 0,-3.6667 0,-7.33333 0,-11 z"
+           id="path2114" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.236376,0.214242,0,230.195,338.96)"
+           d="m 1.5,5.5 c 2,0 4,0 6,0 0,3.66667 0,7.3333 0,11 -2,0 -4,0 -6,0 0,-3.6667 0,-7.33333 0,-11 z"
+           id="path2116" />
+        <path
+           transform="matrix(0,0.236376,0.214242,0,230.195,338.96)"
+           d="m 193.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path2118" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.236376,0.214242,0,230.195,338.96)"
+           d="m 193.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path2120" />
+        <path
+           transform="matrix(0,0.236376,0.214242,0,230.195,338.96)"
+           d="m 8.5,20.63 c 61.3333,-0.0433 122.667,-0.0867 184,-0.13"
+           id="path2122" />
+        <path
+           fill="none"
+           stroke="#000fff"
+           stroke-width="6"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.236376,0.214242,0,230.195,338.96)"
+           d="m 8.5,20.63 c 61.3333,-0.0433 122.667,-0.0867 184,-0.13"
+           id="path2124" />
+        <path
+           transform="matrix(0,0.236376,0.214242,0,230.195,338.96)"
+           d="m 193.5,5.5 c 2,0 4,0 6,0 0,3.33333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.66667 0,-10 z"
+           id="path2126" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.236376,0.214242,0,230.195,338.96)"
+           d="m 193.5,5.5 c 2,0 4,0 6,0 0,3.33333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.66667 0,-10 z"
+           id="path2128" />
+        <path
+           transform="matrix(0,0.236376,0.214242,0,230.195,338.96)"
+           d="m 1.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path2130" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.236376,0.214242,0,230.195,338.96)"
+           d="m 1.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path2132" />
+      </g>
+      <g
+         id="g34686"
+         inkscape:label="Window"
+         style="display:inline">
+        <path
+           fill="#ffffff"
+           transform="matrix(0,0.236376,0.214242,0,230.195,502.197)"
+           d="m 1.5,1.5 c 66,0 132,0 198,0 0,9.3333 0,18.6667 0,28 -66,0 -132,0 -198,0 0,-9.3333 0,-18.6667 0,-28 z"
+           id="path2134" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.236376,0.214242,0,230.195,502.197)"
+           d="m 1.5,1.5 c 66,0 132,0 198,0 0,9.3333 0,18.6667 0,28 -66,0 -132,0 -198,0 0,-9.3333 0,-18.6667 0,-28 z"
+           id="path2136" />
+        <path
+           transform="matrix(0,0.236376,0.214242,0,230.195,502.197)"
+           d="m 8.5,10.63 c 61.3333,-0.0433 122.667,-0.0867 184,-0.13"
+           id="path2138" />
+        <path
+           fill="none"
+           stroke="#000fff"
+           stroke-width="6"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.236376,0.214242,0,230.195,502.197)"
+           d="m 8.5,10.63 c 61.3333,-0.0433 122.667,-0.0867 184,-0.13"
+           id="path2140" />
+        <path
+           transform="matrix(0,0.236376,0.214242,0,230.195,502.197)"
+           d="m 1.5,5.5 c 2,0 4,0 6,0 0,3.66667 0,7.3333 0,11 -2,0 -4,0 -6,0 0,-3.6667 0,-7.33333 0,-11 z"
+           id="path2142" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.236376,0.214242,0,230.195,502.197)"
+           d="m 1.5,5.5 c 2,0 4,0 6,0 0,3.66667 0,7.3333 0,11 -2,0 -4,0 -6,0 0,-3.6667 0,-7.33333 0,-11 z"
+           id="path2144" />
+        <path
+           transform="matrix(0,0.236376,0.214242,0,230.195,502.197)"
+           d="m 193.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path2146" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.236376,0.214242,0,230.195,502.197)"
+           d="m 193.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path2148" />
+        <path
+           transform="matrix(0,0.236376,0.214242,0,230.195,502.197)"
+           d="m 8.5,20.63 c 61.3333,-0.0433 122.667,-0.0867 184,-0.13"
+           id="path2150" />
+        <path
+           fill="none"
+           stroke="#000fff"
+           stroke-width="6"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.236376,0.214242,0,230.195,502.197)"
+           d="m 8.5,20.63 c 61.3333,-0.0433 122.667,-0.0867 184,-0.13"
+           id="path2152" />
+        <path
+           transform="matrix(0,0.236376,0.214242,0,230.195,502.197)"
+           d="m 193.5,5.5 c 2,0 4,0 6,0 0,3.33333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.66667 0,-10 z"
+           id="path2154" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.236376,0.214242,0,230.195,502.197)"
+           d="m 193.5,5.5 c 2,0 4,0 6,0 0,3.33333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.66667 0,-10 z"
+           id="path2156" />
+        <path
+           transform="matrix(0,0.236376,0.214242,0,230.195,502.197)"
+           d="m 1.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path2158" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="3"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.236376,0.214242,0,230.195,502.197)"
+           d="m 1.5,15.5 c 2,0 4,0 6,0 0,3.3333 0,6.6667 0,10 -2,0 -4,0 -6,0 0,-3.3333 0,-6.6667 0,-10 z"
+           id="path2160" />
+      </g>
+      <path
+         id="path836"
+         clip-path="none"
+         style="display:inline;stroke-width:53.5606"
+         inkscape:label="Walls"
+         d="M 10,10 V 173.0918 H 23.443359 V 82.199219 h 34.97461 V 75.771484 H 23.390625 V 23.390625 H 175.39453 v 52.380859 h -35.34961 v 6.427735 h 35.4043 v 11.998047 h 13.38867 V 10 Z m 165.44922,131.4375 v 6.74805 h 13.38867 V 141.4375 Z M 10,213.53125 V 704.03906 H 44.224609 V 690.64844 H 23.498047 V 350.9668 h -0.05469 V 213.53125 Z m 165.44922,29.24219 v 14.62304 h 13.38867 v -14.62304 z m 0,61.91601 v 45.74219 h 0.0527 v 6.96289 h 198.60352 v 169.67969 h 13.38867 V 344.00391 H 188.83789 v -39.31446 z m 198.65625,265.875 v 120.08399 h -70.75391 v 13.39062 h 84.14258 V 570.56445 Z"
+         transform="translate(54.747469,244.81547)" />
+    </g>
+    <g
+       id="doors_group"
+       inkscape:label="Doors"
+       style="display:inline"
+       sodipodi:insensitive="true">
+      <g
+         id="g21798"
+         inkscape:label="Side Garage Door"
+         style="display:inline">
+        <path
+           fill="none"
+           stroke="#636363"
+           stroke-width="1"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.43534,0.43534,0,388.487,771.845)"
+           d="m 0.5,0.5 c 54.676,0 99,44.772 99,100"
+           id="path1308" />
+        <path
+           fill="#636363"
+           transform="matrix(0,0.43534,0.43534,0,388.487,771.845)"
+           d="M 0,100 C 0,66.6667 0,33.3333 0,0 c 3.33333,0 6.66667,0 10,0 0,33.3333 0,66.6667 0,100 -3.33333,0 -6.66667,0 -10,0 z"
+           id="path1310" />
+      </g>
+      <g
+         id="g23697"
+         inkscape:label="Overhead Garage Door"
+         style="display:inline">
+        <path
+           fill="none"
+           stroke="#636363"
+           stroke-width="5"
+           stroke-miterlimit="4"
+           transform="matrix(-0.863878,0,0,0.35707,358.091,834.721)"
+           d="m 134.97,285.149 c 0.003,4.256 0.006,8.512 0.009,12.768 10.35,-0.027 20.701,-0.054 31.051,-0.081 0,-4.229 0,-8.458 0,-12.687"
+           id="path1312" />
+        <path
+           fill="none"
+           stroke="#636363"
+           stroke-width="5"
+           stroke-miterlimit="4"
+           transform="matrix(-0.863878,0,0,0.35707,358.091,834.721)"
+           d="M 2.265,286.353 C 2.33467,209.892 2.40433,133.43 2.474,56.969"
+           id="path1314" />
+        <path
+           fill="#ffffff"
+           transform="matrix(-0.863878,0,0,0.35707,358.091,834.721)"
+           d="m 5.5,184.5 c 96.667,0 193.333,0 290,0 0,33.775 0,67.549 0,101.324 -96.667,0 -193.333,0 -290,0 0,-33.775 0,-67.549 0,-101.324 z"
+           id="path1316" />
+        <path
+           fill="none"
+           stroke="#636363"
+           stroke-width="10"
+           stroke-miterlimit="4"
+           transform="matrix(-0.863878,0,0,0.35707,358.091,834.721)"
+           d="m 5.5,184.5 c 96.667,0 193.333,0 290,0 0,33.775 0,67.549 0,101.324 -96.667,0 -193.333,0 -290,0 0,-33.775 0,-67.549 0,-101.324 z"
+           id="path1318" />
+        <path
+           fill="none"
+           stroke="#636363"
+           stroke-width="5"
+           stroke-miterlimit="4"
+           transform="matrix(-0.863878,0,0,0.35707,358.091,834.721)"
+           d="m 297.909,285.15 c 0.07,-76.461 0.14,-152.923 0.21,-229.384"
+           id="path1320" />
+        <path
+           fill="none"
+           stroke="#636363"
+           stroke-width="5"
+           stroke-miterlimit="4"
+           transform="matrix(-0.863878,0,0,0.35707,358.091,834.721)"
+           d="m 0.5,264.62 c 100,0.013 200,0.027 300,0.04"
+           id="path1322" />
+        <path
+           fill="none"
+           stroke="#636363"
+           stroke-width="5"
+           stroke-miterlimit="4"
+           transform="matrix(-0.863878,0,0,0.35707,358.091,834.721)"
+           d="m 0.5,225.045 c 100,0.013 200,0.027 300,0.04"
+           id="path1324" />
+      </g>
+      <g
+         id="g17599"
+         inkscape:label="Shop Closet Doors"
+         style="display:inline">
+        <path
+           fill="none"
+           stroke="#636363"
+           stroke-width="1"
+           stroke-miterlimit="4"
+           transform="matrix(-0.408132,0,0,-0.408132,194.744,364.592)"
+           d="m 0.5,0.5 c 55.786,0 101.01,44.772 101.01,100"
+           id="path1326" />
+        <path
+           fill="none"
+           stroke="#636363"
+           stroke-width="1"
+           stroke-miterlimit="4"
+           transform="matrix(-0.408132,0,0,-0.408132,194.744,364.592)"
+           d="m 200.5,0.5 c -54.671,0 -98.99,44.772 -98.99,100"
+           id="path1328" />
+        <path
+           fill="#636363"
+           transform="matrix(-0.408132,0,0,-0.408132,194.744,364.592)"
+           d="M 0,100.5 C 0,67.1667 0,33.8333 0,0.5 c 3.33333,0 6.66667,0 10,0 0,33.3333 0,66.6667 0,100 -3.33333,0 -6.66667,0 -10,0 z"
+           id="path1330" />
+        <path
+           fill="#636363"
+           transform="matrix(-0.408132,0,0,-0.408132,194.744,364.592)"
+           d="m 190,100 c 0,-33.3333 0,-66.6667 0,-100 3.333,0 6.667,0 10,0 0,33.3333 0,66.6667 0,100 -3.333,0 -6.667,0 -10,0 z"
+           id="path1332" />
+      </g>
+    </g>
+    <g
+       id="room_labels_group"
+       inkscape:label="Room Labels"
+       sodipodi:insensitive="true">
+      <text
+         xml:space="preserve"
+         style="font-size:24px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+         x="201.91156"
+         y="833.09033"
+         id="text4052"
+         inkscape:label="Garage Label"
+         sodipodi:insensitive="true"><tspan
+           sodipodi:role="line"
+           id="tspan4050"
+           x="201.91156"
+           y="833.09033"
+           style="font-size:24px">Garage</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:24px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+         x="133.30525"
+         y="456.17255"
+         id="text4052-5"
+         inkscape:label="Shop Label"
+         sodipodi:insensitive="true"><tspan
+           sodipodi:role="line"
+           id="tspan4050-4"
+           x="133.30525"
+           y="456.17255"
+           style="font-size:24px">Shop</tspan></text>
+    </g>
+    <g
+       id="objects_group"
+       inkscape:label="Objects"
+       style="display:inline"
+       sodipodi:insensitive="true">
+      <g
+         id="g20714"
+         inkscape:label="Workbench"
+         style="display:inline"
+         sodipodi:insensitive="true">
+        <path
+           fill="#ffffff"
+           fill-opacity="0.74902"
+           transform="matrix(0,0.207467,-0.170055,0,428.807,852.428)"
+           d="m 0,0 c 133.333,0 266.667,0 400,0 0,66.6667 0,133.333 0,200 -133.333,0 -266.667,0 -400,0 C 0,133.333 0,66.6667 0,0 Z"
+           id="path1296" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="5"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.207467,-0.170055,0,428.807,852.428)"
+           d="m 0,0 c 133.333,0 266.667,0 400,0 0,66.6667 0,133.333 0,200 -133.333,0 -266.667,0 -400,0 C 0,133.333 0,66.6667 0,0 Z"
+           id="path1298" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="5"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.207467,-0.170055,0,428.807,852.428)"
+           d="M 0,8 C 133.333,8 266.667,8 400,8"
+           id="path1300" />
+      </g>
+      <g
+         id="g19764"
+         inkscape:label="Workbench"
+         style="display:inline"
+         sodipodi:insensitive="true">
+        <path
+           fill="#ffffff"
+           fill-opacity="0.74902"
+           transform="matrix(0,0.329906,-0.170055,0,428.807,635.371)"
+           d="m 0,0 c 133.333,0 266.667,0 400,0 0,66.6667 0,133.333 0,200 -133.333,0 -266.667,0 -400,0 C 0,133.333 0,66.6667 0,0 Z"
+           id="path1302" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="5"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.329906,-0.170055,0,428.807,635.371)"
+           d="m 0,0 c 133.333,0 266.667,0 400,0 0,66.6667 0,133.333 0,200 -133.333,0 -266.667,0 -400,0 C 0,133.333 0,66.6667 0,0 Z"
+           id="path1304" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="5"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.329906,-0.170055,0,428.807,635.371)"
+           d="M 0,8 C 133.333,8 266.667,8 400,8"
+           id="path1306" />
+      </g>
+      <g
+         id="g19764-7"
+         inkscape:label="Workbench"
+         style="display:inline;stroke-width:1.03339"
+         transform="matrix(0.94458929,0,0,0.99135135,-294.72924,-166.61486)"
+         sodipodi:insensitive="true">
+        <path
+           fill="#ffffff"
+           fill-opacity="0.74902"
+           transform="matrix(0,0.329906,-0.170055,0,428.807,635.371)"
+           d="m 0,0 c 133.333,0 266.667,0 400,0 0,66.6667 0,133.333 0,200 -133.333,0 -266.667,0 -400,0 C 0,133.333 0,66.6667 0,0 Z"
+           id="path1302-9"
+           style="stroke-width:1.03489" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="5.16695"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.329906,-0.170055,0,428.807,635.371)"
+           d="m 0,0 c 133.333,0 266.667,0 400,0 0,66.6667 0,133.333 0,200 -133.333,0 -266.667,0 -400,0 C 0,133.333 0,66.6667 0,0 Z"
+           id="path1304-3" />
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-width="5.16695"
+           stroke-miterlimit="4"
+           transform="matrix(0,0.329906,-0.170055,0,428.807,635.371)"
+           d="M 0,8 C 133.333,8 266.667,8 400,8"
+           id="path1306-8" />
+      </g>
+    </g>
+    <g
+       id="electrical_group"
+       inkscape:label="Electrical"
+       style="display:inline"
+       sodipodi:insensitive="true">
+      <g
+         id="circuit_27_28_group"
+         inkscape:label="Circuit 27 &amp; 28"
+         style="display:inline"
+         onmouseover="toggleCircuits(this, true)"
+         onmouseout="toggleCircuits(this, false)">
+        <g
+           id="g34857"
+           inkscape:label="Electric Vehicle Outlet"
+           style="display:inline">
+          <use
+             xlink:href="#DuplexOutlet"
+             id="use3337-8-5-9-6-0-2"
+             transform="matrix(0,-0.52110559,0.53018373,0,-95.093911,792.10964)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="stroke-width:1.90249"
+             inkscape:label="Outlet" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="252.80212"
+             y="614.80756"
+             id="text6942-2-7-8-7"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               x="252.80212"
+               y="614.80756"
+               style="font-size:6px"
+               id="tspan23354">27/28</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="238.81339"
+             y="625.49219"
+             id="text6942-2-7-8-7-7"
+             inkscape:label="220 Label"><tspan
+               sodipodi:role="line"
+               x="238.81339"
+               y="625.49219"
+               style="font-size:6px"
+               id="tspan32089">220</tspan></text>
+        </g>
+      </g>
+      <g
+         id="circuit_25_group"
+         inkscape:label="Circuit 25"
+         style="display:inline"
+         onmouseover="toggleCircuits(this, true)"
+         onmouseout="toggleCircuits(this, false)">
+        <g
+           id="g26245"
+           inkscape:label="Duplex Outlet"
+           style="display:inline">
+          <use
+             xlink:href="#DuplexOutlet"
+             id="use3337-8-5-9-5"
+             transform="matrix(0,0.52110559,0.53018373,0,-133.28829,130.93739)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="stroke-width:1.90249"
+             inkscape:label="Duplex Outlet" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="212.69443"
+             y="315.17615"
+             id="text6942-6"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-0"
+               x="212.69443"
+               y="315.17615"
+               style="font-size:6px">25</tspan></text>
+        </g>
+        <g
+           id="g143041"
+           inkscape:label="GFCI Duplex Outlet">
+          <use
+             xlink:href="#DuplexOutlet"
+             id="use3337-8"
+             transform="matrix(0,-0.52110559,0.53018373,0,-133.28829,516.67945)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="stroke-width:1.90249"
+             inkscape:label="Duplex Outlet" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="212.69443"
+             y="336.67996"
+             id="text6942-0"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-9"
+               x="212.69443"
+               y="336.67996"
+               style="font-size:6px">25</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="210.636"
+             y="344.97955"
+             id="text6942-0-7"
+             inkscape:label="GFCI Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-9-3"
+               x="210.636"
+               y="344.97955"
+               style="font-size:6px">GFCI</tspan></text>
+        </g>
+        <g
+           id="g26280"
+           inkscape:label="Duplex Outlet">
+          <use
+             xlink:href="#DuplexOutlet"
+             id="use3337-8-5"
+             transform="matrix(0,-0.52110559,0.53018373,0,-238.26043,516.67945)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="stroke-width:1.90249"
+             inkscape:label="Duplex Outlet" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="108.37192"
+             y="336.67996"
+             id="text6942-5"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-6"
+               x="108.37192"
+               y="336.67996"
+               style="font-size:6px">25</tspan></text>
+        </g>
+        <g
+           id="g26275"
+           inkscape:label="Duplex Outlet">
+          <use
+             xlink:href="#DuplexOutlet"
+             id="use3337-8-5-9"
+             transform="matrix(0,0.52110559,0.53018373,0,-238.26043,130.93739)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="stroke-width:1.90249"
+             inkscape:label="Duplex Outlet" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="108.37192"
+             y="315.17615"
+             id="text6942-2"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8"
+               x="108.37192"
+               y="315.17615"
+               style="font-size:6px">25</tspan></text>
+        </g>
+        <g
+           id="g26382"
+           inkscape:label="Duplex Outlet"
+           transform="translate(-11.135714,8)">
+          <use
+             xlink:href="#DuplexOutlet"
+             id="use3337-8-5-9-6"
+             transform="matrix(-0.52110559,0,0,0.53018373,278.92001,58.00848)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="stroke-width:1.90249"
+             inkscape:label="Duplex Outlet" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="106.32451"
+             y="398.97629"
+             id="text6942-2-7"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8"
+               x="106.32451"
+               y="398.97629"
+               style="font-size:6px">25</tspan></text>
+        </g>
+        <g
+           id="g26270"
+           inkscape:label="Ceiling Quad Outlet"
+           style="display:inline"
+           transform="translate(-2.6449792,37.037621)">
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="138.06244"
+             y="359.43375"
+             id="text7314"
+             inkscape:label="Location Label"><tspan
+               sodipodi:role="line"
+               id="tspan7312"
+               x="138.06244"
+               y="359.43375">Ceiling Outlet</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="162.36844"
+             y="347.078"
+             id="text6942-0-4"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-9-0"
+               x="162.36844"
+               y="347.078"
+               style="font-size:6px">25</tspan></text>
+          <use
+             xlink:href="#QuadOutlet"
+             id="use3378"
+             transform="matrix(0,-0.52119604,0.53018373,0,-182.96331,547.82666)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="stroke-width:1.90233"
+             inkscape:label="Quad Outlet" />
+        </g>
+        <g
+           id="g26432"
+           inkscape:label="Quad Outlet"
+           transform="translate(-10.98666,-26.22622)">
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="106.70488"
+             y="514.159"
+             id="text6942-0-4-0"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-9-0-3"
+               x="106.70488"
+               y="514.159"
+               style="font-size:6px">25</tspan></text>
+          <use
+             xlink:href="#QuadOutlet"
+             id="use3378-0"
+             transform="matrix(-0.52119604,0,0,-0.53018373,299.97363,850.755)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="stroke-width:1.90233"
+             inkscape:label="Quad Outlet" />
+        </g>
+        <g
+           id="g26432-0"
+           inkscape:label="Quad Outlet"
+           transform="translate(-10.508822,50.810691)"
+           style="display:inline">
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="106.70488"
+             y="514.159"
+             id="text6942-0-4-0-3"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-9-0-3-1"
+               x="106.70488"
+               y="514.159"
+               style="font-size:6px">25</tspan></text>
+          <use
+             xlink:href="#QuadOutlet"
+             id="use3378-0-1"
+             transform="matrix(-0.52119604,0,0,-0.53018373,299.97363,850.755)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="stroke-width:1.90233"
+             inkscape:label="Quad Outlet" />
+        </g>
+        <g
+           id="g44851"
+           inkscape:label="Duplex Outlet"
+           inkscape:connector-avoid="true">
+          <use
+             xlink:href="#DuplexOutlet"
+             id="use3337-8-5-9-6-0"
+             transform="matrix(0.52110559,0,0,0.53018373,39.975221,226.82949)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="stroke-width:1.90249"
+             inkscape:label="Duplex Outlet"
+             inkscape:connector-avoid="true" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="205.61797"
+             y="567.7973"
+             id="text6942-2-7-8"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4"
+               x="205.61797"
+               y="567.7973"
+               style="font-size:6px">25</tspan></text>
+        </g>
+      </g>
+      <g
+         id="circuit_20_group"
+         inkscape:label="Circuit 20"
+         style="display:inline"
+         inkscape:connector-avoid="true"
+         onmouseover="toggleCircuits(this, true)"
+         onmouseout="toggleCircuits(this, false)">
+        <g
+           id="g65837"
+           inkscape:label="GFCI Duplex Outlet"
+           inkscape:connector-avoid="true">
+          <use
+             xlink:href="#DuplexOutlet"
+             id="use3337-8-5-9-6-0-9-8"
+             transform="matrix(0,-0.52110559,-0.53018373,0,590.30731,1134.7146)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="display:inline;stroke-width:1.90249"
+             inkscape:label="Duplex Outlet" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="258.25351"
+             y="957.21869"
+             id="text6942-2-7-8-9-2"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-0"
+               x="258.25351"
+               y="957.21869"
+               style="font-size:6px">20</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="256.11536"
+             y="963.88599"
+             id="text6942-2-7-8-9-2-0"
+             inkscape:label="GFCI Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-0-0"
+               x="256.11536"
+               y="963.88599"
+               style="font-size:6px">GFCI</tspan></text>
+        </g>
+        <g
+           id="g31311"
+           inkscape:label="Shop Lights"
+           style="display:inline">
+          <use
+             xlink:href="#symbol21770"
+             id="use29625"
+             transform="matrix(0.53018373,0,0,0.53018373,13.099787,196.14034)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="stroke-width:1.88614"
+             inkscape:label="Recessed Light"
+             inkscape:connector-avoid="true" />
+          <use
+             xlink:href="#symbol21770"
+             id="use29625-5"
+             transform="matrix(0.53018373,0,0,0.53018373,-68.93108,196.14034)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="display:inline;stroke-width:1.88614"
+             inkscape:label="Recessed Light" />
+          <use
+             xlink:href="#symbol21770"
+             id="use29625-0"
+             transform="matrix(0.53018373,0,0,0.53018373,-68.93108,15.03766)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="display:inline;stroke-width:1.88614"
+             inkscape:label="Recessed Light" />
+          <use
+             xlink:href="#symbol21770"
+             id="use29625-6"
+             transform="matrix(0.53018373,0,0,0.53018373,13.099787,15.03766)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="display:inline;stroke-width:1.88614"
+             inkscape:label="Recessed Light" />
+          <use
+             xlink:href="#symbol1802"
+             id="use30029"
+             transform="translate(-117.34902,-60.078051)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             inkscape:label="Light Switch" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="117.92139"
+             y="378.89059"
+             id="text6942-2-7-8-9-32"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-5"
+               x="117.92139"
+               y="378.89059"
+               style="font-size:6px">20</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="199.92693"
+             y="545.88135"
+             id="text6942-2-7-8-9-3"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-3"
+               x="199.92693"
+               y="545.88135"
+               style="font-size:6px">20</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="117.92139"
+             y="545.88135"
+             id="text6942-2-7-8-9-7"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-7"
+               x="117.92139"
+               y="545.88135"
+               style="font-size:6px">20</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="213.42668"
+             y="600.98907"
+             id="text39461-5"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan39459-3"
+               x="213.42668"
+               y="600.98907"
+               style="font-size:6px">20</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="199.92693"
+             y="378.89059"
+             id="text6942-2-7-8-9-6"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-34"
+               x="199.92693"
+               y="378.89059"
+               style="font-size:6px">20</tspan></text>
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 196.01772,369.79226 c -7.087,-0.26497 -14.18478,-0.24151 -21.26988,0.0703 -12.79205,0.56297 -25.76164,2.05218 -38.29041,-0.59043 -3.5471,-0.74817 -7.05681,-1.82745 -10.67937,-1.96459 -1.81127,-0.0686 -3.64451,0.10433 -5.3691,0.66219 -1.72459,0.55785 -3.33931,1.51321 -4.54825,2.86372 -1.80877,2.02058 -2.59571,4.78672 -2.74013,7.49477 -0.14442,2.70805 0.29568,5.40816 0.65518,8.09613 2.17167,16.23734 1.43103,32.70218 0.99071,49.07819 -0.45769,17.02211 -0.58595,34.06692 0.36417,51.06866 0.75818,13.56705 2.19706,27.25568 0.0705,40.67647 -0.86664,5.46941 -2.32599,10.91617 -2.05799,16.44733 0.134,2.76558 0.71382,5.53676 1.95906,8.00976 1.24524,2.47301 3.18526,4.63649 5.64617,5.90547 3.05417,1.57489 6.73171,1.67551 10.04111,0.75024 3.30939,-0.92527 6.28425,-2.80729 8.91568,-5.01722 5.26285,-4.41987 9.34784,-10.22047 15.08879,-13.99862 6.68714,-4.40084 15.37624,-5.61029 23.0148,-3.21495 7.63856,2.39534 14.07788,8.34464 17.08075,15.76542 2.626,6.48944 2.65864,13.68191 3.54522,20.62616 0.44328,3.47213 1.11544,6.9407 2.42243,10.18784 1.30698,3.24715 3.28083,6.27944 6.01101,8.46994 3.53611,2.83712 8.28421,4.10843 12.76488,3.41783"
+             id="path5618"
+             inkscape:path-effect="#path-effect5620"
+             inkscape:original-d="m 196.01772,369.79226 c -122.530535,-15.55581 -13.03367,-15.1972 -21.26988,0.0703 -4.11932,7.636 -28.01793,6.91842 -38.29041,-0.59043 -10.27247,-7.50885 -11.49475,-13.2291 -20.59672,1.56132 -18.203945,29.58084 8.71331,-0.65345 -2.08495,15.5909 -10.79827,16.24435 -12.9807,73.81942 0.99071,49.07819 3.6231,-6.41596 1.92278,26.48132 0.36417,51.06866 -1.55861,24.58734 -1.83153,55.16454 0.0705,40.67647 192.9952,-1470.10981 -0.002,24.84227 5.54724,30.36256 106.19572,105.64894 16.14894,-18.13175 34.04558,-18.2656 17.89664,-0.13385 31.93731,5.15349 40.09555,12.55047 8.15824,7.39698 4.80293,33.76363 11.97866,39.28394 7.69552,5.92018 5.03046,-3.61336 12.76488,3.41783"
+             sodipodi:nodetypes="cssssssssscsc"
+             inkscape:label="Wiring" />
+        </g>
+        <g
+           id="g111989"
+           inkscape:label="Closet Light">
+          <use
+             xlink:href="#symbol1802"
+             id="use3742"
+             transform="translate(-148.55608,-339.14526)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             inkscape:label="Light Switch" />
+          <use
+             xlink:href="#symbol21770"
+             id="use3772"
+             transform="matrix(0.53018373,0,0,0.53018373,-68.93108,-60.353275)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="stroke-width:1.88614"
+             inkscape:label="Recessed Light" />
+          <use
+             xlink:href="#symbol21770"
+             id="use3772-1"
+             transform="matrix(0.53018373,0,0,0.53018373,13.099787,-60.116239)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="stroke-width:1.88614"
+             inkscape:label="Recessed Light" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="184.37794"
+             y="318.60574"
+             id="text6942"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               x="184.37794"
+               y="318.60574"
+               style="font-size:6px"
+               id="tspan21739">20</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="117.92139"
+             y="304.72583"
+             id="text6942-06"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               x="117.92139"
+               y="304.72583"
+               style="font-size:6px"
+               id="tspan21739-0">20</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="183.92693"
+             y="304.72583"
+             id="text6942-4"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               x="183.92693"
+               y="304.72583"
+               style="font-size:6px"
+               id="tspan21739-05">20</tspan></text>
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 113.75841,294.96448 c 6.70805,-1.05308 13.44713,-1.90847 20.20555,-2.56471 16.14182,-1.56736 32.43792,-1.99536 48.57151,-0.34551 2.46131,0.2517 4.95856,0.56231 7.22753,1.54881 1.13448,0.49325 2.20275,1.15569 3.09428,2.01332 0.89153,0.85764 1.60268,1.91515 1.98518,3.09161 0.36291,1.1162 0.42439,2.30891 0.38351,3.48191 -0.0409,1.173 -0.18097,2.34121 -0.20931,3.51458 -0.0567,2.34616 0.33919,4.70243 1.15941,6.90127"
+             id="path1759"
+             inkscape:path-effect="#path-effect1761"
+             inkscape:original-d="m 113.75841,294.96448 c 3.52132,-0.11583 11.58199,-3.56867 20.20555,-2.56471 8.62355,1.00396 39.06202,-1.24206 48.57151,-0.34551 19.01898,1.7931 15.04211,12.65344 12.30699,6.65374 -0.4238,-0.92964 -2.87652,-6.08293 0.1742,6.99649 25.33569,108.62232 0.23177,1.09831 1.15941,6.90127"
+             sodipodi:nodetypes="cssssc"
+             inkscape:label="Wiring" />
+        </g>
+        <g
+           id="g52146"
+           inkscape:label="Ceiling Fan"
+           style="display:inline">
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="166.01448"
+             y="554.30969"
+             id="text6942-2-7-8-9-9"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-99"
+               x="166.01448"
+               y="554.30969"
+               style="font-size:6px">20</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="213.52243"
+             y="581.85785"
+             id="text39461"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan39459"
+               x="213.52243"
+               y="581.85785"
+               style="font-size:6px">20</tspan></text>
+          <use
+             xlink:href="#symbol1802"
+             id="use31349"
+             transform="translate(-117.43016,-71.039768)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             inkscape:label="Fan Switch" />
+          <g
+             id="g27243"
+             inkscape:label="Fan"
+             transform="translate(0,40)">
+            <ellipse
+               style="fill:none;stroke:#000000"
+               id="path27088"
+               cx="170.05365"
+               cy="519.83636"
+               rx="7.2653718"
+               ry="1.949246"
+               inkscape:label="Blade" />
+            <ellipse
+               style="display:inline;fill:none;stroke:#000000"
+               id="path27088-2"
+               cx="148.84962"
+               cy="519.83636"
+               rx="7.2653718"
+               ry="1.949246"
+               inkscape:label="Blade" />
+            <ellipse
+               style="display:inline;fill:none;stroke:#000000"
+               id="path27088-0"
+               cx="-530.32025"
+               cy="159.45163"
+               rx="7.2653718"
+               ry="1.949246"
+               transform="rotate(-90)"
+               inkscape:label="Blade" />
+            <ellipse
+               style="display:inline;fill:none;stroke:#000000"
+               id="path27088-6"
+               cx="-509.11621"
+               cy="159.45163"
+               rx="7.2653718"
+               ry="1.949246"
+               transform="rotate(-90)"
+               inkscape:label="Blade" />
+            <circle
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.999998"
+               id="path27088-07"
+               cx="159.45163"
+               cy="519.7182"
+               r="2.3346467"
+               inkscape:label="Center" />
+          </g>
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 159.7187,560.4204 c 5.40588,6.86437 12.19041,12.63844 19.8308,16.87727 11.4823,6.37029 24.89645,9.20216 37.97385,8.0167"
+             id="path5136"
+             inkscape:path-effect="#path-effect5138"
+             inkscape:original-d="m 159.7187,560.4204 c 7.73642,6.61127 -67.850872,3.60574 19.8308,16.87727 10.05909,1.52255 26.44205,6.32998 37.97385,8.0167"
+             sodipodi:nodetypes="csc"
+             inkscape:label="Wiring" />
+        </g>
+        <g
+           id="g77706"
+           inkscape:label="Driveway Light">
+          <use
+             xlink:href="#symbol21770"
+             id="use3772-1-7-9"
+             transform="matrix(0.53018373,0,0,0.53018373,33.60779,599.57124)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="display:inline;stroke-width:1.88614"
+             inkscape:label="Dual Flood Light" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="223.43622"
+             y="957.21869"
+             id="text6942-2-7-8-9-03"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-98"
+               x="223.43622"
+               y="957.21869"
+               style="font-size:6px">20</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="405.50739"
+             y="828.4502"
+             id="text6942-2-7-8-9-03-4"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-98-5"
+               x="405.50739"
+               y="828.4502"
+               style="font-size:6px">20</tspan></text>
+          <use
+             xlink:href="#symbol1802"
+             id="use33470-3"
+             transform="translate(78.08863,175.31397)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             inkscape:label="Light Switch"
+             style="display:inline"
+             inkscape:connector-avoid="true" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 216.34906,952.88339 c 11.30117,-26.9359 26.72388,-52.13809 45.566,-74.45924 9.35529,-11.08266 19.60469,-21.5072 31.35109,-30.01419 11.74641,-8.50699 25.05741,-15.06988 39.27237,-17.9477 17.15007,-3.47203 34.85724,-1.50516 52.33253,-0.61403 9.30928,0.47471 18.63436,0.63962 27.9546,0.49435"
+             id="path4692"
+             inkscape:path-effect="#path-effect4694"
+             inkscape:original-d="m 216.34906,952.88339 c 0.5627,-17.36462 45.0053,-57.09262 45.566,-74.45924 0.56069,-17.36663 47.22395,-30.98908 70.62346,-47.96189 23.39952,-16.9728 19.41853,1.7013 52.33253,-0.61403 32.91401,-2.31534 23.84122,0.7525 27.9546,0.49435"
+             sodipodi:nodetypes="csssc"
+             inkscape:label="Wiring" />
+        </g>
+        <g
+           id="g122137"
+           inkscape:label="Side Yard Light"
+           style="display:inline">
+          <use
+             xlink:href="#symbol1802"
+             id="use33470-5"
+             transform="translate(78.08863,183.83722)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             inkscape:label="Light Switch"
+             style="display:inline" />
+          <use
+             xlink:href="#symbol21770"
+             id="use3772-1-7"
+             transform="matrix(0.53018373,0,0,0.53018373,-125.00793,-90.90867)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="display:inline;stroke-width:1.88614"
+             inkscape:label="Dual Flood Light" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="46.966297"
+             y="259.19727"
+             id="text6942-2-7-8-9-65"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-58"
+               x="46.966297"
+               y="259.19727"
+               style="font-size:6px">20</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="405.50739"
+             y="839.12354"
+             id="text6942-2-7-8-9-65-0"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-58-1"
+               x="405.50739"
+               y="839.12354"
+               style="font-size:6px">20</tspan></text>
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 57.80446,269.47293 c 14.48487,9.34135 28.959053,18.69928 43.42251,28.07375 4.68612,3.0373 9.38704,6.08817 13.62695,9.72248 4.2399,3.6343 8.03128,7.8934 10.52513,12.88997 4.40178,8.81922 4.43014,19.10655 4.19015,28.96031 -1.36488,56.03999 -8.36617,112.39303 -0.71106,167.92449 3.82755,27.76573 11.39546,55.22192 24.58679,79.95196 13.19132,24.73004 32.20251,46.6786 56.15324,61.23705 21.28123,12.93579 45.66166,19.69458 68.33327,30.00106 11.3358,5.15325 22.33151,11.25261 31.90291,19.21782 9.5714,7.96522 17.70282,17.88537 22.45136,29.39657 4.1569,10.07697 5.61829,21.02739 7.02208,31.83732 1.40378,10.80993 2.82246,21.7607 6.90338,31.86868 5.27775,13.07239 15.02673,24.29155 27.23474,31.34183 12.20801,7.05028 26.7979,9.88712 40.75827,7.92498"
+             id="path1569"
+             inkscape:path-effect="#path-effect1571"
+             inkscape:original-d="m 57.80446,269.47293 c 9.928827,10.18447 108.86458,190.98945 43.42251,28.07375 -5.300632,-13.19575 16.59709,9.80914 24.15208,22.61245 3.22506,5.46545 -6.66272,-25.0165 4.19015,28.96031 14.57093,72.46867 77.49358,250.78099 80.02897,309.1135 4.42381,101.78028 71.69334,58.03406 122.68754,78.61545 50.9942,20.5814 -6.04154,21.3134 13.92546,63.706 19.967,42.3926 50.48361,34.04541 67.99301,39.26681"
+             sodipodi:nodetypes="cssssssc"
+             inkscape:label="Wiring" />
+        </g>
+        <g
+           id="g28108"
+           inkscape:label="Backyard Light"
+           style="display:inline">
+          <use
+             xlink:href="#symbol21770"
+             id="use3772-1-7-9-6"
+             transform="matrix(0.53018373,0,0,0.53018373,67.353395,221.76853)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="display:inline;stroke-width:1.88614"
+             inkscape:label="Waterproof Light" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 249.52184,577.36321 c -13.61555,9.77674 -23.73864,24.31719 -28.18201,40.47962 -1.72969,6.29162 -2.61603,12.9779 -1.16802,19.34026 1.41997,6.23915 5.04629,11.8508 9.70415,16.23802 4.65786,4.38722 10.31413,7.60993 16.22728,10.05493 11.82629,4.89 24.68874,6.76398 36.71188,11.14774 25.01448,9.12053 45.59027,29.43393 55.55473,54.12437 8.27716,20.50955 9.39005,43.11979 14.67252,64.59648 2.64124,10.73835 6.38551,21.3174 12.35702,30.62488 5.97152,9.30749 14.30476,17.31666 24.47236,21.665 7.81146,3.3407 16.57045,4.43076 24.96246,3.10661"
+             id="path4047"
+             inkscape:path-effect="#path-effect4049"
+             inkscape:original-d="m 249.52184,577.36321 c -9.39301,13.49421 -31.11441,24.30227 -28.18201,40.47962 5.77422,31.85496 4.81098,9.43486 -1.16802,19.34026 -5.979,9.90541 56.6663,32.14689 62.64331,37.44069 5.977,5.2938 7.49741,75.73681 55.55473,54.12437 50.46997,-22.69746 41.25489,89.90095 51.5019,116.88636 10.247,26.98541 14.77976,1.80594 24.96246,3.10661"
+             sodipodi:nodetypes="csssssc"
+             inkscape:label="Wiring" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="257.47058"
+             y="582.25488"
+             id="text6942-2-7-8-9-8"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-39"
+               x="257.47058"
+               y="582.25488"
+               style="font-size:6px">20</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="405.50739"
+             y="847.276"
+             id="text6942-2-7-8-9-05"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-2"
+               x="405.50739"
+               y="847.276"
+               style="font-size:6px">20</tspan></text>
+          <use
+             xlink:href="#symbol1802"
+             id="use33470-2"
+             transform="translate(78.08863,192.36048)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             inkscape:label="Light Switch"
+             style="display:inline"
+             inkscape:connector-avoid="true" />
+        </g>
+        <g
+           id="g44907"
+           inkscape:label="GFCI Ceiling Outlet"
+           transform="translate(5.7993317,1.8274964)"
+           style="display:inline">
+          <text
+             xml:space="preserve"
+             style="font-size:6.00027px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline;stroke-width:1"
+             x="225.19685"
+             y="751.60962"
+             id="text6942-2-7-8-9-58-6-7"
+             inkscape:label="Location Label"
+             transform="scale(1.0000446,0.9999554)"><tspan
+               sodipodi:role="line"
+               x="225.19685"
+               y="751.60962"
+               style="font-size:6.00027px;stroke-width:1"
+               id="tspan80234">Ceiling</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="227.27901"
+             y="744.53308"
+             id="text6942-2-7-8-9-58-6"
+             inkscape:label="GFCI Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-56-7"
+               x="227.27901"
+               y="744.53308"
+               style="font-size:6px">GFCI</tspan></text>
+          <use
+             xlink:href="#DuplexOutlet"
+             id="use3337-8-5-9-6-0-9-7"
+             transform="matrix(0,-0.52110559,-0.53018373,0,573.31508,904.63987)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="display:inline;stroke-width:1.90249"
+             inkscape:label="Duplex Outlet" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="231.05121"
+             y="737.49005"
+             id="text6942-2-7-8-9-5"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-02"
+               x="231.05121"
+               y="737.49005"
+               style="font-size:6px">20</tspan></text>
+        </g>
+        <g
+           id="g119400"
+           inkscape:label="Duplex Ceiling Outlet">
+          <use
+             xlink:href="#DuplexOutlet"
+             id="use3337-8-5-9-6-0-9-5"
+             transform="matrix(0,-0.52110559,-0.53018373,0,579.11441,958.51926)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="display:inline;stroke-width:1.90249"
+             inkscape:label="Duplex Outlet" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="236.85054"
+             y="791.36945"
+             id="text6942-2-7-8-9-58"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-56"
+               x="236.85054"
+               y="791.36945"
+               style="font-size:6px">20</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6.00027px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline;stroke-width:1"
+             x="230.46938"
+             y="798.33923"
+             id="text6942-2-7-8-9-58-6-7-5"
+             inkscape:label="Location Label"
+             transform="scale(1.0000446,0.9999554)"><tspan
+               sodipodi:role="line"
+               x="230.46938"
+               y="798.33923"
+               style="font-size:6.00027px;stroke-width:1"
+               id="tspan80234-7">Ceiling</tspan></text>
+        </g>
+        <g
+           id="g121050"
+           inkscape:label="Garage Lights">
+          <g
+             id="g43862"
+             inkscape:label="Switched Duplex Ceiling Outlet"
+             style="display:inline">
+            <text
+               xml:space="preserve"
+               style="font-size:6.00027px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline;stroke-width:1"
+               x="196.70049"
+               y="753.43719"
+               id="text6942-2-7-8-9-58-6-7-7"
+               inkscape:label="Location Label"
+               transform="scale(1.0000446,0.9999554)"><tspan
+                 sodipodi:role="line"
+                 x="196.70049"
+                 y="753.43719"
+                 style="font-size:6.00027px;stroke-width:1"
+                 id="tspan80234-3">Ceiling</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-size:6.00027px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline;stroke-width:1"
+               x="193.73111"
+               y="746.39386"
+               id="text6942-2-7-8-9-58-6-7-0"
+               inkscape:label="Switched Label"
+               transform="scale(1.0000446,0.9999554)"><tspan
+                 sodipodi:role="line"
+                 x="193.73111"
+                 y="746.39386"
+                 style="font-size:6.00027px;stroke-width:1"
+                 id="tspan80234-0">Switched</tspan></text>
+            <use
+               xlink:href="#DuplexOutlet"
+               id="use3337-8-5-9-6-0-9"
+               transform="matrix(0,-0.52110559,-0.53018373,0,544.81744,906.46737)"
+               x="0"
+               y="0"
+               width="100%"
+               height="100%"
+               style="stroke-width:1.90249"
+               inkscape:label="Duplex Outlet" />
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+               x="202.55357"
+               y="739.31757"
+               id="text6942-2-7-8-9"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan6940-8-8-4-9"
+                 x="202.55357"
+                 y="739.31757"
+                 style="font-size:6px">20</tspan></text>
+          </g>
+          <g
+             id="g42952"
+             inkscape:label="Switched Duplex Ceiling Outlet"
+             transform="translate(0,-0.67852392)"
+             style="display:inline">
+            <text
+               xml:space="preserve"
+               style="font-size:6.00027px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline;stroke-width:1"
+               x="262.32196"
+               y="746.39386"
+               id="text6942-2-7-8-9-58-6-7-0-3"
+               inkscape:label="Switched Label"
+               transform="scale(1.0000446,0.9999554)"><tspan
+                 sodipodi:role="line"
+                 x="262.32196"
+                 y="746.39386"
+                 style="font-size:6.00027px;stroke-width:1"
+                 id="tspan80234-0-9">Switched</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-size:6.00027px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline;stroke-width:1"
+               x="265.29135"
+               y="753.43719"
+               id="text6942-2-7-8-9-58-6-7-7-7"
+               inkscape:label="Location Label"
+               transform="scale(1.0000446,0.9999554)"><tspan
+                 sodipodi:role="line"
+                 x="265.29135"
+                 y="753.43719"
+                 style="font-size:6.00027px;stroke-width:1"
+                 id="tspan80234-3-7">Ceiling</tspan></text>
+            <use
+               xlink:href="#DuplexOutlet"
+               id="use3337-8-5-9-6-0-9-1"
+               transform="matrix(0,-0.52110559,-0.53018373,0,613.41136,907.14589)"
+               x="0"
+               y="0"
+               width="100%"
+               height="100%"
+               style="display:inline;stroke-width:1.90249"
+               inkscape:label="Duplex Outlet" />
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+               x="271.14749"
+               y="739.99609"
+               id="text6942-2-7-8-9-87"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan6940-8-8-4-9-1"
+                 x="271.14749"
+                 y="739.99609"
+                 style="font-size:6px">20</tspan></text>
+          </g>
+          <g
+             id="g40727"
+             inkscape:label="Switched Duplex Ceiling Outlet"
+             transform="translate(0,-3.1845246)"
+             style="display:inline">
+            <text
+               xml:space="preserve"
+               style="font-size:6.00027px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline;stroke-width:1"
+               x="369.28644"
+               y="755.9433"
+               id="text6942-2-7-8-9-58-6-7-7-3"
+               inkscape:label="Location Label"
+               transform="scale(1.0000446,0.9999554)"><tspan
+                 sodipodi:role="line"
+                 x="369.28644"
+                 y="755.9433"
+                 style="font-size:6.00027px;stroke-width:1"
+                 id="tspan80234-3-3">Ceiling</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-size:6.00027px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline;stroke-width:1"
+               x="366.31708"
+               y="748.89996"
+               id="text6942-2-7-8-9-58-6-7-0-9"
+               inkscape:label="Switched Label"
+               transform="scale(1.0000446,0.9999554)"><tspan
+                 sodipodi:role="line"
+                 x="366.31708"
+                 y="748.89996"
+                 style="font-size:6.00027px;stroke-width:1"
+                 id="tspan80234-0-5">Switched</tspan></text>
+            <use
+               xlink:href="#DuplexOutlet"
+               id="use3337-8-5-9-6-0-9-79"
+               transform="matrix(0,-0.52110559,-0.53018373,0,717.4111,909.65191)"
+               x="0"
+               y="0"
+               width="100%"
+               height="100%"
+               style="display:inline;stroke-width:1.90249"
+               inkscape:label="Duplex Outlet" />
+            <text
+               xml:space="preserve"
+               style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+               x="375.14725"
+               y="742.50208"
+               id="text6942-2-7-8-9-4"
+               inkscape:label="Circuit Label"><tspan
+                 sodipodi:role="line"
+                 id="tspan6940-8-8-4-9-16"
+                 x="375.14725"
+                 y="742.50208"
+                 style="font-size:6px">20</tspan></text>
+          </g>
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 211.35405,723.93147 c 4.75388,-5.61446 11.22324,-9.75625 18.31201,-11.72367 7.08878,-1.96741 14.76737,-1.75224 21.73484,0.60908 6.40495,2.17067 12.07101,6.04248 17.67204,9.83244 5.60102,3.78996 11.32813,7.59285 17.7873,9.59643 9.08003,2.81654 18.93296,1.85194 28.16327,-0.42432 9.2303,-2.27627 18.10704,-5.81819 27.31307,-8.19072 9.20603,-2.37253 19.01068,-3.5436 28.17448,-1.01284 4.5819,1.26537 8.9385,3.46424 12.48115,6.63357 3.54264,3.16933 6.2446,7.33109 7.4093,11.93961 0.94528,3.74028 0.87118,7.68734 0.19176,11.48492 -0.67943,3.79759 -1.94977,7.46497 -3.37924,11.04825 -2.85895,7.16656 -6.41354,14.2132 -7.32621,21.8748 -1.14815,9.63839 2.24853,19.72104 8.99479,26.69993 6.74626,6.97889 16.70801,10.71531 26.37977,9.89445"
+             id="path66815"
+             inkscape:path-effect="#path-effect66817"
+             inkscape:original-d="m 211.35405,723.93147 c 12.13014,-5.87242 27.91872,-5.24017 40.04685,-11.11459 12.12814,-5.87442 24.72484,8.3454 35.45934,19.42887 10.7345,11.08348 333.78249,227.1557 103.54127,8.9453 -24.26291,-22.99509 -11.34524,15.64624 -10.51369,44.40797 0.83155,28.76174 23.31297,35.24003 35.37456,36.59438"
+             sodipodi:nodetypes="cssssc"
+             inkscape:label="Wiring" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="405.50739"
+             y="818.59314"
+             id="text6942-2-7-8-9-58-3"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-56-8"
+               x="405.50739"
+               y="818.59314"
+               style="font-size:6px">20</tspan></text>
+          <use
+             xlink:href="#symbol1802"
+             id="use33470"
+             transform="translate(78.08863,166.79071)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             inkscape:label="Light Switch"
+             inkscape:connector-avoid="true" />
+        </g>
+      </g>
+      <g
+         id="circuit_19_group"
+         inkscape:label="Circuit 19"
+         style="display:inline"
+         onmouseover="toggleCircuits(this, true)"
+         onmouseout="toggleCircuits(this, false)">
+        <g
+           id="g49304"
+           inkscape:label="Duplex Outlet"
+           transform="translate(6.5332746,20.506088)">
+          <use
+             xlink:href="#DuplexOutlet"
+             id="use3337-8-5-9-6-0-9-0"
+             transform="matrix(0.52110559,0,0,0.53018373,232.1178,282.92153)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="display:inline;stroke-width:1.90249"
+             inkscape:label="Duplex Outlet" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="397.76056"
+             y="623.88934"
+             id="text6942-2-7-8-9-0"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-9"
+               x="397.76056"
+               y="623.88934"
+               style="font-size:6px">19</tspan></text>
+        </g>
+        <g
+           id="g49304-4"
+           inkscape:label="Duplex Outlet"
+           transform="translate(6.5332746,80.536324)">
+          <use
+             xlink:href="#DuplexOutlet"
+             id="use3337-8-5-9-6-0-9-0-0"
+             transform="matrix(0.52110559,0,0,0.53018373,232.1178,282.92153)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="display:inline;stroke-width:1.90249"
+             inkscape:label="Duplex Outlet" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="397.76056"
+             y="623.88934"
+             id="text6942-2-7-8-9-0-4"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-9-6"
+               x="397.76056"
+               y="623.88934"
+               style="font-size:6px">19</tspan></text>
+        </g>
+        <g
+           id="g55459"
+           inkscape:label="Quad Outlet">
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="82.195877"
+             y="913.87616"
+             id="text6942-0-4-0-3-0"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-9-0-3-1-0"
+               x="82.195877"
+               y="913.87616"
+               style="font-size:6px">19</tspan></text>
+          <use
+             xlink:href="#QuadOutlet"
+             id="use3378-0-1-6"
+             transform="matrix(-0.52119604,0,0,-0.53018373,289.46463,1260.4721)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="stroke-width:1.90233"
+             inkscape:label="Quad Outlet" />
+        </g>
+        <g
+           id="g76001"
+           inkscape:label="Quad Outlet Lower"
+           inkscape:connector-avoid="true">
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="397.69699"
+             y="867.237"
+             id="text64784"
+             inkscape:label="Location Label"><tspan
+               sodipodi:role="line"
+               id="tspan64782"
+               x="397.69699"
+               y="867.237">Lower</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="405.08475"
+             y="861.95435"
+             id="text6942-0-4-0-3-0-6"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-9-0-3-1-0-4"
+               x="405.08475"
+               y="861.95435"
+               style="font-size:6px">19</tspan></text>
+          <use
+             xlink:href="#QuadOutlet"
+             id="use3378-0-1-6-3"
+             transform="matrix(0.52119604,0,0,-0.53018373,217.90051,1198.6806)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="stroke-width:1.90233"
+             inkscape:label="Quad Outlet" />
+        </g>
+        <g
+           id="g76001-1"
+           inkscape:label="Quad Outlet Upper"
+           transform="translate(0,21.586046)"
+           inkscape:connector-avoid="true">
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="397.69699"
+             y="867.237"
+             id="text64784-8"
+             inkscape:label="Location Label"><tspan
+               sodipodi:role="line"
+               id="tspan64782-7"
+               x="397.69699"
+               y="867.237">Upper</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="405.08475"
+             y="861.95435"
+             id="text6942-0-4-0-3-0-6-1"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-9-0-3-1-0-4-5"
+               x="405.08475"
+               y="861.95435"
+               style="font-size:6px">19</tspan></text>
+          <use
+             xlink:href="#QuadOutlet"
+             id="use3378-0-1-6-3-5"
+             transform="matrix(0.52119604,0,0,-0.53018373,217.90051,1198.6806)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="stroke-width:1.90233"
+             inkscape:label="Quad Outlet" />
+        </g>
+        <g
+           id="g58590"
+           inkscape:label="GFCI Duplex Outlet">
+          <use
+             xlink:href="#DuplexOutlet"
+             id="use3337-8-6"
+             transform="matrix(0,-0.52110559,0.53018373,0,-183.9645,458.06426)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="stroke-width:1.90249"
+             inkscape:label="Duplex Outlet" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="161.55812"
+             y="278.06476"
+             id="text6942-2-3"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-7"
+               x="161.55812"
+               y="278.06476"
+               style="font-size:6px">19</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="161.56262"
+             y="285.92065"
+             id="text153221"
+             inkscape:label="GFCI Label"><tspan
+               sodipodi:role="line"
+               id="tspan153219"
+               x="161.56262"
+               y="285.92065">GFCI</tspan></text>
+        </g>
+      </g>
+      <g
+         id="breaker_panel_group"
+         inkscape:label="Breaker Panel"
+         transform="translate(4.8373989,49.295399)"
+         style="display:inline">
+        <rect
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.37953;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect124199"
+           width="27.30514"
+           height="8.5106735"
+           x="189.5184"
+           y="219.28342"
+           inkscape:label="Box"
+           ry="0" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.623622;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 189.28132,224.12976 4.4882,-4.4747 -0.20401,0.17901"
+           id="path134239-4"
+           inkscape:label="Stripe" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.623622;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 189.64038,227.53183 7.88938,-7.87677 -0.35861,0.31509"
+           id="path134239-4-1"
+           inkscape:label="Stripe" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.623622;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 193.40165,227.53183 7.88938,-7.87677 -0.35861,0.31509"
+           id="path134239-4-9"
+           inkscape:label="Stripe" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.623622;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 197.16293,227.53183 7.88938,-7.87677 -0.35861,0.31509"
+           id="path134239-4-0"
+           inkscape:label="Stripe" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.623622;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 200.92424,227.53183 7.88938,-7.87677 -0.35861,0.31509"
+           id="path134239-4-6"
+           inkscape:label="Stripe" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.623622;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 204.68552,227.53183 7.88938,-7.87677 -0.35861,0.31509"
+           id="path134239-4-17"
+           inkscape:label="Stripe" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.623622;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 208.44679,227.53183 7.88938,-7.87677 -0.35861,0.31509"
+           id="path134239-4-3"
+           inkscape:label="Stripe" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.623622;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 212.20806,227.53149 4.8661,-4.85269 -0.22119,0.19411"
+           id="path134239-4-8"
+           inkscape:label="Stripe" />
+      </g>
+    </g>
+    <g
+       id="doors_checkbox"
+       inkscape:label="Doors Checkbox"
+       onclick="toggleCheck(this)"
+       transform="translate(-5.7512593,186.51783)"
+       style="fill:#ffffff;fill-opacity:0">
+      <g
+         id="g24377-1"
+         inkscape:label="X"
+         style="fill:#ffffff;fill-opacity:0">
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 298.11688,305.99506 -15.1181,15.1181 v 0"
+           id="path23942-70" />
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 282.99878,305.99506 15.1181,15.1181"
+           id="path23944-8" />
+      </g>
+      <rect
+         style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="doors_box"
+         width="15.118111"
+         height="15.118111"
+         x="282.99878"
+         y="305.99506"
+         inkscape:label="Box" />
+    </g>
+    <g
+       id="objects_checkbox"
+       inkscape:label="Objects Checkbox"
+       onclick="toggleCheck(this)"
+       transform="translate(-5.7512593,161.31977)"
+       style="fill:#ffffff;fill-opacity:0">
+      <g
+         id="g24377-7"
+         inkscape:label="X"
+         style="fill:#ffffff;fill-opacity:0">
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 298.11688,305.99506 -15.1181,15.1181 v 0"
+           id="path23942-7" />
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 282.99878,305.99506 15.1181,15.1181"
+           id="path23944-0" />
+      </g>
+      <rect
+         style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="objects_box"
+         width="15.118111"
+         height="15.118111"
+         x="282.99878"
+         y="305.99506"
+         inkscape:label="Box" />
+    </g>
+    <g
+       id="circuit_27_28_checkbox"
+       inkscape:label="Circuit 27 &amp; 28 Checkbox"
+       onclick="toggleCheck(this)"
+       transform="translate(-5.7512593,136.12173)"
+       style="fill:#ffffff;fill-opacity:0">
+      <g
+         id="g24377-4-8"
+         inkscape:label="X"
+         style="fill:#ffffff;fill-opacity:0">
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 298.11688,305.99506 -15.1181,15.1181 v 0"
+           id="path23942-6-0" />
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 282.99878,305.99506 15.1181,15.1181"
+           id="path23944-7-2" />
+      </g>
+      <rect
+         style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circuit_27_28_box"
+         width="15.118111"
+         height="15.118111"
+         x="282.99878"
+         y="305.99506"
+         inkscape:label="Box" />
+    </g>
+    <g
+       id="circuit_25_checkbox"
+       inkscape:label="Circuit 25 Checkbox"
+       onclick="toggleCheck(this)"
+       transform="translate(-5.7512593,110.92368)"
+       style="fill:#ffffff;fill-opacity:0">
+      <g
+         id="g24377-4"
+         inkscape:label="X"
+         style="fill:#ffffff;fill-opacity:0">
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 298.11688,305.99506 -15.1181,15.1181 v 0"
+           id="path23942-6" />
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 282.99878,305.99506 15.1181,15.1181"
+           id="path23944-7" />
+      </g>
+      <rect
+         style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circuit_25_box"
+         width="15.118111"
+         height="15.118111"
+         x="282.99878"
+         y="305.99506"
+         inkscape:label="Box" />
+    </g>
+    <g
+       id="circuit_20_checkbox"
+       inkscape:label="Circuit 20 Checkbox"
+       onclick="toggleCheck(this)"
+       transform="translate(-5.7512593,85.725626)"
+       style="fill:#ffffff;fill-opacity:0">
+      <g
+         id="g24377-2"
+         inkscape:label="X"
+         style="fill:#ffffff;fill-opacity:0">
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 298.11688,305.99506 -15.1181,15.1181 v 0"
+           id="path23942-0" />
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 282.99878,305.99506 15.1181,15.1181"
+           id="path23944-6" />
+      </g>
+      <rect
+         style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circuit_20_box"
+         width="15.118111"
+         height="15.118111"
+         x="282.99878"
+         y="305.99506"
+         inkscape:label="Box" />
+    </g>
+    <g
+       id="circuit_19_checkbox"
+       inkscape:label="Circuit 19 Checkbox"
+       onclick="toggleCheck(this)"
+       style="fill:#ffffff;fill-opacity:1"
+       transform="translate(-5.7512593,60.527571)">
+      <g
+         id="g24377"
+         inkscape:label="X"
+         style="fill:#ffffff;fill-opacity:1">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 298.11688,305.99506 -15.1181,15.1181 v 0"
+           id="path23942" />
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 282.99878,305.99506 15.1181,15.1181"
+           id="path23944" />
+      </g>
+      <rect
+         style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circuit_19_box"
+         width="15.118111"
+         height="15.118111"
+         x="282.99878"
+         y="305.99506"
+         inkscape:label="Box" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+       x="308.47809"
+       y="506.40887"
+       id="doors_check_label"
+       inkscape:label="Doors Check Label"
+       onclick="toggleCheck(this)"><tspan
+         sodipodi:role="line"
+         id="tspan7629"
+         x="308.47809"
+         y="506.40887">Doors</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+       x="308.99664"
+       y="481.4165"
+       id="objects_check_label"
+       inkscape:label="Objects Check Label"
+       onclick="toggleCheck(this)"><tspan
+         sodipodi:role="line"
+         id="tspan11371"
+         x="308.99664"
+         y="481.4165">Objects</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+       x="308.97028"
+       y="456.18677"
+       id="circuit_27_28_check_label"
+       inkscape:label="Circuit 27 &amp; 28 Check Label"
+       onmouseover=""
+       onmouseout=""
+       onmousedown=""
+       onmouseup=""
+       onclick="toggleCheck(this)"><tspan
+         sodipodi:role="line"
+         id="tspan23049-9"
+         x="308.97028"
+         y="456.18677"
+         style="font-size:18px">Circuit 27/28</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+       x="308.97028"
+       y="430.96588"
+       id="circuit_25_check_label"
+       inkscape:label="Circuit 25 Check Label"
+       onmouseover=""
+       onmouseout=""
+       onmousedown=""
+       onmouseup=""
+       onclick="toggleCheck(this)"><tspan
+         sodipodi:role="line"
+         id="tspan23049"
+         x="308.97028"
+         y="430.96588"
+         style="font-size:18px">Circuit 25</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+       x="308.97028"
+       y="405.74496"
+       id="circuit_20_check_label"
+       inkscape:label="Circuit 20 Check Label"
+       onmouseout=""
+       onmouseover=""
+       onclick="toggleCheck(this)"><tspan
+         sodipodi:role="line"
+         id="tspan22671"
+         x="308.97028"
+         y="405.74496"
+         style="font-size:18px">Circuit 20</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+       x="308.97028"
+       y="380.52405"
+       id="circuit_19_check_label"
+       inkscape:label="Circuit 19 Check Label"
+       onmouseover=""
+       onmouseout=""
+       onclick="toggleCheck(this)"><tspan
+         sodipodi:role="line"
+         id="tspan16563"
+         x="308.97028"
+         y="380.52405"
+         style="font-size:18px">Circuit 19</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+       x="287.67706"
+       y="345.83615"
+       id="select_all_label"
+       inkscape:label="Select All Label"
+       onclick="toggleAll(true)"><tspan
+         sodipodi:role="line"
+         id="tspan35644"
+         x="287.67706"
+         y="345.83615">All</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+       x="329.17502"
+       y="345.73068"
+       id="deselect_all_label"
+       inkscape:label="Deselect All Label"
+       onclick="toggleAll(false)"><tspan
+         sodipodi:role="line"
+         id="tspan55824"
+         x="329.17502"
+         y="345.73068">None</tspan></text>
+  </g>
+</svg>
