@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    width="415.09415"
-   height="729.14374"
+   height="753.14398"
    version="1.1"
    id="svg2170"
    sodipodi:docname="garage.svg"
-   inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -67,10 +67,12 @@ function toggleAll(checkAll) {
 		group,
 		box,
 		objectsArr = [
-			'circuit_19',
-			'circuit_20',
-			'circuit_25',
-			'circuit_27_28',
+			'circuit_2_4',
+			'circuit_6',
+			'circuit_8',
+			'circuit_22_24',
+			'circuit_23',
+			'circuit_30',
 			'objects',
 			'doors'
 		];
@@ -234,15 +236,15 @@ function toggleAll(checkAll) {
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="1.0361785"
-     inkscape:cx="277.46185"
-     inkscape:cy="222.45202"
-     inkscape:window-width="1280"
-     inkscape:window-height="685"
-     inkscape:window-x="0"
+     inkscape:zoom="6.0613661"
+     inkscape:cx="161.59724"
+     inkscape:cy="39.842504"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="1470"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg2170"
+     inkscape:current-layer="electrical_group"
      fit-margin-top="10"
      fit-margin-left="10"
      fit-margin-right="10"
@@ -252,7 +254,9 @@ function toggleAll(checkAll) {
      units="mm"
      inkscape:snap-to-guides="false"
      inkscape:snap-grids="false"
-     showguides="false" />
+     showguides="false"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
   <clipPath
      id="cl_3">
     <rect
@@ -266,20 +270,18 @@ function toggleAll(checkAll) {
      clip-path="url(#cl_3)"
      id="g2164"
      inkscape:label="Garage"
-     transform="translate(-37.147469,-244.81547)">
+     transform="translate(-37.147469,-222.81547)">
     <path
        id="backgroup_shading"
        clip-path="none"
        style="display:inline;fill:#000014;fill-opacity:0.0705882;stroke-width:53.5606"
        inkscape:label="Background"
        d="m 23.390625,23.390625 v 52.380859 h 35.027344 v 6.427735 H 23.443359 V 173.0918 h -6.695312 v 40.43945 h 6.695312 V 350.9668 h 0.05469 v 339.68164 h 20.726562 v 6.69531 H 303.35156 v -6.69531 h 70.75391 V 570.56445 h 6.69531 v -43.49023 h -6.69531 V 357.39453 H 175.50195 v -6.69531 h -0.0527 v -46.00977 h 6.69531 v -47.29297 h -6.69531 v -14.62304 h 6.69531 v -94.58789 h -6.69531 v -6.74805 h 6.69531 V 94.197266 h -6.69531 V 82.199219 h -35.4043 v -6.427735 h 35.34961 V 23.390625 Z"
-       transform="translate(54.747469,244.81547)"
-       sodipodi:insensitive="true" />
+       transform="translate(54.747469,244.81547)" />
     <g
        id="walls_windows_group"
        inkscape:label="Walls and Windows"
-       style="display:inline"
-       sodipodi:insensitive="true">
+       style="display:inline">
       <g
          id="g35732"
          inkscape:label="Patio Door"
@@ -586,8 +588,7 @@ function toggleAll(checkAll) {
     <g
        id="doors_group"
        inkscape:label="Doors"
-       style="display:inline"
-       sodipodi:insensitive="true">
+       style="display:inline">
       <g
          id="g21798"
          inkscape:label="Side Garage Door"
@@ -698,8 +699,7 @@ function toggleAll(checkAll) {
     </g>
     <g
        id="room_labels_group"
-       inkscape:label="Room Labels"
-       sodipodi:insensitive="true">
+       inkscape:label="Room Labels">
       <text
          xml:space="preserve"
          style="font-size:24px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
@@ -730,8 +730,7 @@ function toggleAll(checkAll) {
     <g
        id="objects_group"
        inkscape:label="Objects"
-       style="display:inline"
-       sodipodi:insensitive="true">
+       style="display:inline">
       <g
          id="g20714"
          inkscape:label="Workbench"
@@ -825,8 +824,255 @@ function toggleAll(checkAll) {
        style="display:inline"
        sodipodi:insensitive="true">
       <g
-         id="circuit_27_28_group"
-         inkscape:label="Circuit 27 &amp; 28"
+         id="circuit_30_group"
+         inkscape:label="Circuit 30"
+         transform="translate(5.5000002)">
+        <g
+           id="g65837-7"
+           inkscape:label="GFCI Duplex Outlet"
+           inkscape:connector-avoid="true"
+           style="display:inline"
+           transform="translate(-28.746932,-709.63775)">
+          <use
+             xlink:href="#DuplexOutlet"
+             id="use3337-8-5-9-6-0-9-8-0"
+             transform="matrix(0,0.52110559,-0.53018373,0,590.30724,774.07637)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="display:inline;stroke-width:1.90249"
+             inkscape:label="Duplex Outlet" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="258.25351"
+             y="955.4187"
+             id="text6942-2-7-8-9-2-3"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-0-9"
+               x="258.25351"
+               y="955.4187"
+               style="font-size:6px">30</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="256.11536"
+             y="961.78638"
+             id="text6942-2-7-8-9-2-0-8"
+             inkscape:label="GFCI Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-0-0-6"
+               x="256.11536"
+               y="961.78638"
+               style="font-size:6px">GFCI</tspan></text>
+        </g>
+      </g>
+      <g
+         id="circuit_23_group"
+         inkscape:label="Circuit 23"
+         style="display:inline"
+         onmouseover="toggleCircuits(this, true)"
+         onmouseout="toggleCircuits(this, false)">
+        <g
+           id="g49304"
+           inkscape:label="Duplex Outlet"
+           transform="translate(6.5332746,20.506088)">
+          <use
+             xlink:href="#DuplexOutlet"
+             id="use3337-8-5-9-6-0-9-0"
+             transform="matrix(0.52110559,0,0,0.53018373,232.1178,282.92153)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="display:inline;stroke-width:1.90249"
+             inkscape:label="Duplex Outlet" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="397.76056"
+             y="623.88934"
+             id="text6942-2-7-8-9-0"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-9"
+               x="397.76056"
+               y="623.88934"
+               style="font-size:6px">23</tspan></text>
+        </g>
+        <g
+           id="g49304-4"
+           inkscape:label="Duplex Outlet"
+           transform="translate(6.5332746,80.536324)">
+          <use
+             xlink:href="#DuplexOutlet"
+             id="use3337-8-5-9-6-0-9-0-0"
+             transform="matrix(0.52110559,0,0,0.53018373,232.1178,282.92153)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="display:inline;stroke-width:1.90249"
+             inkscape:label="Duplex Outlet" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="397.76056"
+             y="623.88934"
+             id="text6942-2-7-8-9-0-4"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-8-4-9-9-6"
+               x="397.76056"
+               y="623.88934"
+               style="font-size:6px">23</tspan></text>
+        </g>
+        <g
+           id="g55459"
+           inkscape:label="Quad Outlet">
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="82.195877"
+             y="913.87616"
+             id="text6942-0-4-0-3-0"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-9-0-3-1-0"
+               x="82.195877"
+               y="913.87616"
+               style="font-size:6px">23</tspan></text>
+          <use
+             xlink:href="#QuadOutlet"
+             id="use3378-0-1-6"
+             transform="matrix(-0.52119604,0,0,-0.53018373,289.46463,1260.4721)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="stroke-width:1.90233"
+             inkscape:label="Quad Outlet" />
+        </g>
+        <g
+           id="g76001"
+           inkscape:label="Quad Outlet Lower"
+           inkscape:connector-avoid="true">
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="397.69699"
+             y="867.237"
+             id="text64784"
+             inkscape:label="Location Label"><tspan
+               sodipodi:role="line"
+               id="tspan64782"
+               x="397.69699"
+               y="867.237">Lower</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="405.08475"
+             y="861.95435"
+             id="text6942-0-4-0-3-0-6"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-9-0-3-1-0-4"
+               x="405.08475"
+               y="861.95435"
+               style="font-size:6px">23</tspan></text>
+          <use
+             xlink:href="#QuadOutlet"
+             id="use3378-0-1-6-3"
+             transform="matrix(0.52119604,0,0,-0.53018373,217.90051,1198.6806)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="stroke-width:1.90233"
+             inkscape:label="Quad Outlet" />
+        </g>
+        <g
+           id="g76001-1"
+           inkscape:label="Quad Outlet Upper"
+           transform="translate(0,21.586046)"
+           inkscape:connector-avoid="true">
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="397.69699"
+             y="867.237"
+             id="text64784-8"
+             inkscape:label="Location Label"><tspan
+               sodipodi:role="line"
+               id="tspan64782-7"
+               x="397.69699"
+               y="867.237">Upper</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="405.08475"
+             y="861.95435"
+             id="text6942-0-4-0-3-0-6-1"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-9-0-3-1-0-4-5"
+               x="405.08475"
+               y="861.95435"
+               style="font-size:6px">23</tspan></text>
+          <use
+             xlink:href="#QuadOutlet"
+             id="use3378-0-1-6-3-5"
+             transform="matrix(0.52119604,0,0,-0.53018373,217.90051,1198.6806)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="stroke-width:1.90233"
+             inkscape:label="Quad Outlet" />
+        </g>
+        <g
+           id="g58590"
+           inkscape:label="GFCI Duplex Outlet">
+          <use
+             xlink:href="#DuplexOutlet"
+             id="use3337-8-6"
+             transform="matrix(0,-0.52110559,0.53018373,0,-183.9645,458.06426)"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%"
+             style="stroke-width:1.90249"
+             inkscape:label="Duplex Outlet" />
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+             x="161.55812"
+             y="278.06476"
+             id="text6942-2-3"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan6940-8-7"
+               x="161.55812"
+               y="278.06476"
+               style="font-size:6px">23</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="161.56262"
+             y="285.92065"
+             id="text153221"
+             inkscape:label="GFCI Label"><tspan
+               sodipodi:role="line"
+               id="tspan153219"
+               x="161.56262"
+               y="285.92065">GFCI</tspan></text>
+        </g>
+      </g>
+      <g
+         id="circuit_22_24_group"
+         inkscape:label="Circuit 22 &amp; 24"
          style="display:inline"
          onmouseover="toggleCircuits(this, true)"
          onmouseout="toggleCircuits(this, false)">
@@ -855,7 +1101,7 @@ function toggleAll(checkAll) {
                x="252.80212"
                y="614.80756"
                style="font-size:6px"
-               id="tspan23354">27/28</tspan></text>
+               id="tspan23354">22/24</tspan></text>
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
@@ -871,8 +1117,8 @@ function toggleAll(checkAll) {
         </g>
       </g>
       <g
-         id="circuit_25_group"
-         inkscape:label="Circuit 25"
+         id="circuit_8_group"
+         inkscape:label="Circuit 8"
          style="display:inline"
          onmouseover="toggleCircuits(this, true)"
          onmouseout="toggleCircuits(this, false)">
@@ -901,7 +1147,7 @@ function toggleAll(checkAll) {
                id="tspan6940-0"
                x="212.69443"
                y="315.17615"
-               style="font-size:6px">25</tspan></text>
+               style="font-size:6px">8</tspan></text>
         </g>
         <g
            id="g143041"
@@ -927,7 +1173,7 @@ function toggleAll(checkAll) {
                id="tspan6940-9"
                x="212.69443"
                y="336.67996"
-               style="font-size:6px">25</tspan></text>
+               style="font-size:6px">8</tspan></text>
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
@@ -965,7 +1211,7 @@ function toggleAll(checkAll) {
                id="tspan6940-6"
                x="108.37192"
                y="336.67996"
-               style="font-size:6px">25</tspan></text>
+               style="font-size:6px">8</tspan></text>
         </g>
         <g
            id="g26275"
@@ -991,7 +1237,7 @@ function toggleAll(checkAll) {
                id="tspan6940-8"
                x="108.37192"
                y="315.17615"
-               style="font-size:6px">25</tspan></text>
+               style="font-size:6px">8</tspan></text>
         </g>
         <g
            id="g26382"
@@ -1018,7 +1264,7 @@ function toggleAll(checkAll) {
                id="tspan6940-8-8"
                x="106.32451"
                y="398.97629"
-               style="font-size:6px">25</tspan></text>
+               style="font-size:6px">8</tspan></text>
         </g>
         <g
            id="g26270"
@@ -1047,7 +1293,7 @@ function toggleAll(checkAll) {
                id="tspan6940-9-0"
                x="162.36844"
                y="347.078"
-               style="font-size:6px">25</tspan></text>
+               style="font-size:6px">8</tspan></text>
           <use
              xlink:href="#QuadOutlet"
              id="use3378"
@@ -1074,7 +1320,7 @@ function toggleAll(checkAll) {
                id="tspan6940-9-0-3"
                x="106.70488"
                y="514.159"
-               style="font-size:6px">25</tspan></text>
+               style="font-size:6px">8</tspan></text>
           <use
              xlink:href="#QuadOutlet"
              id="use3378-0"
@@ -1102,7 +1348,7 @@ function toggleAll(checkAll) {
                id="tspan6940-9-0-3-1"
                x="106.70488"
                y="514.159"
-               style="font-size:6px">25</tspan></text>
+               style="font-size:6px">8</tspan></text>
           <use
              xlink:href="#QuadOutlet"
              id="use3378-0-1"
@@ -1140,12 +1386,12 @@ function toggleAll(checkAll) {
                id="tspan6940-8-8-4"
                x="205.61797"
                y="567.7973"
-               style="font-size:6px">25</tspan></text>
+               style="font-size:6px">8</tspan></text>
         </g>
       </g>
       <g
-         id="circuit_20_group"
-         inkscape:label="Circuit 20"
+         id="circuit_6_group"
+         inkscape:label="Circuit 6"
          style="display:inline"
          inkscape:connector-avoid="true"
          onmouseover="toggleCircuits(this, true)"
@@ -1175,7 +1421,7 @@ function toggleAll(checkAll) {
                id="tspan6940-8-8-4-9-0"
                x="258.25351"
                y="957.21869"
-               style="font-size:6px">20</tspan></text>
+               style="font-size:6px">6</tspan></text>
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
@@ -1254,7 +1500,7 @@ function toggleAll(checkAll) {
                id="tspan6940-8-8-4-9-5"
                x="117.92139"
                y="378.89059"
-               style="font-size:6px">20</tspan></text>
+               style="font-size:6px">6</tspan></text>
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
@@ -1266,7 +1512,7 @@ function toggleAll(checkAll) {
                id="tspan6940-8-8-4-9-3"
                x="199.92693"
                y="545.88135"
-               style="font-size:6px">20</tspan></text>
+               style="font-size:6px">6</tspan></text>
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
@@ -1278,7 +1524,7 @@ function toggleAll(checkAll) {
                id="tspan6940-8-8-4-9-7"
                x="117.92139"
                y="545.88135"
-               style="font-size:6px">20</tspan></text>
+               style="font-size:6px">6</tspan></text>
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
@@ -1290,7 +1536,7 @@ function toggleAll(checkAll) {
                id="tspan39459-3"
                x="213.42668"
                y="600.98907"
-               style="font-size:6px">20</tspan></text>
+               style="font-size:6px">6</tspan></text>
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
@@ -1302,7 +1548,7 @@ function toggleAll(checkAll) {
                id="tspan6940-8-8-4-9-34"
                x="199.92693"
                y="378.89059"
-               style="font-size:6px">20</tspan></text>
+               style="font-size:6px">6</tspan></text>
           <path
              style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
              d="m 196.01772,369.79226 c -7.087,-0.26497 -14.18478,-0.24151 -21.26988,0.0703 -12.79205,0.56297 -25.76164,2.05218 -38.29041,-0.59043 -3.5471,-0.74817 -7.05681,-1.82745 -10.67937,-1.96459 -1.81127,-0.0686 -3.64451,0.10433 -5.3691,0.66219 -1.72459,0.55785 -3.33931,1.51321 -4.54825,2.86372 -1.80877,2.02058 -2.59571,4.78672 -2.74013,7.49477 -0.14442,2.70805 0.29568,5.40816 0.65518,8.09613 2.17167,16.23734 1.43103,32.70218 0.99071,49.07819 -0.45769,17.02211 -0.58595,34.06692 0.36417,51.06866 0.75818,13.56705 2.19706,27.25568 0.0705,40.67647 -0.86664,5.46941 -2.32599,10.91617 -2.05799,16.44733 0.134,2.76558 0.71382,5.53676 1.95906,8.00976 1.24524,2.47301 3.18526,4.63649 5.64617,5.90547 3.05417,1.57489 6.73171,1.67551 10.04111,0.75024 3.30939,-0.92527 6.28425,-2.80729 8.91568,-5.01722 5.26285,-4.41987 9.34784,-10.22047 15.08879,-13.99862 6.68714,-4.40084 15.37624,-5.61029 23.0148,-3.21495 7.63856,2.39534 14.07788,8.34464 17.08075,15.76542 2.626,6.48944 2.65864,13.68191 3.54522,20.62616 0.44328,3.47213 1.11544,6.9407 2.42243,10.18784 1.30698,3.24715 3.28083,6.27944 6.01101,8.46994 3.53611,2.83712 8.28421,4.10843 12.76488,3.41783"
@@ -1355,7 +1601,7 @@ function toggleAll(checkAll) {
                x="184.37794"
                y="318.60574"
                style="font-size:6px"
-               id="tspan21739">20</tspan></text>
+               id="tspan21739">6</tspan></text>
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
@@ -1367,7 +1613,7 @@ function toggleAll(checkAll) {
                x="117.92139"
                y="304.72583"
                style="font-size:6px"
-               id="tspan21739-0">20</tspan></text>
+               id="tspan21739-0">6</tspan></text>
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
@@ -1379,7 +1625,7 @@ function toggleAll(checkAll) {
                x="183.92693"
                y="304.72583"
                style="font-size:6px"
-               id="tspan21739-05">20</tspan></text>
+               id="tspan21739-05">6</tspan></text>
           <path
              style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
              d="m 113.75841,294.96448 c 6.70805,-1.05308 13.44713,-1.90847 20.20555,-2.56471 16.14182,-1.56736 32.43792,-1.99536 48.57151,-0.34551 2.46131,0.2517 4.95856,0.56231 7.22753,1.54881 1.13448,0.49325 2.20275,1.15569 3.09428,2.01332 0.89153,0.85764 1.60268,1.91515 1.98518,3.09161 0.36291,1.1162 0.42439,2.30891 0.38351,3.48191 -0.0409,1.173 -0.18097,2.34121 -0.20931,3.51458 -0.0567,2.34616 0.33919,4.70243 1.15941,6.90127"
@@ -1391,20 +1637,20 @@ function toggleAll(checkAll) {
         </g>
         <g
            id="g52146"
-           inkscape:label="Ceiling Fan"
+           inkscape:label="Track Lights"
            style="display:inline">
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
              x="166.01448"
-             y="554.30969"
+             y="557.81"
              id="text6942-2-7-8-9-9"
              inkscape:label="Circuit Label"><tspan
                sodipodi:role="line"
                id="tspan6940-8-8-4-9-99"
                x="166.01448"
-               y="554.30969"
-               style="font-size:6px">20</tspan></text>
+               y="557.81"
+               style="font-size:6px">6</tspan></text>
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
@@ -1416,7 +1662,7 @@ function toggleAll(checkAll) {
                id="tspan39459"
                x="213.52243"
                y="581.85785"
-               style="font-size:6px">20</tspan></text>
+               style="font-size:6px">6</tspan></text>
           <use
              xlink:href="#symbol1802"
              id="use31349"
@@ -1425,53 +1671,14 @@ function toggleAll(checkAll) {
              y="0"
              width="100%"
              height="100%"
-             inkscape:label="Fan Switch" />
-          <g
-             id="g27243"
-             inkscape:label="Fan"
-             transform="translate(0,40)">
-            <ellipse
-               style="fill:none;stroke:#000000"
-               id="path27088"
-               cx="170.05365"
-               cy="519.83636"
-               rx="7.2653718"
-               ry="1.949246"
-               inkscape:label="Blade" />
-            <ellipse
-               style="display:inline;fill:none;stroke:#000000"
-               id="path27088-2"
-               cx="148.84962"
-               cy="519.83636"
-               rx="7.2653718"
-               ry="1.949246"
-               inkscape:label="Blade" />
-            <ellipse
-               style="display:inline;fill:none;stroke:#000000"
-               id="path27088-0"
-               cx="-530.32025"
-               cy="159.45163"
-               rx="7.2653718"
-               ry="1.949246"
-               transform="rotate(-90)"
-               inkscape:label="Blade" />
-            <ellipse
-               style="display:inline;fill:none;stroke:#000000"
-               id="path27088-6"
-               cx="-509.11621"
-               cy="159.45163"
-               rx="7.2653718"
-               ry="1.949246"
-               transform="rotate(-90)"
-               inkscape:label="Blade" />
-            <circle
-               style="display:inline;fill:none;stroke:#000000;stroke-width:0.999998"
-               id="path27088-07"
-               cx="159.45163"
-               cy="519.7182"
-               r="2.3346467"
-               inkscape:label="Center" />
-          </g>
+             inkscape:label="Light Switch" />
+          <circle
+             style="display:inline;fill:none;stroke:#000000;stroke-width:0.999998"
+             id="path27088-07"
+             cx="159.45163"
+             cy="559.7182"
+             r="2.3346467"
+             inkscape:label="Center" />
           <path
              style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
              d="m 159.7187,560.4204 c 5.40588,6.86437 12.19041,12.63844 19.8308,16.87727 11.4823,6.37029 24.89645,9.20216 37.97385,8.0167"
@@ -1480,6 +1687,75 @@ function toggleAll(checkAll) {
              inkscape:original-d="m 159.7187,560.4204 c 7.73642,6.61127 -67.850872,3.60574 19.8308,16.87727 10.05909,1.52255 26.44205,6.32998 37.97385,8.0167"
              sodipodi:nodetypes="csc"
              inkscape:label="Wiring" />
+          <g
+             id="g16440"
+             inkscape:label="Track Light Fixture">
+            <path
+               sodipodi:type="star"
+               style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+               id="path16401"
+               inkscape:flatsided="false"
+               sodipodi:sides="3"
+               sodipodi:cx="130.89026"
+               sodipodi:cy="253.61447"
+               sodipodi:r1="7.2665849"
+               sodipodi:r2="3.6332924"
+               sodipodi:arg1="0.83082144"
+               sodipodi:arg2="1.878019"
+               inkscape:rounded="0.35"
+               inkscape:randomized="0"
+               d="m 135.78989,258.98074 c -1.62656,1.48512 -3.89895,-1.23701 -5.99838,-1.9031 -2.09944,-0.66608 -5.52552,0.24811 -5.99839,-1.90309 -0.47288,-2.15121 3.02076,-2.75809 4.64732,-4.24321 1.62656,-1.48513 2.54789,-4.90929 4.64732,-4.24321 2.09944,0.66608 0.8782,3.9951 1.35107,6.1463 0.47287,2.15121 2.97763,4.66119 1.35106,6.14631 z"
+               transform="matrix(0.53204813,-0.49620007,0.49620007,0.53204813,-43.642961,432.06836)"
+               inkscape:transform-center-x="-1.2671311"
+               inkscape:transform-center-y="-0.38052096"
+               inkscape:label="Track Light" />
+            <path
+               sodipodi:type="star"
+               style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+               id="path16401-5"
+               inkscape:flatsided="false"
+               sodipodi:sides="3"
+               sodipodi:cx="130.89026"
+               sodipodi:cy="253.61447"
+               sodipodi:r1="7.2665849"
+               sodipodi:r2="3.6332924"
+               sodipodi:arg1="0.83082144"
+               sodipodi:arg2="1.878019"
+               inkscape:rounded="0.35"
+               inkscape:randomized="0"
+               d="m 135.78989,258.98074 c -1.62656,1.48512 -3.89895,-1.23701 -5.99838,-1.9031 -2.09944,-0.66608 -5.52552,0.24811 -5.99839,-1.90309 -0.47288,-2.15121 3.02076,-2.75809 4.64732,-4.24321 1.62656,-1.48513 2.54789,-4.90929 4.64732,-4.24321 2.09944,0.66608 0.8782,3.9951 1.35107,6.1463 0.47287,2.15121 2.97763,4.66119 1.35106,6.14631 z"
+               transform="matrix(0.53204813,-0.49620007,0.49620007,0.53204813,-43.642961,508.08536)"
+               inkscape:transform-center-x="-1.2671311"
+               inkscape:transform-center-y="-0.38052096"
+               inkscape:label="Track Light" />
+            <path
+               sodipodi:type="star"
+               style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+               id="path16401-1"
+               inkscape:flatsided="false"
+               sodipodi:sides="3"
+               sodipodi:cx="130.89026"
+               sodipodi:cy="253.61447"
+               sodipodi:r1="7.2665849"
+               sodipodi:r2="3.6332924"
+               sodipodi:arg1="0.83082144"
+               sodipodi:arg2="1.878019"
+               inkscape:rounded="0.35"
+               inkscape:randomized="0"
+               d="m 135.78989,258.98074 c -1.62656,1.48512 -3.89895,-1.23701 -5.99838,-1.9031 -2.09944,-0.66608 -5.52552,0.24811 -5.99839,-1.90309 -0.47288,-2.15121 3.02076,-2.75809 4.64732,-4.24321 1.62656,-1.48513 2.54789,-4.90929 4.64732,-4.24321 2.09944,0.66608 0.8782,3.9951 1.35107,6.1463 0.47287,2.15121 2.97763,4.66119 1.35106,6.14631 z"
+               transform="matrix(-0.53204813,-0.49620007,-0.49620007,0.53204813,362.26833,472.51807)"
+               inkscape:transform-center-x="1.2671307"
+               inkscape:transform-center-y="-0.38052096"
+               inkscape:label="Track Light" />
+            <rect
+               style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+               id="rect14303"
+               width="2.5"
+               height="90"
+               x="158.07147"
+               y="495.09521"
+               inkscape:label="Light Rail" />
+          </g>
         </g>
         <g
            id="g77706"
@@ -1505,7 +1781,7 @@ function toggleAll(checkAll) {
                id="tspan6940-8-8-4-9-98"
                x="223.43622"
                y="957.21869"
-               style="font-size:6px">20</tspan></text>
+               style="font-size:6px">6</tspan></text>
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
@@ -1517,7 +1793,7 @@ function toggleAll(checkAll) {
                id="tspan6940-8-8-4-9-98-5"
                x="405.50739"
                y="828.4502"
-               style="font-size:6px">20</tspan></text>
+               style="font-size:6px">6</tspan></text>
           <use
              xlink:href="#symbol1802"
              id="use33470-3"
@@ -1573,7 +1849,7 @@ function toggleAll(checkAll) {
                id="tspan6940-8-8-4-9-58"
                x="46.966297"
                y="259.19727"
-               style="font-size:6px">20</tspan></text>
+               style="font-size:6px">6</tspan></text>
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
@@ -1585,7 +1861,7 @@ function toggleAll(checkAll) {
                id="tspan6940-8-8-4-9-58-1"
                x="405.50739"
                y="839.12354"
-               style="font-size:6px">20</tspan></text>
+               style="font-size:6px">6</tspan></text>
           <path
              style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
              d="m 57.80446,269.47293 c 14.48487,9.34135 28.959053,18.69928 43.42251,28.07375 4.68612,3.0373 9.38704,6.08817 13.62695,9.72248 4.2399,3.6343 8.03128,7.8934 10.52513,12.88997 4.40178,8.81922 4.43014,19.10655 4.19015,28.96031 -1.36488,56.03999 -8.36617,112.39303 -0.71106,167.92449 3.82755,27.76573 11.39546,55.22192 24.58679,79.95196 13.19132,24.73004 32.20251,46.6786 56.15324,61.23705 21.28123,12.93579 45.66166,19.69458 68.33327,30.00106 11.3358,5.15325 22.33151,11.25261 31.90291,19.21782 9.5714,7.96522 17.70282,17.88537 22.45136,29.39657 4.1569,10.07697 5.61829,21.02739 7.02208,31.83732 1.40378,10.80993 2.82246,21.7607 6.90338,31.86868 5.27775,13.07239 15.02673,24.29155 27.23474,31.34183 12.20801,7.05028 26.7979,9.88712 40.75827,7.92498"
@@ -1628,7 +1904,7 @@ function toggleAll(checkAll) {
                id="tspan6940-8-8-4-9-39"
                x="257.47058"
                y="582.25488"
-               style="font-size:6px">20</tspan></text>
+               style="font-size:6px">6</tspan></text>
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
@@ -1640,7 +1916,7 @@ function toggleAll(checkAll) {
                id="tspan6940-8-8-4-9-2"
                x="405.50739"
                y="847.276"
-               style="font-size:6px">20</tspan></text>
+               style="font-size:6px">6</tspan></text>
           <use
              xlink:href="#symbol1802"
              id="use33470-2"
@@ -1696,15 +1972,15 @@ function toggleAll(checkAll) {
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
-             x="231.05121"
+             x="232.69307"
              y="737.49005"
              id="text6942-2-7-8-9-5"
              inkscape:label="Circuit Label"><tspan
                sodipodi:role="line"
                id="tspan6940-8-8-4-9-02"
-               x="231.05121"
+               x="232.69307"
                y="737.49005"
-               style="font-size:6px">20</tspan></text>
+               style="font-size:6px">6</tspan></text>
         </g>
         <g
            id="g119400"
@@ -1722,15 +1998,15 @@ function toggleAll(checkAll) {
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
-             x="236.85054"
+             x="238.4924"
              y="791.36945"
              id="text6942-2-7-8-9-58"
              inkscape:label="Circuit Label"><tspan
                sodipodi:role="line"
                id="tspan6940-8-8-4-9-56"
-               x="236.85054"
+               x="238.4924"
                y="791.36945"
-               style="font-size:6px">20</tspan></text>
+               style="font-size:6px">6</tspan></text>
           <text
              xml:space="preserve"
              style="font-size:6.00027px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline;stroke-width:1"
@@ -1791,15 +2067,15 @@ function toggleAll(checkAll) {
             <text
                xml:space="preserve"
                style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
-               x="202.55357"
+               x="204.19543"
                y="739.31757"
                id="text6942-2-7-8-9"
                inkscape:label="Circuit Label"><tspan
                  sodipodi:role="line"
                  id="tspan6940-8-8-4-9"
-                 x="202.55357"
+                 x="204.19543"
                  y="739.31757"
-                 style="font-size:6px">20</tspan></text>
+                 style="font-size:6px">6</tspan></text>
           </g>
           <g
              id="g42952"
@@ -1845,15 +2121,15 @@ function toggleAll(checkAll) {
             <text
                xml:space="preserve"
                style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
-               x="271.14749"
+               x="272.78934"
                y="739.99609"
                id="text6942-2-7-8-9-87"
                inkscape:label="Circuit Label"><tspan
                  sodipodi:role="line"
                  id="tspan6940-8-8-4-9-1"
-                 x="271.14749"
+                 x="272.78934"
                  y="739.99609"
-                 style="font-size:6px">20</tspan></text>
+                 style="font-size:6px">6</tspan></text>
           </g>
           <g
              id="g40727"
@@ -1899,15 +2175,15 @@ function toggleAll(checkAll) {
             <text
                xml:space="preserve"
                style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
-               x="375.14725"
+               x="376.78909"
                y="742.50208"
                id="text6942-2-7-8-9-4"
                inkscape:label="Circuit Label"><tspan
                  sodipodi:role="line"
                  id="tspan6940-8-8-4-9-16"
-                 x="375.14725"
+                 x="376.78909"
                  y="742.50208"
-                 style="font-size:6px">20</tspan></text>
+                 style="font-size:6px">6</tspan></text>
           </g>
           <path
              style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -1928,7 +2204,7 @@ function toggleAll(checkAll) {
                id="tspan6940-8-8-4-9-56-8"
                x="405.50739"
                y="818.59314"
-               style="font-size:6px">20</tspan></text>
+               style="font-size:6px">6</tspan></text>
           <use
              xlink:href="#symbol1802"
              id="use33470"
@@ -1942,205 +2218,63 @@ function toggleAll(checkAll) {
         </g>
       </g>
       <g
-         id="circuit_19_group"
-         inkscape:label="Circuit 19"
+         id="circuit_2_4_group"
+         inkscape:label="Circuit 2 &amp; 4"
          style="display:inline"
          onmouseover="toggleCircuits(this, true)"
-         onmouseout="toggleCircuits(this, false)">
+         onmouseout="toggleCircuits(this, false)"
+         transform="translate(-57.591214,-374.78681)">
         <g
-           id="g49304"
-           inkscape:label="Duplex Outlet"
-           transform="translate(6.5332746,20.506088)">
+           id="g34857-1"
+           inkscape:label="Backup Generator Outlet"
+           style="display:inline">
           <use
              xlink:href="#DuplexOutlet"
-             id="use3337-8-5-9-6-0-9-0"
-             transform="matrix(0.52110559,0,0,0.53018373,232.1178,282.92153)"
-             x="0"
-             y="0"
-             width="100%"
-             height="100%"
-             style="display:inline;stroke-width:1.90249"
-             inkscape:label="Duplex Outlet" />
-          <text
-             xml:space="preserve"
-             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
-             x="397.76056"
-             y="623.88934"
-             id="text6942-2-7-8-9-0"
-             inkscape:label="Circuit Label"><tspan
-               sodipodi:role="line"
-               id="tspan6940-8-8-4-9-9"
-               x="397.76056"
-               y="623.88934"
-               style="font-size:6px">19</tspan></text>
-        </g>
-        <g
-           id="g49304-4"
-           inkscape:label="Duplex Outlet"
-           transform="translate(6.5332746,80.536324)">
-          <use
-             xlink:href="#DuplexOutlet"
-             id="use3337-8-5-9-6-0-9-0-0"
-             transform="matrix(0.52110559,0,0,0.53018373,232.1178,282.92153)"
-             x="0"
-             y="0"
-             width="100%"
-             height="100%"
-             style="display:inline;stroke-width:1.90249"
-             inkscape:label="Duplex Outlet" />
-          <text
-             xml:space="preserve"
-             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
-             x="397.76056"
-             y="623.88934"
-             id="text6942-2-7-8-9-0-4"
-             inkscape:label="Circuit Label"><tspan
-               sodipodi:role="line"
-               id="tspan6940-8-8-4-9-9-6"
-               x="397.76056"
-               y="623.88934"
-               style="font-size:6px">19</tspan></text>
-        </g>
-        <g
-           id="g55459"
-           inkscape:label="Quad Outlet">
-          <text
-             xml:space="preserve"
-             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
-             x="82.195877"
-             y="913.87616"
-             id="text6942-0-4-0-3-0"
-             inkscape:label="Circuit Label"><tspan
-               sodipodi:role="line"
-               id="tspan6940-9-0-3-1-0"
-               x="82.195877"
-               y="913.87616"
-               style="font-size:6px">19</tspan></text>
-          <use
-             xlink:href="#QuadOutlet"
-             id="use3378-0-1-6"
-             transform="matrix(-0.52119604,0,0,-0.53018373,289.46463,1260.4721)"
-             x="0"
-             y="0"
-             width="100%"
-             height="100%"
-             style="stroke-width:1.90233"
-             inkscape:label="Quad Outlet" />
-        </g>
-        <g
-           id="g76001"
-           inkscape:label="Quad Outlet Lower"
-           inkscape:connector-avoid="true">
-          <text
-             xml:space="preserve"
-             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
-             x="397.69699"
-             y="867.237"
-             id="text64784"
-             inkscape:label="Location Label"><tspan
-               sodipodi:role="line"
-               id="tspan64782"
-               x="397.69699"
-               y="867.237">Lower</tspan></text>
-          <text
-             xml:space="preserve"
-             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
-             x="405.08475"
-             y="861.95435"
-             id="text6942-0-4-0-3-0-6"
-             inkscape:label="Circuit Label"><tspan
-               sodipodi:role="line"
-               id="tspan6940-9-0-3-1-0-4"
-               x="405.08475"
-               y="861.95435"
-               style="font-size:6px">19</tspan></text>
-          <use
-             xlink:href="#QuadOutlet"
-             id="use3378-0-1-6-3"
-             transform="matrix(0.52119604,0,0,-0.53018373,217.90051,1198.6806)"
-             x="0"
-             y="0"
-             width="100%"
-             height="100%"
-             style="stroke-width:1.90233"
-             inkscape:label="Quad Outlet" />
-        </g>
-        <g
-           id="g76001-1"
-           inkscape:label="Quad Outlet Upper"
-           transform="translate(0,21.586046)"
-           inkscape:connector-avoid="true">
-          <text
-             xml:space="preserve"
-             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
-             x="397.69699"
-             y="867.237"
-             id="text64784-8"
-             inkscape:label="Location Label"><tspan
-               sodipodi:role="line"
-               id="tspan64782-7"
-               x="397.69699"
-               y="867.237">Upper</tspan></text>
-          <text
-             xml:space="preserve"
-             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
-             x="405.08475"
-             y="861.95435"
-             id="text6942-0-4-0-3-0-6-1"
-             inkscape:label="Circuit Label"><tspan
-               sodipodi:role="line"
-               id="tspan6940-9-0-3-1-0-4-5"
-               x="405.08475"
-               y="861.95435"
-               style="font-size:6px">19</tspan></text>
-          <use
-             xlink:href="#QuadOutlet"
-             id="use3378-0-1-6-3-5"
-             transform="matrix(0.52119604,0,0,-0.53018373,217.90051,1198.6806)"
-             x="0"
-             y="0"
-             width="100%"
-             height="100%"
-             style="stroke-width:1.90233"
-             inkscape:label="Quad Outlet" />
-        </g>
-        <g
-           id="g58590"
-           inkscape:label="GFCI Duplex Outlet">
-          <use
-             xlink:href="#DuplexOutlet"
-             id="use3337-8-6"
-             transform="matrix(0,-0.52110559,0.53018373,0,-183.9645,458.06426)"
+             id="use3337-8-5-9-6-0-2-1"
+             transform="matrix(0,0.52110559,0.53018373,0,-102.39439,439.22543)"
              x="0"
              y="0"
              width="100%"
              height="100%"
              style="stroke-width:1.90249"
-             inkscape:label="Duplex Outlet" />
-          <text
-             xml:space="preserve"
-             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
-             x="161.55812"
-             y="278.06476"
-             id="text6942-2-3"
-             inkscape:label="Circuit Label"><tspan
-               sodipodi:role="line"
-               id="tspan6940-8-7"
-               x="161.55812"
-               y="278.06476"
-               style="font-size:6px">19</tspan></text>
+             inkscape:label="Outlet" />
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
-             x="161.56262"
-             y="285.92065"
-             id="text153221"
-             inkscape:label="GFCI Label"><tspan
+             x="244.38818"
+             y="620.59705"
+             id="text6942-2-7-8-7-9"
+             inkscape:label="Circuit Label"><tspan
                sodipodi:role="line"
-               id="tspan153219"
-               x="161.56262"
-               y="285.92065">GFCI</tspan></text>
+               x="244.38818"
+               y="620.59705"
+               style="font-size:6px"
+               id="tspan23354-8">2/4</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="231.71928"
+             y="611.79895"
+             id="text6942-2-7-8-7-7-0"
+             inkscape:label="220 Label"><tspan
+               sodipodi:role="line"
+               x="231.71928"
+               y="611.79895"
+               style="font-size:6px"
+               id="tspan32089-9">220</tspan></text>
         </g>
+        <text
+           xml:space="preserve"
+           style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+           x="243.5401"
+           y="627.05377"
+           id="text6942-2-7-8-9-2-0-8-8"
+           inkscape:label="Generator Label"><tspan
+             sodipodi:role="line"
+             id="tspan6940-8-8-4-9-0-0-6-7"
+             x="243.5401"
+             y="627.05377"
+             style="font-size:6px">Generator</tspan></text>
       </g>
       <g
          id="breaker_panel_group"
@@ -2199,38 +2333,10 @@ function toggleAll(checkAll) {
       </g>
     </g>
     <g
-       id="doors_checkbox"
-       inkscape:label="Doors Checkbox"
-       onclick="toggleCheck(this)"
-       transform="translate(-5.7512593,186.51783)"
-       style="fill:#ffffff;fill-opacity:0">
-      <g
-         id="g24377-1"
-         inkscape:label="X"
-         style="fill:#ffffff;fill-opacity:0">
-        <path
-           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           d="m 298.11688,305.99506 -15.1181,15.1181 v 0"
-           id="path23942-70" />
-        <path
-           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           d="m 282.99878,305.99506 15.1181,15.1181"
-           id="path23944-8" />
-      </g>
-      <rect
-         style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
-         id="doors_box"
-         width="15.118111"
-         height="15.118111"
-         x="282.99878"
-         y="305.99506"
-         inkscape:label="Box" />
-    </g>
-    <g
        id="objects_checkbox"
        inkscape:label="Objects Checkbox"
        onclick="toggleCheck(this)"
-       transform="translate(-5.7512593,161.31977)"
+       transform="translate(-5.7512593,186.51741)"
        style="fill:#ffffff;fill-opacity:0">
       <g
          id="g24377-7"
@@ -2255,10 +2361,94 @@ function toggleAll(checkAll) {
          inkscape:label="Box" />
     </g>
     <g
-       id="circuit_27_28_checkbox"
-       inkscape:label="Circuit 27 &amp; 28 Checkbox"
+       id="doors_checkbox"
+       inkscape:label="Doors Checkbox"
        onclick="toggleCheck(this)"
-       transform="translate(-5.7512593,136.12173)"
+       transform="translate(-5.7512593,211.71541)"
+       style="fill:#ffffff;fill-opacity:0">
+      <g
+         id="g24377-1"
+         inkscape:label="X"
+         style="fill:#ffffff;fill-opacity:0">
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 298.11688,305.99506 -15.1181,15.1181 v 0"
+           id="path23942-70" />
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 282.99878,305.99506 15.1181,15.1181"
+           id="path23944-8" />
+      </g>
+      <rect
+         style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="doors_box"
+         width="15.118111"
+         height="15.118111"
+         x="282.99878"
+         y="305.99506"
+         inkscape:label="Box" />
+    </g>
+    <g
+       id="circuit_30_checkbox"
+       inkscape:label="Circuit 30 Checkbox"
+       onclick="toggleCheck(this)"
+       transform="translate(-5.7512593,161.31941)"
+       style="fill:#ffffff;fill-opacity:0">
+      <g
+         id="g24377-7-5"
+         inkscape:label="X"
+         style="fill:#ffffff;fill-opacity:0">
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 298.11688,305.99506 -15.1181,15.1181 v 0"
+           id="path23942-7-9" />
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 282.99878,305.99506 15.1181,15.1181"
+           id="path23944-0-4" />
+      </g>
+      <rect
+         style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circuit_30_box"
+         width="15.118111"
+         height="15.118111"
+         x="282.99878"
+         y="305.99506"
+         inkscape:label="Box" />
+    </g>
+    <g
+       id="circuit_23_checkbox"
+       inkscape:label="Circuit 23 Checkbox"
+       onclick="toggleCheck(this)"
+       style="fill:#ffffff;fill-opacity:1"
+       transform="translate(-5.7512593,136.12173)">
+      <g
+         id="g24377"
+         inkscape:label="X"
+         style="fill:#ffffff;fill-opacity:1">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 298.11688,305.99506 -15.1181,15.1181 v 0"
+           id="path23942" />
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 282.99878,305.99506 15.1181,15.1181"
+           id="path23944" />
+      </g>
+      <rect
+         style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circuit_23_box"
+         width="15.118111"
+         height="15.118111"
+         x="282.99878"
+         y="305.99506"
+         inkscape:label="Box" />
+    </g>
+    <g
+       id="circuit_22_24_checkbox"
+       inkscape:label="Circuit 22 &amp; 24 Checkbox"
+       onclick="toggleCheck(this)"
+       transform="translate(-5.7512593,110.92367)"
        style="fill:#ffffff;fill-opacity:0">
       <g
          id="g24377-4-8"
@@ -2275,7 +2465,7 @@ function toggleAll(checkAll) {
       </g>
       <rect
          style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
-         id="circuit_27_28_box"
+         id="circuit_22_24_box"
          width="15.118111"
          height="15.118111"
          x="282.99878"
@@ -2283,10 +2473,10 @@ function toggleAll(checkAll) {
          inkscape:label="Box" />
     </g>
     <g
-       id="circuit_25_checkbox"
-       inkscape:label="Circuit 25 Checkbox"
+       id="circuit_8_checkbox"
+       inkscape:label="Circuit 8 Checkbox"
        onclick="toggleCheck(this)"
-       transform="translate(-5.7512593,110.92368)"
+       transform="translate(-5.7512593,85.725613)"
        style="fill:#ffffff;fill-opacity:0">
       <g
          id="g24377-4"
@@ -2311,10 +2501,10 @@ function toggleAll(checkAll) {
          inkscape:label="Box" />
     </g>
     <g
-       id="circuit_20_checkbox"
-       inkscape:label="Circuit 20 Checkbox"
+       id="circuit_6_checkbox"
+       inkscape:label="Circuit 6 Checkbox"
        onclick="toggleCheck(this)"
-       transform="translate(-5.7512593,85.725626)"
+       transform="translate(-5.7512593,60.692562)"
        style="fill:#ffffff;fill-opacity:0">
       <g
          id="g24377-2"
@@ -2331,7 +2521,7 @@ function toggleAll(checkAll) {
       </g>
       <rect
          style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
-         id="circuit_20_box"
+         id="circuit_6_box"
          width="15.118111"
          height="15.118111"
          x="282.99878"
@@ -2339,27 +2529,27 @@ function toggleAll(checkAll) {
          inkscape:label="Box" />
     </g>
     <g
-       id="circuit_19_checkbox"
-       inkscape:label="Circuit 19 Checkbox"
+       id="circuit_2_4_checkbox"
+       inkscape:label="Circuit 2 &amp; 4 Checkbox"
        onclick="toggleCheck(this)"
-       style="fill:#ffffff;fill-opacity:1"
-       transform="translate(-5.7512593,60.527571)">
+       transform="translate(-5.7512593,35.494473)"
+       style="fill:#ffffff;fill-opacity:0">
       <g
-         id="g24377"
+         id="g24377-4-8-4"
          inkscape:label="X"
-         style="fill:#ffffff;fill-opacity:1">
+         style="fill:#ffffff;fill-opacity:0">
         <path
-           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            d="m 298.11688,305.99506 -15.1181,15.1181 v 0"
-           id="path23942" />
+           id="path23942-6-0-8" />
         <path
-           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            d="m 282.99878,305.99506 15.1181,15.1181"
-           id="path23944" />
+           id="path23944-7-2-3" />
       </g>
       <rect
          style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
-         id="circuit_19_box"
+         id="circuit_2_4_box"
          width="15.118111"
          height="15.118111"
          x="282.99878"
@@ -2370,33 +2560,65 @@ function toggleAll(checkAll) {
        xml:space="preserve"
        style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
        x="308.47809"
-       y="506.40887"
+       y="531.60645"
        id="doors_check_label"
        inkscape:label="Doors Check Label"
        onclick="toggleCheck(this)"><tspan
          sodipodi:role="line"
          id="tspan7629"
          x="308.47809"
-         y="506.40887">Doors</tspan></text>
+         y="531.60645">Doors</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
        x="308.99664"
-       y="481.4165"
+       y="505.83374"
        id="objects_check_label"
        inkscape:label="Objects Check Label"
        onclick="toggleCheck(this)"><tspan
          sodipodi:role="line"
          id="tspan11371"
          x="308.99664"
-         y="481.4165">Objects</tspan></text>
+         y="505.83374">Objects</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
        x="308.97028"
-       y="456.18677"
-       id="circuit_27_28_check_label"
-       inkscape:label="Circuit 27 &amp; 28 Check Label"
+       y="481.31152"
+       id="circuit_30_check_label"
+       inkscape:label="Circuit 30 Check Label"
+       onmouseover=""
+       onmouseout=""
+       onmousedown=""
+       onmouseup=""
+       onclick="toggleCheck(this)"><tspan
+         sodipodi:role="line"
+         id="tspan23049-4"
+         x="308.97028"
+         y="481.31152"
+         style="font-size:18px">Circuit 30</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+       x="308.97028"
+       y="456.11383"
+       id="circuit_23_check_label"
+       inkscape:label="Circuit 23 Check Label"
+       onmouseover=""
+       onmouseout=""
+       onclick="toggleCheck(this)"><tspan
+         sodipodi:role="line"
+         id="tspan16563"
+         x="308.97028"
+         y="456.11383"
+         style="font-size:18px">Circuit 23</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+       x="308.97028"
+       y="430.92017"
+       id="circuit_22_24_check_label"
+       inkscape:label="Circuit 22 &amp; 24 Check Label"
        onmouseover=""
        onmouseout=""
        onmousedown=""
@@ -2405,15 +2627,15 @@ function toggleAll(checkAll) {
          sodipodi:role="line"
          id="tspan23049-9"
          x="308.97028"
-         y="456.18677"
-         style="font-size:18px">Circuit 27/28</tspan></text>
+         y="430.92017"
+         style="font-size:18px">Circuit 22/24</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
        x="308.97028"
-       y="430.96588"
-       id="circuit_25_check_label"
-       inkscape:label="Circuit 25 Check Label"
+       y="405.72211"
+       id="circuit_8_check_label"
+       inkscape:label="Circuit 8 Check Label"
        onmouseover=""
        onmouseout=""
        onmousedown=""
@@ -2422,61 +2644,61 @@ function toggleAll(checkAll) {
          sodipodi:role="line"
          id="tspan23049"
          x="308.97028"
-         y="430.96588"
-         style="font-size:18px">Circuit 25</tspan></text>
+         y="405.72211"
+         style="font-size:18px">Circuit 8</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
        x="308.97028"
-       y="405.74496"
-       id="circuit_20_check_label"
-       inkscape:label="Circuit 20 Check Label"
+       y="380.68906"
+       id="circuit_6_check_label"
+       inkscape:label="Circuit 6 Check Label"
        onmouseout=""
        onmouseover=""
        onclick="toggleCheck(this)"><tspan
          sodipodi:role="line"
          id="tspan22671"
          x="308.97028"
-         y="405.74496"
-         style="font-size:18px">Circuit 20</tspan></text>
+         y="380.68906"
+         style="font-size:18px">Circuit 6</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
        x="308.97028"
-       y="380.52405"
-       id="circuit_19_check_label"
-       inkscape:label="Circuit 19 Check Label"
-       onmouseover=""
+       y="355.49097"
+       id="circuit_2_4_check_label"
+       inkscape:label="Circuit 2 &amp; 4 Check Label"
        onmouseout=""
+       onmouseover=""
        onclick="toggleCheck(this)"><tspan
          sodipodi:role="line"
-         id="tspan16563"
+         id="tspan22671-6"
          x="308.97028"
-         y="380.52405"
-         style="font-size:18px">Circuit 19</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
-       x="287.67706"
-       y="345.83615"
-       id="select_all_label"
-       inkscape:label="Select All Label"
-       onclick="toggleAll(true)"><tspan
-         sodipodi:role="line"
-         id="tspan35644"
-         x="287.67706"
-         y="345.83615">All</tspan></text>
+         y="355.49097"
+         style="font-size:18px">Circuit 2/4</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
        x="329.17502"
-       y="345.73068"
+       y="320.53278"
        id="deselect_all_label"
        inkscape:label="Deselect All Label"
        onclick="toggleAll(false)"><tspan
          sodipodi:role="line"
          id="tspan55824"
          x="329.17502"
-         y="345.73068">None</tspan></text>
+         y="320.53278">None</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+       x="287.67706"
+       y="320.63824"
+       id="select_all_label"
+       inkscape:label="Select All Label"
+       onclick="toggleAll(true)"><tspan
+         sodipodi:role="line"
+         id="tspan35644"
+         x="287.67706"
+         y="320.63824">All</tspan></text>
   </g>
 </svg>
