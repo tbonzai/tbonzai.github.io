@@ -6,7 +6,7 @@
    id="svg332"
    sodipodi:docname="second_floor.svg"
    inkscape:label="2nd Floor"
-   inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -189,16 +189,18 @@ function toggleAll(checkAll) {
      fit-margin-right="10"
      fit-margin-bottom="10"
      inkscape:zoom="1.0455165"
-     inkscape:cx="545.66332"
-     inkscape:cy="343.84919"
-     inkscape:window-width="1280"
-     inkscape:window-height="685"
-     inkscape:window-x="0"
+     inkscape:cx="499.27476"
+     inkscape:cy="288.37422"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="1470"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
      inkscape:current-layer="g326"
      units="mm"
-     inkscape:document-units="mm" />
+     inkscape:document-units="mm"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
   <clipPath
      id="cl_5">
     <rect
@@ -1357,11 +1359,10 @@ function toggleAll(checkAll) {
     <g
        id="g28783"
        inkscape:label="Electrical"
-       style="display:inline"
-       sodipodi:insensitive="true">
+       style="display:inline">
       <g
-         id="circuit_19_group"
-         inkscape:label="Circuit 19"
+         id="circuit_23_group"
+         inkscape:label="Circuit 23"
          style="display:inline"
          onmouseover="toggleCircuits(this, true)"
          onmouseout="toggleCircuits(this, false)">
@@ -1441,7 +1442,7 @@ function toggleAll(checkAll) {
                sodipodi:role="line"
                id="tspan13488-4"
                x="801.28601"
-               y="1014.7896">19</tspan></text>
+               y="1014.7896">23</tspan></text>
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
@@ -1452,7 +1453,7 @@ function toggleAll(checkAll) {
                sodipodi:role="line"
                id="tspan13488"
                x="796.98987"
-               y="994.01141">19</tspan></text>
+               y="994.01141">23</tspan></text>
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
@@ -1503,7 +1504,7 @@ function toggleAll(checkAll) {
                sodipodi:role="line"
                id="tspan24405"
                x="693.70093"
-               y="918.37195">19</tspan></text>
+               y="918.37195">23</tspan></text>
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
@@ -1554,7 +1555,7 @@ function toggleAll(checkAll) {
                sodipodi:role="line"
                id="tspan24405-9"
                x="746.22125"
-               y="979.60931">19</tspan></text>
+               y="979.60931">23</tspan></text>
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
@@ -1569,10 +1570,9 @@ function toggleAll(checkAll) {
         </g>
       </g>
       <g
-         id="circuit_16_group"
-         inkscape:label="Circuit 16"
+         id="circuit_13_group"
+         inkscape:label="Circuit 13"
          style="display:inline"
-         sodipodi:insensitive="true"
          onmouseover="toggleCircuits(this, true)"
          onmouseout="toggleCircuits(this, false)">
         <g
@@ -1670,7 +1670,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan46668"
                  x="511.7016"
-                 y="906.19434">16</tspan></text>
+                 y="906.19434">13</tspan></text>
             <text
                xml:space="preserve"
                style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
@@ -1681,7 +1681,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan46668-6"
                  x="434.27209"
-                 y="957.46967">16</tspan></text>
+                 y="957.46967">13</tspan></text>
           </g>
           <g
              id="g43263"
@@ -1722,7 +1722,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan6158-4-5-1-13"
                  x="593.57062"
-                 y="862.0744">16</tspan></text>
+                 y="862.0744">13</tspan></text>
           </g>
           <g
              id="g88569"
@@ -1860,7 +1860,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan88107"
                  x="590.75897"
-                 y="876.57721">16</tspan></text>
+                 y="876.57721">13</tspan></text>
             <text
                xml:space="preserve"
                style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
@@ -1871,7 +1871,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan88107-5"
                  x="693.92407"
-                 y="897.29053">16</tspan></text>
+                 y="897.29053">13</tspan></text>
             <text
                xml:space="preserve"
                style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
@@ -1882,7 +1882,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan88107-1"
                  x="516.3985"
-                 y="854.34796">16</tspan></text>
+                 y="854.34796">13</tspan></text>
             <text
                xml:space="preserve"
                style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
@@ -1893,7 +1893,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan88107-3"
                  x="753.24683"
-                 y="813.17621">16</tspan></text>
+                 y="813.17621">13</tspan></text>
           </g>
         </g>
         <g
@@ -1939,7 +1939,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan6158-4-5-0-9"
                  x="352.88583"
-                 y="743.40088">16</tspan></text>
+                 y="743.40088">13</tspan></text>
           </g>
           <g
              id="g20521-0"
@@ -1980,7 +1980,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan6158-4-5-1-1"
                  x="418.40396"
-                 y="828.94702">16</tspan></text>
+                 y="828.94702">13</tspan></text>
           </g>
           <g
              id="g53812"
@@ -2058,7 +2058,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan52461"
                  x="654.54504"
-                 y="829.08441">16</tspan></text>
+                 y="829.08441">13</tspan></text>
             <text
                xml:space="preserve"
                style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
@@ -2069,7 +2069,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan52461-5"
                  x="616.72333"
-                 y="731.14001">16</tspan></text>
+                 y="731.14001">13</tspan></text>
             <path
                style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
                d="m 609.82356,736.80197 c 6.28984,5.16574 12.02648,11.0046 17.08034,17.38468 16.55818,20.90334 25.4655,47.73506 24.6955,74.39083"
@@ -2123,7 +2123,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan6158-4-5-0"
                  x="352.88583"
-                 y="743.40088">16</tspan></text>
+                 y="743.40088">13</tspan></text>
           </g>
           <g
              id="g20521"
@@ -2164,7 +2164,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan6158-4-5-1"
                  x="418.40396"
-                 y="828.94702">16</tspan></text>
+                 y="828.94702">13</tspan></text>
           </g>
           <g
              id="g20151"
@@ -2205,7 +2205,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan6158-4-5"
                  x="473.05746"
-                 y="752.15369">16</tspan></text>
+                 y="752.15369">13</tspan></text>
           </g>
           <g
              id="g30315"
@@ -2291,7 +2291,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan26711-3"
                  x="421.49469"
-                 y="731.14001">16</tspan></text>
+                 y="731.14001">163</tspan></text>
             <text
                xml:space="preserve"
                style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
@@ -2302,7 +2302,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan26711"
                  x="453.14932"
-                 y="829.534">16</tspan></text>
+                 y="829.534">13</tspan></text>
           </g>
           <g
              id="g40104"
@@ -2334,7 +2334,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan36644"
                  x="392.85043"
-                 y="829.534">16</tspan></text>
+                 y="829.534">13</tspan></text>
             <text
                xml:space="preserve"
                style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
@@ -2345,7 +2345,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan37572"
                  x="373.03369"
-                 y="889.67151">16</tspan></text>
+                 y="889.67151">13</tspan></text>
             <circle
                id="path291-8-2-9-7-7-3-7-5"
                cx="367.28564"
@@ -2407,7 +2407,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan6158-4-5-7"
                  x="473.05746"
-                 y="752.15369">16</tspan></text>
+                 y="752.15369">13</tspan></text>
           </g>
           <g
              id="g30016"
@@ -2466,7 +2466,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan15377"
                  x="554.33807"
-                 y="1146.1589">16</tspan></text>
+                 y="1146.1589">13</tspan></text>
             <text
                xml:space="preserve"
                style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
@@ -2500,7 +2500,7 @@ function toggleAll(checkAll) {
                x="841.21008"
                y="930.3985"
                id="tspan7228-1"
-               style="font-size:6px">16</tspan><tspan
+               style="font-size:6px">13</tspan><tspan
                sodipodi:role="line"
                x="841.21008"
                y="937.8985"
@@ -2517,7 +2517,7 @@ function toggleAll(checkAll) {
                x="825.97815"
                y="961.66083"
                id="tspan7228-7-3"
-               style="font-size:6px">16</tspan><tspan
+               style="font-size:6px">13</tspan><tspan
                sodipodi:role="line"
                x="825.97815"
                y="969.16083"
@@ -2534,7 +2534,7 @@ function toggleAll(checkAll) {
                x="853.01068"
                y="978.73187"
                id="tspan7228-6-5"
-               style="font-size:6px">16</tspan><tspan
+               style="font-size:6px">13</tspan><tspan
                sodipodi:role="line"
                x="853.01068"
                y="986.23187"
@@ -2581,10 +2581,9 @@ function toggleAll(checkAll) {
         </g>
       </g>
       <g
-         id="circuit_15_group"
-         inkscape:label="Circuit 15"
+         id="circuit_10_group"
+         inkscape:label="Circuit 10"
          style="display:inline"
-         sodipodi:insensitive="true"
          onmouseover="toggleCircuits(this, true)"
          onmouseout="toggleCircuits(this, false)">
         <g
@@ -2605,7 +2604,7 @@ function toggleAll(checkAll) {
                  x="784.16766"
                  y="911.24554"
                  id="tspan7228"
-                 style="font-size:6px">15</tspan><tspan
+                 style="font-size:6px">10</tspan><tspan
                  sodipodi:role="line"
                  x="784.16766"
                  y="918.74554"
@@ -2622,7 +2621,7 @@ function toggleAll(checkAll) {
                  x="848.87842"
                  y="955.41528"
                  id="tspan7228-7"
-                 style="font-size:6px">15</tspan><tspan
+                 style="font-size:6px">10</tspan><tspan
                  sodipodi:role="line"
                  x="848.87842"
                  y="962.91528"
@@ -2639,7 +2638,7 @@ function toggleAll(checkAll) {
                  x="920.46234"
                  y="955.41528"
                  id="tspan7228-6"
-                 style="font-size:6px">15</tspan><tspan
+                 style="font-size:6px">10</tspan><tspan
                  sodipodi:role="line"
                  x="920.46234"
                  y="962.91528"
@@ -2728,7 +2727,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan72536-7"
                  x="885.0531"
-                 y="629.40131">15</tspan></text>
+                 y="629.40131">10</tspan></text>
           </g>
           <g
              id="g73420-9"
@@ -2769,7 +2768,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan72536-9"
                  x="883.42944"
-                 y="639.38629">15</tspan></text>
+                 y="639.38629">10</tspan></text>
           </g>
           <g
              id="g1500"
@@ -2810,7 +2809,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan72536-8"
                  x="915.08954"
-                 y="756.1203">15</tspan></text>
+                 y="756.1203">10</tspan></text>
           </g>
           <g
              id="g73420"
@@ -2851,7 +2850,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan72536"
                  x="883.42944"
-                 y="646.56726">15</tspan></text>
+                 y="646.56726">10</tspan></text>
           </g>
           <g
              id="g15318"
@@ -2931,7 +2930,7 @@ function toggleAll(checkAll) {
                  id="tspan7425-6-8-8-3-7-5"
                  x="789.94989"
                  y="815.78699"
-                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arial;-inkscape-font-specification:Arial">15</tspan><tspan
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arial;-inkscape-font-specification:Arial">10</tspan><tspan
                  sodipodi:role="line"
                  x="789.94989"
                  y="823.35645"
@@ -2948,7 +2947,7 @@ function toggleAll(checkAll) {
                  id="tspan7425-6-8-8-3-7-5-5"
                  x="874.49597"
                  y="751.12378"
-                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arial;-inkscape-font-specification:Arial">15</tspan><tspan
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arial;-inkscape-font-specification:Arial">10</tspan><tspan
                  sodipodi:role="line"
                  x="874.49597"
                  y="758.69324"
@@ -2977,7 +2976,7 @@ function toggleAll(checkAll) {
                  id="tspan7425-6-8-8-3-7"
                  x="789.94989"
                  y="791.07458"
-                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arial;-inkscape-font-specification:Arial">15</tspan><tspan
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arial;-inkscape-font-specification:Arial">10</tspan><tspan
                  sodipodi:role="line"
                  x="789.94989"
                  y="798.64404"
@@ -2994,7 +2993,7 @@ function toggleAll(checkAll) {
                  id="tspan7425-6-8-8-3-7-41"
                  x="748.53815"
                  y="765.91339"
-                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arial;-inkscape-font-specification:Arial">15</tspan><tspan
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:Arial;-inkscape-font-specification:Arial">10</tspan><tspan
                  sodipodi:role="line"
                  x="748.53815"
                  y="773.48285"
@@ -3040,8 +3039,7 @@ function toggleAll(checkAll) {
           <g
              id="g11246"
              inkscape:label="Outlet 2"
-             transform="translate(3.0236178)"
-             sodipodi:insensitive="true">
+             transform="translate(3.0236178)">
             <g
                id="DuplexOutlet-6-39"
                transform="translate(378.14099,107.59137)"
@@ -3076,12 +3074,11 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan9786"
                  x="679.69781"
-                 y="753.38354">15</tspan></text>
+                 y="753.38354">10</tspan></text>
           </g>
           <g
              id="g8296"
-             inkscape:label="Outlet 1"
-             sodipodi:insensitive="true">
+             inkscape:label="Outlet 1">
             <g
                id="DuplexOutlet-6-3"
                transform="rotate(-90,461.23044,496.52508)"
@@ -3116,12 +3113,11 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan6158"
                  x="615.39856"
-                 y="644.42804">15</tspan></text>
+                 y="644.42804">10</tspan></text>
           </g>
           <g
              id="g16344"
-             inkscape:label="Closet Light"
-             sodipodi:insensitive="true">
+             inkscape:label="Closet Light">
             <text
                xml:space="preserve"
                style="font-size:4.8px;line-height:1.25;font-family:sans-serif;display:inline"
@@ -3155,7 +3151,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan15368"
                  x="690.65088"
-                 y="695.27356">15</tspan></text>
+                 y="695.27356">10</tspan></text>
             <text
                xml:space="preserve"
                style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
@@ -3166,7 +3162,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan15368-5"
                  x="748.99323"
-                 y="679.72778">15</tspan></text>
+                 y="679.72778">10</tspan></text>
             <path
                style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
                d="m 743.06947,671.7464 c -11.97648,-1.27086 -24.40424,2.43278 -33.73126,10.05236 -2.36897,1.9353 -4.54289,4.10922 -6.47819,6.47819"
@@ -3220,7 +3216,7 @@ function toggleAll(checkAll) {
                  sodipodi:role="line"
                  id="tspan6158-4"
                  x="615.39856"
-                 y="644.42804">15</tspan></text>
+                 y="644.42804">10</tspan></text>
           </g>
         </g>
         <g
@@ -3308,7 +3304,7 @@ function toggleAll(checkAll) {
                    id="tspan65887-5"
                    x="712.94318"
                    y="868.38031"
-                   style="font-size:6px">15</tspan></text>
+                   style="font-size:6px">10</tspan></text>
             </g>
             <g
                id="g52583"
@@ -3365,14 +3361,13 @@ function toggleAll(checkAll) {
                  id="tspan65887"
                  x="723.81384"
                  y="839.06274"
-                 style="font-size:6px">15</tspan></text>
+                 style="font-size:6px">10</tspan></text>
           </g>
         </g>
       </g>
       <g
-         id="circuit_13_group"
-         inkscape:label="Circuit 13"
-         sodipodi:insensitive="true"
+         id="circuit_14_group"
+         inkscape:label="Circuit 14"
          onmouseover="toggleCircuits(this, true)"
          onmouseout="toggleCircuits(this, false)">
         <g
@@ -3432,7 +3427,7 @@ function toggleAll(checkAll) {
                sodipodi:role="line"
                id="tspan15377-1"
                x="554.33807"
-               y="1146.1589">13</tspan></text>
+               y="1146.1589">14</tspan></text>
           <text
              xml:space="preserve"
              style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
@@ -3462,7 +3457,7 @@ function toggleAll(checkAll) {
        id="doors_checkbox"
        inkscape:label="Doors Checkbox"
        onclick="toggleCheck(this)"
-       transform="translate(715.55753,492.24203)"
+       transform="translate(715.55753,526.24203)"
        style="fill:#ffffff;fill-opacity:0">
       <g
          id="g24377-1"
@@ -3490,7 +3485,7 @@ function toggleAll(checkAll) {
        id="objects_checkbox"
        inkscape:label="Objects Checkbox"
        onclick="toggleCheck(this)"
-       transform="translate(715.55753,467.04397)"
+       transform="translate(715.55753,501.04397)"
        style="fill:#ffffff;fill-opacity:0">
       <g
          id="g24377-7"
@@ -3515,10 +3510,10 @@ function toggleAll(checkAll) {
          inkscape:label="Box" />
     </g>
     <g
-       id="circuit_19_checkbox"
-       inkscape:label="Circuit 19 Checkbox"
+       id="circuit_23_checkbox"
+       inkscape:label="Circuit 23 Checkbox"
        onclick="toggleCheck(this)"
-       transform="translate(715.55753,441.84593)"
+       transform="translate(715.55753,475.84593)"
        style="fill:#ffffff;fill-opacity:0">
       <g
          id="g24377-4-8"
@@ -3535,7 +3530,7 @@ function toggleAll(checkAll) {
       </g>
       <rect
          style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
-         id="circuit_19_box"
+         id="circuit_23_box"
          width="15.118111"
          height="15.118111"
          x="282.99878"
@@ -3543,10 +3538,10 @@ function toggleAll(checkAll) {
          inkscape:label="Box" />
     </g>
     <g
-       id="circuit_16_checkbox"
-       inkscape:label="Circuit 16 Checkbox"
+       id="circuit_14_checkbox"
+       inkscape:label="Circuit 14 Checkbox"
        onclick="toggleCheck(this)"
-       transform="translate(715.55753,416.64788)"
+       transform="translate(715.55753,450.64788)"
        style="fill:#ffffff;fill-opacity:0">
       <g
          id="g24377-4"
@@ -3563,7 +3558,7 @@ function toggleAll(checkAll) {
       </g>
       <rect
          style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
-         id="circuit_16_box"
+         id="circuit_14_box"
          width="15.118111"
          height="15.118111"
          x="282.99878"
@@ -3571,10 +3566,10 @@ function toggleAll(checkAll) {
          inkscape:label="Box" />
     </g>
     <g
-       id="circuit_15_checkbox"
-       inkscape:label="Circuit 15 Checkbox"
+       id="circuit_13_checkbox"
+       inkscape:label="Circuit 13 Checkbox"
        onclick="toggleCheck(this)"
-       transform="translate(715.55753,391.44983)"
+       transform="translate(715.55753,425.44983)"
        style="fill:#ffffff;fill-opacity:0">
       <g
          id="g24377-2"
@@ -3591,7 +3586,7 @@ function toggleAll(checkAll) {
       </g>
       <rect
          style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
-         id="circuit_15_box"
+         id="circuit_13_box"
          width="15.118111"
          height="15.118111"
          x="282.99878"
@@ -3599,11 +3594,11 @@ function toggleAll(checkAll) {
          inkscape:label="Box" />
     </g>
     <g
-       id="circuit_13_checkbox"
-       inkscape:label="Circuit 13 Checkbox"
+       id="circuit_10_checkbox"
+       inkscape:label="Circuit 10 Checkbox"
        onclick="toggleCheck(this)"
        style="fill:#ffffff;fill-opacity:1"
-       transform="translate(715.55753,366.25177)">
+       transform="translate(715.55753,400.25177)">
       <g
          id="g24377"
          inkscape:label="X"
@@ -3619,7 +3614,7 @@ function toggleAll(checkAll) {
       </g>
       <rect
          style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
-         id="circuit_13_box"
+         id="circuit_10_box"
          width="15.118111"
          height="15.118111"
          x="282.99878"
@@ -3630,33 +3625,33 @@ function toggleAll(checkAll) {
        xml:space="preserve"
        style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
        x="1029.7869"
-       y="812.13306"
+       y="846.13306"
        id="doors_check_label"
        inkscape:label="Doors Check Label"
        onclick="toggleCheck(this)"><tspan
          sodipodi:role="line"
          id="tspan7629"
          x="1029.7869"
-         y="812.13306">Doors</tspan></text>
+         y="846.13306">Doors</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
        x="1030.3054"
-       y="787.14069"
+       y="821.14069"
        id="objects_check_label"
        inkscape:label="Objects Check Label"
        onclick="toggleCheck(this)"><tspan
          sodipodi:role="line"
          id="tspan11371"
          x="1030.3054"
-         y="787.14069">Objects</tspan></text>
+         y="821.14069">Objects</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
        x="1030.2791"
-       y="761.91095"
-       id="circuit_19_check_label"
-       inkscape:label="Circuit 19 Check Label"
+       y="795.91095"
+       id="circuit_23_check_label"
+       inkscape:label="Circuit 23 Check Label"
        onmouseover=""
        onmouseout=""
        onmousedown=""
@@ -3665,15 +3660,15 @@ function toggleAll(checkAll) {
          sodipodi:role="line"
          id="tspan23049-9"
          x="1030.2791"
-         y="761.91095"
-         style="font-size:18px">Circuit 19</tspan></text>
+         y="795.91095"
+         style="font-size:18px">Circuit 23</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
        x="1030.2791"
-       y="736.69006"
-       id="circuit_16_check_label"
-       inkscape:label="Circuit 16 Check Label"
+       y="770.69006"
+       id="circuit_14_check_label"
+       inkscape:label="Circuit 14 Check Label"
        onmouseover=""
        onmouseout=""
        onmousedown=""
@@ -3682,61 +3677,73 @@ function toggleAll(checkAll) {
          sodipodi:role="line"
          id="tspan23049"
          x="1030.2791"
-         y="736.69006"
-         style="font-size:18px">Circuit 16</tspan></text>
+         y="770.69006"
+         style="font-size:18px">Circuit 14</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
        x="1030.2791"
-       y="711.46918"
-       id="circuit_15_check_label"
-       inkscape:label="Circuit 15 Check Label"
+       y="745.46918"
+       id="circuit_13_check_label"
+       inkscape:label="Circuit 13 Check Label"
        onmouseout=""
        onmouseover=""
        onclick="toggleCheck(this)"><tspan
          sodipodi:role="line"
          id="tspan22671"
          x="1030.2791"
-         y="711.46918"
-         style="font-size:18px">Circuit 15</tspan></text>
+         y="745.46918"
+         style="font-size:18px">Circuit 13</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
        x="1030.2791"
-       y="686.24823"
-       id="circuit_13_check_label"
-       inkscape:label="Circuit 13 Check Label"
+       y="720.24823"
+       id="circuit_10_check_label"
+       inkscape:label="Circuit 10 Check Label"
        onmouseover=""
        onmouseout=""
        onclick="toggleCheck(this)"><tspan
          sodipodi:role="line"
          id="tspan16563"
          x="1030.2791"
-         y="686.24823"
-         style="font-size:18px">Circuit 13</tspan></text>
+         y="720.24823"
+         style="font-size:18px">Circuit 10</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
-       x="1008.9858"
-       y="651.56036"
+       x="1046.9858"
+       y="685.56036"
        id="select_all_label"
        inkscape:label="Select All Label"
        onclick="toggleAll(true)"><tspan
          sodipodi:role="line"
          id="tspan35644"
-         x="1008.9858"
-         y="651.56036">All</tspan></text>
+         x="1046.9858"
+         y="685.56036">All</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
-       x="1050.4838"
-       y="651.4549"
+       x="1074.4838"
+       y="685.4549"
        id="deselect_all_label"
        inkscape:label="Deselect All Label"
        onclick="toggleAll(false)"><tspan
          sodipodi:role="line"
          id="tspan55824"
-         x="1050.4838"
-         y="651.4549">None</tspan></text>
+         x="1074.4838"
+         y="685.4549">None</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+       x="981.48401"
+       y="685.34064"
+       id="show_label"
+       inkscape:label="Show Label"
+       onclick=""><tspan
+         sodipodi:role="line"
+         id="tspan35644-3"
+         x="981.48401"
+         y="685.34064">Show:</tspan></text>
   </g>
 </svg>
