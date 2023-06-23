@@ -268,7 +268,7 @@ function toggleAll(checkAll) {
      showgrid="false"
      inkscape:zoom="1.230549"
      inkscape:cx="492.86946"
-     inkscape:cy="251.51376"
+     inkscape:cy="576.57194"
      inkscape:window-width="1920"
      inkscape:window-height="1027"
      inkscape:window-x="1470"
@@ -8142,7 +8142,7 @@ function toggleAll(checkAll) {
          id="circuit_1_3_group"
          inkscape:label="Circuits 1 &amp; 3"
          style="display:inline"
-         transform="translate(-1.9627,184.43654)"
+         transform="translate(-15.162657,184.43654)"
          onmouseover="toggleCircuits(this, true)"
          onmouseout="toggleCircuits(this, false)">
         <g
