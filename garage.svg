@@ -236,15 +236,15 @@ function toggleAll(checkAll) {
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="6.0613661"
-     inkscape:cx="161.59724"
-     inkscape:cy="39.842504"
+     inkscape:zoom="1.0715083"
+     inkscape:cx="235.64914"
+     inkscape:cy="349.50734"
      inkscape:window-width="1920"
      inkscape:window-height="1027"
      inkscape:window-x="1470"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
-     inkscape:current-layer="electrical_group"
+     inkscape:current-layer="g2164"
      fit-margin-top="10"
      fit-margin-left="10"
      fit-margin-right="10"
@@ -821,8 +821,7 @@ function toggleAll(checkAll) {
     <g
        id="electrical_group"
        inkscape:label="Electrical"
-       style="display:inline"
-       sodipodi:insensitive="true">
+       style="display:inline">
       <g
          id="circuit_30_group"
          inkscape:label="Circuit 30"
@@ -2493,7 +2492,7 @@ function toggleAll(checkAll) {
       </g>
       <rect
          style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
-         id="circuit_25_box"
+         id="circuit_8_box"
          width="15.118111"
          height="15.118111"
          x="282.99878"
