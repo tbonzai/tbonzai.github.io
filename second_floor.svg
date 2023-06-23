@@ -67,10 +67,10 @@ function toggleAll(checkAll) {
 		group,
 		box,
 		objectsArr = [
+			'circuit_10',
 			'circuit_13',
-			'circuit_15',
-			'circuit_16',
-			'circuit_19',
+			'circuit_14',
+			'circuit_23',
 			'objects',
 			'doors'
 		];
@@ -189,7 +189,7 @@ function toggleAll(checkAll) {
      fit-margin-right="10"
      fit-margin-bottom="10"
      inkscape:zoom="1.0455165"
-     inkscape:cx="499.27476"
+     inkscape:cx="694.39363"
      inkscape:cy="288.37422"
      inkscape:window-width="1920"
      inkscape:window-height="1027"
@@ -1567,6 +1567,94 @@ function toggleAll(checkAll) {
                id="tspan27313-5"
                x="753.80829"
                y="988.63062">GFCI</tspan></text>
+        </g>
+      </g>
+      <g
+         id="circuit_14_group"
+         inkscape:label="Circuit 14"
+         onmouseover="toggleCircuits(this, true)"
+         onmouseout="toggleCircuits(this, false)"
+         style="display:inline">
+        <g
+           id="g30016-1"
+           inkscape:label="Furnace"
+           transform="translate(42.394316,-349.80273)"
+           style="display:inline">
+          <g
+             id="Appliance-2-3-2-8"
+             transform="translate(237.85419,501.23621)"
+             inkscape:label="Appliance"
+             style="display:inline">
+            <title
+               id="title4266-0-1-7">Appliance</title>
+            <circle
+               id="path291-8-2-9-7-7-2-4-9-8"
+               cx="330.62677"
+               cy="642.8031"
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               r="4.9344997" />
+            <path
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m 334.04547,644.08751 h 7.513 v 0"
+               id="path1300-7-3-0-8-1-1-8-2-7" />
+            <path
+               style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m 331.97947,640.58716 h 9.579 v 0"
+               id="path1300-7-3-0-8-6-8-8-5-4-7" />
+            <path
+               sodipodi:type="star"
+               style="fill:none;stroke:#000000;stroke-width:0.51766;stroke-miterlimit:4;stroke-dasharray:none"
+               id="path3851-55-5-4"
+               inkscape:flatsided="false"
+               sodipodi:sides="3"
+               sodipodi:cx="290.89798"
+               sodipodi:cy="398.42972"
+               sodipodi:r1="3.6526456"
+               sodipodi:r2="1.8263229"
+               sodipodi:arg1="0.52391935"
+               sodipodi:arg2="1.5711169"
+               inkscape:rounded="0"
+               inkscape:randomized="0"
+               transform="matrix(1.2054248,0,0,1.2054248,-20.028026,162.60668)"
+               inkscape:transform-center-x="0.00071903649"
+               inkscape:transform-center-y="-1.1001616"
+               d="m 294.06068,400.25705 -3.16329,-0.001 -3.16328,-0.001 1.58252,-2.73898 1.58252,-2.73898 1.58076,2.73999 z" />
+            <title
+               id="title4412-4-8-4">Appliance</title>
+          </g>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="554.33807"
+             y="1146.1589"
+             id="text15379-9"
+             inkscape:label="Circuit Label"><tspan
+               sodipodi:role="line"
+               id="tspan15377-1"
+               x="554.33807"
+               y="1146.1589">14</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
+             x="576.53046"
+             y="1154.5562"
+             id="text17891-5"
+             inkscape:label="Furnace Label"><tspan
+               sodipodi:role="line"
+               x="576.53046"
+               y="1154.5562"
+               id="tspan3014-5">Furnace</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+             x="559.83124"
+             y="1162.9592"
+             id="text14850"
+             inkscape:label="Location Label"><tspan
+               sodipodi:role="line"
+               id="tspan14848"
+               x="559.83124"
+               y="1162.9592">Attic</tspan></text>
         </g>
       </g>
       <g
@@ -3363,93 +3451,6 @@ function toggleAll(checkAll) {
                  y="839.06274"
                  style="font-size:6px">10</tspan></text>
           </g>
-        </g>
-      </g>
-      <g
-         id="circuit_14_group"
-         inkscape:label="Circuit 14"
-         onmouseover="toggleCircuits(this, true)"
-         onmouseout="toggleCircuits(this, false)">
-        <g
-           id="g30016-1"
-           inkscape:label="Furnace"
-           transform="translate(42.394316,-349.80273)"
-           style="display:inline">
-          <g
-             id="Appliance-2-3-2-8"
-             transform="translate(237.85419,501.23621)"
-             inkscape:label="Appliance"
-             style="display:inline">
-            <title
-               id="title4266-0-1-7">Appliance</title>
-            <circle
-               id="path291-8-2-9-7-7-2-4-9-8"
-               cx="330.62677"
-               cy="642.8031"
-               style="display:inline;fill:none;stroke:#000000;stroke-width:0.623622;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-               r="4.9344997" />
-            <path
-               style="display:inline;fill:none;stroke:#000000;stroke-width:0.624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-               d="m 334.04547,644.08751 h 7.513 v 0"
-               id="path1300-7-3-0-8-1-1-8-2-7" />
-            <path
-               style="display:inline;fill:none;stroke:#000000;stroke-width:0.623998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-               d="m 331.97947,640.58716 h 9.579 v 0"
-               id="path1300-7-3-0-8-6-8-8-5-4-7" />
-            <path
-               sodipodi:type="star"
-               style="fill:none;stroke:#000000;stroke-width:0.51766;stroke-miterlimit:4;stroke-dasharray:none"
-               id="path3851-55-5-4"
-               inkscape:flatsided="false"
-               sodipodi:sides="3"
-               sodipodi:cx="290.89798"
-               sodipodi:cy="398.42972"
-               sodipodi:r1="3.6526456"
-               sodipodi:r2="1.8263229"
-               sodipodi:arg1="0.52391935"
-               sodipodi:arg2="1.5711169"
-               inkscape:rounded="0"
-               inkscape:randomized="0"
-               transform="matrix(1.2054248,0,0,1.2054248,-20.028026,162.60668)"
-               inkscape:transform-center-x="0.00071903649"
-               inkscape:transform-center-y="-1.1001616"
-               d="m 294.06068,400.25705 -3.16329,-0.001 -3.16328,-0.001 1.58252,-2.73898 1.58252,-2.73898 1.58076,2.73999 z" />
-            <title
-               id="title4412-4-8-4">Appliance</title>
-          </g>
-          <text
-             xml:space="preserve"
-             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
-             x="554.33807"
-             y="1146.1589"
-             id="text15379-9"
-             inkscape:label="Circuit Label"><tspan
-               sodipodi:role="line"
-               id="tspan15377-1"
-               x="554.33807"
-               y="1146.1589">14</tspan></text>
-          <text
-             xml:space="preserve"
-             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;text-anchor:end"
-             x="576.53046"
-             y="1154.5562"
-             id="text17891-5"
-             inkscape:label="Furnace Label"><tspan
-               sodipodi:role="line"
-               x="576.53046"
-               y="1154.5562"
-               id="tspan3014-5">Furnace</tspan></text>
-          <text
-             xml:space="preserve"
-             style="font-size:6px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
-             x="559.83124"
-             y="1162.9592"
-             id="text14850"
-             inkscape:label="Location Label"><tspan
-               sodipodi:role="line"
-               id="tspan14848"
-               x="559.83124"
-               y="1162.9592">Attic</tspan></text>
         </g>
       </g>
     </g>
