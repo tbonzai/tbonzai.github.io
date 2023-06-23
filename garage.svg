@@ -237,8 +237,8 @@ function toggleAll(checkAll) {
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="1.0715083"
-     inkscape:cx="235.64914"
-     inkscape:cy="349.50734"
+     inkscape:cx="208.58448"
+     inkscape:cy="350.44059"
      inkscape:window-width="1920"
      inkscape:window-height="1027"
      inkscape:window-x="1470"
@@ -2678,26 +2678,38 @@ function toggleAll(checkAll) {
     <text
        xml:space="preserve"
        style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
-       x="329.17502"
-       y="320.53278"
+       x="356.23965"
+       y="322.1264"
        id="deselect_all_label"
        inkscape:label="Deselect All Label"
        onclick="toggleAll(false)"><tspan
          sodipodi:role="line"
          id="tspan55824"
-         x="329.17502"
-         y="320.53278">None</tspan></text>
+         x="356.23965"
+         y="322.1264">None</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
-       x="287.67706"
-       y="320.63824"
+       x="325.00763"
+       y="322.33734"
        id="select_all_label"
        inkscape:label="Select All Label"
        onclick="toggleAll(true)"><tspan
          sodipodi:role="line"
          id="tspan35644"
-         x="287.67706"
-         y="320.63824">All</tspan></text>
+         x="325.00763"
+         y="322.33734">All</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;display:inline"
+       x="260.17523"
+       y="322.11761"
+       id="show_label"
+       inkscape:label="Show Label"
+       onclick=""><tspan
+         sodipodi:role="line"
+         id="tspan35644-3"
+         x="260.17523"
+         y="322.11761">Show:</tspan></text>
   </g>
 </svg>
